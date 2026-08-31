@@ -5,9 +5,10 @@ import { Experiences } from './experiences/experiences';
 import { InfosCompany } from "./infos-company/infos-company";
 import { Experience } from '../../shared/interfaces';
 import { EXPERIENCES_DATA } from '../../shared/data';
+import { Certifications } from "./certifications/certifications";
 
 @Component({
-  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany],
+  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications],
   selector: 'app-homepage',
   styleUrl: './homepage.css',
   templateUrl: './homepage.html',

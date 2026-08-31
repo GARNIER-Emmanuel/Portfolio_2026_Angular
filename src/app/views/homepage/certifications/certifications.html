@@ -1,0 +1,24 @@
+<div class="flex flex-row flex-wrap justify-center space-x-4">
+    @for (certification of certifications(); track certification.id) {
+    <a [matTooltip]="'sur '+ certification.site" href="#"
+        class="block group transition hover:-translate-y-1  mb-5 w-80">
+        @if (certification.status === 'obtained') {
+        <img alt="image certification" [ngSrc]="certification.image" width="1684" height="1191"
+            class="w-full rounded-se-3xl rounded-es-3xl object-cover bg-white shadow-xs" />
+        }@else {
+        <div
+            class="h-57 w-full rounded-se-3xl rounded-es-3xl bg-gray-200/80 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
+            <span class="text-sm font-semibold uppercase tracking-wider">En cours d'obtention</span>
+        </div>
+        }
+        <div class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
+            <strong class="font-medium">{{ certification.name }} :</strong>
+            @if (certification.obtained_date && certification.status === 'obtained') {
+            <p class="mt-0.5 opacity-50 sm:mt-0">{{certification.status}}{{certification.obtained_date}}</p>
+            }@else {
+            <p class="mt-0.5 opacity-50 sm:mt-0">{{certification.status}}</p>
+            }
+        </div>
+    </a>
+    }
+</div>
