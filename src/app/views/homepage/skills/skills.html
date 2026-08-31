@@ -1,0 +1,11 @@
+@for (skill of skills(); track skill.name) {
+<div class="flex text-3xl">
+    @if (skill.icon?.startsWith('devicon-')) {
+    <i [class]="skill.icon" [matTooltip]="skill.category ? (skill.name + ' - ' + skill.category) : skill.name"></i>
+    } @else {
+    <mat-icon [matTooltip]="skill.category ? (skill.name + ' - ' + skill.category) : skill.name">
+        {{ skill.icon }}
+    </mat-icon>
+    }
+</div>
+}

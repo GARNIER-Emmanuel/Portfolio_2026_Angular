@@ -1,0 +1,16 @@
+section {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.ex-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+    .ex-skills {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
