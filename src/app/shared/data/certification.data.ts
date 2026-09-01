@@ -90,6 +90,53 @@ Création d'applications : concevoir des solutions personnalisées via le vibe c
         site: 'Coursera',
         link: 'https://www.coursera.org/professional-certificates/google-ai',
         status: 'wish'
+    },
+    {
+        id: '8',
+        name: 'AWS Certified Developer - Associate',
+        image: 'certif-spring-boot.png',
+        obtained_date: '2026',
+        description: `Déploiement et sécurisation d'applications et microservices dans le cloud AWS
+Gestion des services serverless (Lambda, API Gateway), bases de données (DynamoDB, RDS) et stockage S3
+Mise en place de pipelines CI/CD et surveillance applicative via CloudWatch et X-Ray`,
+        site: 'Amazon Web Services',
+        link: 'https://aws.amazon.com/certification/certified-developer-associate/',
+        status: 'wish'
+    },
+    {
+        id: '9',
+        name: 'Oracle Certified Professional Java SE 17/21',
+        image: 'certif-spring-boot.png',
+        obtained_date: '2026',
+        description: `Maîtrise approfondie des fonctionnalités avancées de Java moderne (Records, Pattern Matching, Sealed Classes)
+Programmation orientée objet, gestion de la mémoire, Garbage Collector et Concurrency
+Flux de données (Streams), I/O, NIO.2, JDBC et modularité logicielle (JPMS)`,
+        site: 'Oracle',
+        link: 'https://education.oracle.com/oracle-certified-professional-java-se-17-developer/pexam_1Z0-829',
+        status: 'wish'
+    },
+    {
+        id: '10',
+        name: 'Professional Scrum Master (PSM I)',
+        image: 'certif-spring-boot.png',
+        obtained_date: '2026',
+        description: `Maîtrise approfondie du framework Scrum, des rôles, des artefacts et des événements
+Facilitation des processus agiles et résolution des blocages au sein des équipes de développement
+Optimisation de la productivité et de la livraison de valeur continue`,
+        site: 'Scrum.org',
+        link: 'https://www.scrum.org/assessments/professional-scrum-master-i-certification',
+        status: 'wish'
+    },
+    {
+        id: '11',
+        name: 'Docker Certified Associate (DCA)',
+        image: 'certif-spring-boot.png',
+        obtained_date: '2026',
+        description: `Création, optimisation et sécurisation des images de conteneurs Docker (Multi-stage builds)
+Orchestration multi-conteneurs avec Docker Compose et gestion des réseaux et volumes
+Déploiement, monitoring et maintenance d'infrastructures conteneurisées`,
+        site: 'Docker',
+        link: 'https://www.docker.com/',
+        status: 'wish'
     }
-
 ]

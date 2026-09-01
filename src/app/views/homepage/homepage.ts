@@ -11,9 +11,10 @@ import { InfosSchool } from './edu-section/infos-school/infos-school';
 import { Contact } from './contact/contact';
 import { Projects } from './projects/projects';
 import { Centers } from './centers/centers';
+import { MatDivider } from '@angular/material/divider';
 
 @Component({
-  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications, Educations, InfosSchool, Centers, Projects, Contact],
+  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications, Educations, InfosSchool, Centers, Projects, Contact, MatDivider],
   selector: 'app-homepage',
   styleUrl: './homepage.css',
   templateUrl: './homepage.html',

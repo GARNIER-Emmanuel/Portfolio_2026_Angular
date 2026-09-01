@@ -2,12 +2,7 @@ import { Interest } from "../interfaces";
 
 export const INTERESTS_DATA: Interest[] = [
     {
-        title: "Développement Full Stack",
-        logo: "💻",
-        description: "Veille active sur les écosystèmes Java / Spring Boot, Angular, React / Node et les architectures logicielles modernes."
-    },
-    {
-        title: "Intelligence Artificielle",
+        title: "IA",
         logo: "🤖",
         description: "Passionné par l'IA et les modèles génératifs : veille continue sur les avancées technologiques, agents autonomes et expérimentation des nouveaux outils."
     },
