@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core';
-import { Experience } from '../../../shared/interfaces';
+import { Experience } from '../../../../shared/interfaces';
 
 @Component({
   imports: [],
@@ -9,7 +9,7 @@ import { Experience } from '../../../shared/interfaces';
 })
 export class Experiences {
   readonly experiences = input.required<Experience[]>();
-  readonly selectedId = input.required<Experience['id'] | null>();
+  readonly selectedExperienceId = input.required<Experience['id'] | null>();
   readonly experienceSelected = output<Experience>();
 
   selectExperience(exp: Experience) {

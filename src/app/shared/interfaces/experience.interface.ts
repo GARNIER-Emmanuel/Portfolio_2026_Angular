@@ -2,11 +2,12 @@ import { Skill } from "./skills.interface";
 
 export interface Experience {
     id: string;
-    company: string;
+    name: string;
     logo: string;
-    role: string;
+    title: string;
     period: string;
     resume: string;
     description: string;
+    school?: boolean;
     skills: Skill[];
 }

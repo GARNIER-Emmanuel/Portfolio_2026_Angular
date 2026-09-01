@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
-import { Experience } from '../../../shared/interfaces';
 import { NgOptimizedImage } from '@angular/common';
+import { Experience } from '../../../../shared/interfaces';
 
 @Component({
   imports: [NgOptimizedImage],

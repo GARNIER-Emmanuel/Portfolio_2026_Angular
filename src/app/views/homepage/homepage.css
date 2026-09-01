@@ -3,13 +3,13 @@ section {
     padding-right: 24px;
 }
 
-.ex-skills {
+.section-direction {
     display: flex;
     flex-direction: column;
 }
 
 @media (min-width: 1024px) {
-    .ex-skills {
+    .section-direction {
         flex-direction: row;
         justify-content: space-between;
     }

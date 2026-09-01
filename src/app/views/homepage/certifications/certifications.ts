@@ -1,11 +1,11 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
 import { Certification } from '../../../shared/interfaces';
-import { CERTIFICATIONS_DATA } from '../../../shared/data/certifications.data';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogCertif } from './dialog-certif/dialog-certif';
+import { CERTIFICATIONS_DATA } from '../../../shared/data';
 
 @Component({
   imports: [NgOptimizedImage, MatTooltipModule, MatExpansionModule],

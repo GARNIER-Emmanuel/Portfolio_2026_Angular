@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
-import { Certification } from '../../../../shared/interfaces';
 import { NgOptimizedImage } from '@angular/common';
+import { Certification } from '../../../../shared/interfaces';
 
 @Component({
   imports: [MatDialogModule, MatButtonModule, NgOptimizedImage],

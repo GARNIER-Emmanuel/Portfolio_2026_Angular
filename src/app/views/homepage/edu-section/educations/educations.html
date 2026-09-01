@@ -1,0 +1,23 @@
+<ol
+    class="relative space-y-8 before:absolute before:left-0 lg:before:left-auto lg:before:right-0 before:h-full before:w-0.5 before:rounded-full before:bg-gray-200">
+    @for (edu of formations(); track edu.id) {
+
+    <li (click)="selectFormation(edu)"
+        class="relative flex flex-row lg:flex-row-reverse items-start gap-4 cursor-pointer transition hover:-translate-y-1">
+        <span [class.bg-red-800]="edu.id === selectedFormationId()"
+            class="relative -ms-1.5 lg:ms-0 lg:-mr-1.5 size-3 shrink-0 rounded-full bg-blue-600"></span>
+
+        <div class="-mt-2 text-left lg:text-right flex-1">
+            <time class="text-xs/none font-medium text-gray-700">{{ edu.period }}</time>
+
+            <h3 class="text-lg font-bold text-gray-900">{{ edu.title }}</h3>
+            <h1 class="text-gray-500">{{ edu.name }}</h1>
+
+            <p class="whitespace-pre-line text-sm text-gray-700 leading-relaxed">
+                {{ edu.resume }}
+            </p>
+        </div>
+    </li>
+    }
+
+</ol>

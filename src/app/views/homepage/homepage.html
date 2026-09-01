@@ -16,21 +16,42 @@
 
 
 <!-- Section 2 : Compétences et Expériences -->
-<h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10 px-4">
+<h2 id="experiences" class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10 px-4 ">
     Expériences et Compétences
 </h2>
 
-<section id="skills" class="ex-skills">
-    <app-experiences [experiences]="experiences()" [selectedId]="selectedExperience().id"
-        (experienceSelected)="onSelectExperience($event)" />
-    <div class="flex flex-col justify-center w-full">
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-7xl mx-auto w-full px-4 items-center">
+    <div class="lg:col-span-5">
+        <app-experiences [experiences]="workExperiences()" [selectedExperienceId]="selectedExperience().id"
+            (experienceSelected)="onSelectExperience($event)" />
+    </div>
+    <div class="flex flex-col gap-6 lg:col-span-7 w-full">
         <app-infos-company [experience]="selectedExperience()" />
         <app-skills [skills]="selectedExperience().skills" />
     </div>
 </section>
 
-<!-- Section 3 : Certifications -->
-<section id="certifications" class="relative py-16 px-4 overflow-hidden">
+
+
+<!-- Section 3 : Formations -->
+<h2 id="formations" class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10 px-4 ">
+    Formations
+</h2>
+
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-7xl mx-auto w-full px-4 items-center">
+    <div class="flex flex-col gap-6 lg:col-span-7 w-full order-2 lg:order-1">
+        <app-infos-school [formation]="selectedFormation()" />
+        <app-skills [skills]="selectedFormation().skills" />
+    </div>
+    <div class="lg:col-span-5 order-1 lg:order-2">
+        <app-educations [formations]="schoolFormations()" [selectedFormationId]="selectedFormation().id"
+            (formationSelected)="onSelectFormation($event)" />
+    </div>
+</section>
+
+
+<!-- Section 4 : Certifications -->
+<section id="certifications" class="relative py-16 px-4 overflow-hidden mt-16">
 
     <!-- Image de fond optimisée -->
     <img ngSrc="wood_background.jpg" fill alt="Image de fond certifications" class="object-cover -z-10 brightness-50" />

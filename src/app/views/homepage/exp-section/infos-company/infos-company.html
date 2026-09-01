@@ -1,0 +1,16 @@
+<div class="w-full text-left lg:text-right">
+    <h1 class="md:text-3xl font-bold mb-5">{{ experience().name }}</h1>
+    <div class="flex flex-col sm:flex-row lg:flex-row-reverse items-start gap-6">
+        <img [ngSrc]="experience().logo" width="160" height="160" [alt]="experience().name + ' logo'"
+            class="w-36 h-36 shrink-0 object-contain shadow-2xl rounded-lg" />
+
+        <div>
+            <time class="block text-xs text-gray-500">{{ experience().period }}</time>
+            <h3 class="font-medium text-gray-900 sm:text-lg">{{experience().title}}</h3>
+
+            <p class="mt-2 text-sm/relaxed text-gray-600 w-card whitespace-pre-line">
+                {{experience().description}}
+            </p>
+        </div>
+    </div>
+</div>

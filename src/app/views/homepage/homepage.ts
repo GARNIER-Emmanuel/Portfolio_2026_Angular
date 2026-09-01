@@ -1,23 +1,35 @@
-import { Component, signal } from '@angular/core';
-import { Skills } from "./skills/skills";
+import { Component, computed, signal } from '@angular/core';
+import { Skills } from "../../components/skills/skills";
 import { NgOptimizedImage } from '@angular/common';
-import { Experiences } from './experiences/experiences';
-import { InfosCompany } from "./infos-company/infos-company";
 import { Experience } from '../../shared/interfaces';
 import { EXPERIENCES_DATA } from '../../shared/data';
 import { Certifications } from "./certifications/certifications";
+import { Educations } from './edu-section/educations/educations';
+import { Experiences } from './exp-section/experiences/experiences';
+import { InfosCompany } from './exp-section/infos-company/infos-company';
+import { InfosSchool } from './edu-section/infos-school/infos-school';
 
 @Component({
-  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications],
+  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications, Educations, InfosSchool],
   selector: 'app-homepage',
   styleUrl: './homepage.css',
   templateUrl: './homepage.html',
 })
 export class Homepage {
   protected readonly experiences = signal<Experience[]>(EXPERIENCES_DATA);
-  protected readonly selectedExperience = signal<Experience>(EXPERIENCES_DATA[0]);
 
+  // Dérivés automatiques (évite les @if dans les templates)
+  protected readonly workExperiences = computed(() => this.experiences().filter(e => !e.school));
+  protected readonly schoolFormations = computed(() => this.experiences().filter(e => e.school));
+
+  // États de sélection indépendants
+  protected readonly selectedExperience = signal<Experience>(this.workExperiences()[0]);
+  protected readonly selectedFormation = signal<Experience>(this.schoolFormations()[0]);
   onSelectExperience(exp: Experience) {
     this.selectedExperience.set(exp);
+  }
+
+  onSelectFormation(edu: Experience) {
+    this.selectedFormation.set(edu);
   }
 }
