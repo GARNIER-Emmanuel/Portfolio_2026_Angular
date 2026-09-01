@@ -6,5 +6,6 @@ export interface Certification {
     description: string;
     site: string;
     link: string;
-    status: 'obtained' | 'in_progress';
+    pdf?: string;
+    status: 'obtained' | 'in_progress' | 'wish';
 }

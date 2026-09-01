@@ -30,9 +30,18 @@
 </section>
 
 <!-- Section 3 : Certifications -->
-<h2 id="certifications" class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10 px-4">
-    Mes Certifications
-</h2>
-<section>
-    <app-certifications />
+<section id="certifications" class="relative py-16 px-4 overflow-hidden">
+
+    <!-- Image de fond optimisée -->
+    <img ngSrc="wood_background.jpg" fill alt="Image de fond certifications" class="object-cover -z-10 brightness-50" />
+
+    <!-- Contenu au-dessus du fond -->
+    <div class="relative z-10 text-white">
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center">
+            Mes Certifications
+        </h2>
+
+        <app-certifications />
+    </div>
+
 </section>

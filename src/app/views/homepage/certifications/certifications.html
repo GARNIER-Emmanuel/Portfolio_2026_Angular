@@ -1,24 +1,73 @@
 <div class="flex flex-row flex-wrap justify-center space-x-4">
     @for (certification of certifications(); track certification.id) {
-    <a [matTooltip]="'sur '+ certification.site" href="#"
-        class="block group transition hover:-translate-y-1  mb-5 w-80">
-        @if (certification.status === 'obtained') {
+    @if (certification.status === 'obtained') {
+    <a (click)="openDialogCertif(certification)" [matTooltip]="'sur '+ certification.site"
+        class="block group transition hover:-translate-y-1 mb-5 w-80 ">
+
         <img alt="image certification" [ngSrc]="certification.image" width="1684" height="1191"
             class="w-full rounded-se-3xl rounded-es-3xl object-cover bg-white shadow-xs" />
-        }@else {
-        <div
-            class="h-57 w-full rounded-se-3xl rounded-es-3xl bg-gray-200/80 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
-            <span class="text-sm font-semibold uppercase tracking-wider">En cours d'obtention</span>
-        </div>
-        }
-        <div class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
-            <strong class="font-medium">{{ certification.name }} :</strong>
-            @if (certification.obtained_date && certification.status === 'obtained') {
-            <p class="mt-0.5 opacity-50 sm:mt-0">{{certification.status}}{{certification.obtained_date}}</p>
-            }@else {
-            <p class="mt-0.5 opacity-50 sm:mt-0">{{certification.status}}</p>
-            }
-        </div>
+
     </a>
     }
+    }
+
 </div>
+
+
+<!-- Conteneur avec scroll interne pour ne pas étirer la page -->
+<div class="max-w-screen-2xl w-full mx-auto mt-8 px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div>
+            <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-center mt-10">En cours</h1>
+
+            <mat-accordion>
+                @for (certification of certifications(); track certification.id) {
+                @if (certification.status === 'in_progress') {
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header class="!h-auto !py-3">
+                        <mat-panel-title class="!whitespace-normal break-words pr-2"> {{certification.name}}
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            {{certification.site}}
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="border-t border-black bg-white p-4 flex flex-col gap-3">
+                        <p class="whitespace-pre-line text-sm text-gray-700 leading-relaxed">
+                            {{ certification.description }}
+                        </p>
+                        <a [href]="certification.link" target="_blank" rel="noopener noreferrer"
+                            class="text-xs text-blue-600 hover:underline inline-flex items-center gap-1 font-medium w-fit">
+                            Consulter la formation sur {{ certification.site }} →
+                        </a>
+                    </div>
+                </mat-expansion-panel>
+                }}
+            </mat-accordion>
+        </div>
+        <div>
+            <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-center mt-10">Souhaitées</h1>
+            <mat-accordion>
+                @for (certification of certifications(); track certification.id) {
+                @if (certification.status === 'wish') {
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header class="!h-auto !py-3">
+                        <mat-panel-title class="!whitespace-normal break-words pr-2">{{certification.name}}
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            {{certification.site}}
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="border-t border-black bg-white p-4 flex flex-col gap-3">
+                        <p class="whitespace-pre-line text-sm text-gray-700 leading-relaxed">
+                            {{ certification.description }}
+                        </p>
+                        <a [href]="certification.link" target="_blank" rel="noopener noreferrer"
+                            class="text-xs text-blue-600 hover:underline inline-flex items-center gap-1 font-medium w-fit">
+                            Consulter la formation sur {{ certification.site }} →
+                        </a>
+                    </div>
+                </mat-expansion-panel>
+                }}
+            </mat-accordion>
+        </div>
+    </div>

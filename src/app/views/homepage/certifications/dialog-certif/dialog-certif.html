@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>{{certification.name}} -
+    <span class="font-normal text-gray-500">{{ certification.site }} • {{ certification.obtained_date }}</span>
+</h2>
+
+<mat-dialog-content class="flex flex-col items-center gap-4 !p-4">
+    <!-- Image en grand format avec ratio préservé -->
+    <div class="rounded-lg shadow-lg mb-5">
+        <img [ngSrc]="certification.image" width="1684" height="1191" priority [alt]="certification.name"
+            class="w-full h-auto object-contain bg-black/5" />
+    </div>
+    @if (certification.description) {
+    <p class="text-sm text-gray-700 whitespace-pre-line text-center">
+        {{ certification.description }}
+    </p>
+    }
+</mat-dialog-content>
+<mat-dialog-actions align="end" class="gap-2">
+    @if (certification.pdf) {
+    <a [href]="certification.pdf" target="_blank" rel="noopener noreferrer" matButton>
+        Voir l'original ↗
+    </a>
+    }
+    <button matButton mat-dialog-close>Fermer</button>
+</mat-dialog-actions>
