@@ -1,10 +1,10 @@
 <div class="flex flex-row flex-wrap justify-center space-x-4">
     @for (certification of certifications(); track certification.id) {
     @if (certification.status === 'obtained') {
-    <a (click)="openDialogCertif(certification)" [matTooltip]="'sur '+ certification.site"
-        class="block group transition hover:-translate-y-1 mb-5 w-80 ">
+    <a (click)="openDialogCertif(certification)" [matTooltip]="certification.name + ' - '+ certification.site"
+        class="block group transition hover:-translate-y-1 mb-5 w-80 cursor-pointer">
 
-        <img alt="image certification" [ngSrc]="certification.image" width="1684" height="1191"
+        <img alt="image certification" [ngSrc]="certification.image_minimize!" width="650" height="452"
             class="w-full rounded-se-3xl rounded-es-3xl object-cover bg-white shadow-xs" />
 
     </a>

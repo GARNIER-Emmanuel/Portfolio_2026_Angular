@@ -21,8 +21,9 @@ export class Certifications {
     this.dialogCertif.open(DialogCertif, {
       data: certification,
       width: '90vw',
-      maxWidth: '1000px',
+      maxWidth: '800px',
       maxHeight: '90vh',
+      autoFocus: false,
     });
   }
 }
