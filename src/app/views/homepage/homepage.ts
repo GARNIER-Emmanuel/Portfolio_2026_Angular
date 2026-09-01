@@ -9,9 +9,10 @@ import { Experiences } from './exp-section/experiences/experiences';
 import { InfosCompany } from './exp-section/infos-company/infos-company';
 import { InfosSchool } from './edu-section/infos-school/infos-school';
 import { Contact } from './contact/contact';
+import { Projects } from './projects/projects';
 
 @Component({
-  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications, Educations, InfosSchool, Contact],
+  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications, Educations, InfosSchool, Projects, Contact],
   selector: 'app-homepage',
   styleUrl: './homepage.css',
   templateUrl: './homepage.html',

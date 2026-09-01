@@ -1,0 +1,38 @@
+<h2 id="formations" class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10  px-4 ">
+    Mes Projets
+</h2>
+
+<div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 gap-5 p-5 max-w-[1920px] mx-auto">
+
+    @for (project of projects(); track project.name){
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+            <mat-card-title>{{project.name}}</mat-card-title>
+            <mat-card-subtitle class="!text-black/50">{{project.type}} - {{project.date}}</mat-card-subtitle>
+        </mat-card-header>
+        <div class="flex-1 flex flex-col justify-between gap-4">
+            <mat-card-content>
+                <div>
+                    <p class="mb-5">
+                        {{project.description}}
+                    </p>
+                    <app-skills [skills]="project.skills" />
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                @if (project.repo && project.live) {
+                <a matButton [href]="project.repo">Voir le repo</a>
+                <a matButton [href]="project.live">Voir le site</a>
+                } @else if (project.repo) {
+                <a matButton [href]="project.repo">Voir le repo</a>
+                } @else if (project.live) {
+                <a matButton [href]="project.live">Voir le site</a>
+                }@else {
+                <p>Aucun lien disponible</p>
+                }
+            </mat-card-actions>
+        </div>
+    </mat-card>
+    }
+</div>
