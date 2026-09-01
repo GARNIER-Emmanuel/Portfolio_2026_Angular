@@ -1,0 +1,25 @@
+<h2 class="text-3xl text-white sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10  px-4 ">
+    Centres d'intérêt
+</h2>
+
+<div class="flex flex-col w-full max-w-7xl mx-auto px-4 items-center">
+    <div class="w-full overflow-x-auto text-center pb-2 mb-5">
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="!bg-white/95 !shadow-md rounded-lg">
+            @for (item of interests(); track $index) {
+            <mat-button-toggle (click)="selectInterest(item)" value="{{$index}}">{{item.title}}</mat-button-toggle>
+            }
+        </mat-button-toggle-group>
+    </div>
+    <mat-card class="example-card w-full max-w-3xl" appearance="outlined">
+        <mat-card-header>
+            <div class="text-4xl" mat-card-avatar>{{selectedInterest().logo}}</div>
+            <mat-card-title>{{ selectedInterest().title }}</mat-card-title>
+            <!-- <mat-card-subtitle>{{ selectedInterest().description }}</mat-card-subtitle> -->
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{ selectedInterest().description }}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>

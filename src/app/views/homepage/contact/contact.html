@@ -119,11 +119,15 @@
                 </div>
             </div>
 
-            <button [disabled]="contactForm().invalid()"
-                class="block w-full rounded-lg border border-gray-300 bg-white px-12 py-3 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-300/50 disabled:hover:bg-red-300"
-                type="submit">
-                Envoyer le Message
-            </button>
+            <div [matTooltip]="'Veuillez remplir tous les champs du formulaire'"
+                [matTooltipDisabled]="contactForm().valid()" matTooltipPosition="right" class="w-full">
+                <button [disabled]="contactForm().invalid()"
+                    class="block w-full rounded-lg border border-gray-300 bg-white px-12 py-3 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-300/50 disabled:opacity-50 disabled:cursor-not-allowed"
+                    type="submit">
+                    Envoyer le Message
+                </button>
+            </div>
+
         </form>
     </div>
 </div>

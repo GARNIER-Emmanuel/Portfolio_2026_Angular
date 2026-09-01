@@ -4,9 +4,10 @@ import { ContactService } from '../../../shared/services/contact-service';
 import { ContactForm } from '../../../shared/interfaces/contact-form.interface';
 import { MatDialog } from '@angular/material/dialog';
 import { ContactDialog } from './contact-dialog/contact-dialog';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @Component({
-  imports: [FormRoot, FormField],
+  imports: [FormRoot, FormField, MatTooltip],
   selector: 'app-contact',
   styleUrl: './contact.css',
   templateUrl: './contact.html',
