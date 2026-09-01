@@ -14,5 +14,9 @@ export class Educations {
 
   selectFormation(edu: Experience) {
     this.formationSelected.emit(edu);
+
+    if (window.innerWidth < 1024) {
+      document.getElementById('infosschool')?.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }

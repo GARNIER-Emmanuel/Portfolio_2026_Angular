@@ -14,5 +14,8 @@ export class Experiences {
 
   selectExperience(exp: Experience) {
     this.experienceSelected.emit(exp);
+    if (window.innerWidth < 1024) {
+      document.getElementById('infoscompany')?.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
