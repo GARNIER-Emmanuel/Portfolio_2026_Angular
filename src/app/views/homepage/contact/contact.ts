@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { email, form, FormField, FormRoot, required } from '@angular/forms/signals';
 import { ContactService } from '../../../shared/services/contact-service';
 import { ContactForm } from '../../../shared/interfaces/contact-form.interface';
@@ -9,6 +9,7 @@ import { MatTooltip } from '@angular/material/tooltip';
 @Component({
   imports: [FormRoot, FormField, MatTooltip],
   selector: 'app-contact',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './contact.css',
   templateUrl: './contact.html',
 })

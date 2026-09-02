@@ -1,9 +1,10 @@
-import { Component, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import { Experience } from '../../../../shared/interfaces';
 
 @Component({
   imports: [],
   selector: 'app-educations',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './educations.css',
   templateUrl: './educations.html',
 })

@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { Certification } from '../../../shared/interfaces';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -10,6 +10,7 @@ import { CERTIFICATIONS_DATA } from '../../../shared/data';
 @Component({
   imports: [NgOptimizedImage, MatTooltipModule, MatExpansionModule],
   selector: 'app-certifications',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './certifications.css',
   templateUrl: './certifications.html',
 })

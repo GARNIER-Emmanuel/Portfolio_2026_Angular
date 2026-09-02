@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
 import { Skills } from "../../components/skills/skills";
 import { NgOptimizedImage } from '@angular/common';
 import { Experience } from '../../shared/interfaces';
@@ -11,11 +11,11 @@ import { InfosSchool } from './edu-section/infos-school/infos-school';
 import { Contact } from './contact/contact';
 import { Projects } from './projects/projects';
 import { Centers } from './centers/centers';
-import { MatDivider } from '@angular/material/divider';
 
 @Component({
-  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications, Educations, InfosSchool, Centers, Projects, Contact, MatDivider],
+  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications, Educations, InfosSchool, Centers, Projects, Contact],
   selector: 'app-homepage',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './homepage.css',
   templateUrl: './homepage.html',
 })

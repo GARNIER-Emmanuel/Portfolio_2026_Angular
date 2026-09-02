@@ -1,14 +1,13 @@
-import { Component, computed, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { INTERESTS_DATA } from '../../../shared/data';
 import { Interest } from '../../../shared/interfaces';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  imports: [MatButtonToggleModule, MatCardModule, MatMenuModule, MatButtonModule],
+  imports: [MatButtonToggleModule, MatCardModule],
   selector: 'app-centers',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './centers.css',
   templateUrl: './centers.html',
 })

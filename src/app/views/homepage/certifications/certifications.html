@@ -1,25 +1,21 @@
-<div class="flex flex-row flex-wrap justify-center gap-3 sm:gap-4">
+<div class="flex flex-row flex-wrap justify-center gap-3 sm:gap-4 lg:mb-32">
     @for (certification of certifications(); track certification.id) {
     @if (certification.status === 'obtained') {
-    <a (click)="openDialogCertif(certification)" [matTooltip]="certification.name + ' - '+ certification.site"
-        class="block group transition hover:-translate-y-1 mb-5 w-40 sm:w-60 md:w-80 cursor-pointer">
+    <a (click)="openDialogCertif(certification)" role="button" tabindex="0"
+        (keydown.enter)="openDialogCertif(certification)" [matTooltip]="certification.name + ' - '+ certification.site"
+        class="block group transition-all duration-200 hover:-translate-y-1 w-40 sm:w-60 md:w-80 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-se-3xl rounded-es-3xl">
 
         <img alt="image certification" [ngSrc]="certification.image_minimize!" width="650" height="452"
             class="w-full rounded-se-3xl rounded-es-3xl object-cover bg-white shadow-xs" />
-
     </a>
     }
     }
-
 </div>
 
-
-<!-- Conteneur avec scroll interne pour ne pas étirer la page -->
-<div class="max-w-screen-2xl w-full mx-auto mt-8">
+<div class="max-w-screen-2xl  w-full mx-auto mt-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
-            <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-center mt-10">En cours</h1>
-
+            <h3 class="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-center mt-10">En cours</h3>
             <mat-accordion>
                 @for (certification of certifications(); track certification.id) {
                 @if (certification.status === 'in_progress') {
@@ -45,7 +41,7 @@
             </mat-accordion>
         </div>
         <div>
-            <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-center mt-10">Souhaitées</h1>
+            <h3 class="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-center mt-10">Souhaitées</h3>
             <mat-accordion>
                 @for (certification of certifications(); track certification.id) {
                 @if (certification.status === 'wish') {

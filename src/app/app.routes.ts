@@ -10,6 +10,6 @@ export const routes: Routes = [
     },
     {
         path: '**',
-        component: Notfound,
+        loadComponent: () => import('./views/notfound/notfound').then(m => m.Notfound),
     },
 ];

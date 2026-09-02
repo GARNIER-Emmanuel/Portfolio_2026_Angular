@@ -1,9 +1,11 @@
 @for (skill of skills(); track skill.name) {
-<div class="flex text-3xl">
+<div class="inline-flex items-center justify-center text-3xl transition-transform duration-200 hover:scale-115"
+    [matTooltip]="skill.category ? (skill.name + ' - ' + skill.category) : skill.name" [attr.aria-label]="skill.name">
+
     @if (skill.icon?.startsWith('devicon-')) {
-    <i [class]="skill.icon" [matTooltip]="skill.category ? (skill.name + ' - ' + skill.category) : skill.name"></i>
+    <i [class]="skill.icon"></i>
     } @else {
-    <mat-icon [matTooltip]="skill.category ? (skill.name + ' - ' + skill.category) : skill.name">
+    <mat-icon class="!text-3xl !size-8 flex items-center justify-center leading-none">
         {{ skill.icon }}
     </mat-icon>
     }
