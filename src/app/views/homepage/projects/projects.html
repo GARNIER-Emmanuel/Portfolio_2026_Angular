@@ -14,9 +14,9 @@
             <mat-card-title class="!text-primary-20">{{ project.name }}</mat-card-title>
             <mat-card-subtitle>
                 @switch (project.type) {
-                    @case ('formation') { <span i18n="@@project_type_formation">Formation</span> }
-                    @case ('personal') { <span i18n="@@project_type_personal">Projet personnel</span> }
-                    @case ('school') { <span i18n="@@project_type_school">Projet académique</span> }
+                @case ('formation') { <span i18n="@@project_type_formation">Formation</span> }
+                @case ('personal') { <span i18n="@@project_type_personal">Projet personnel</span> }
+                @case ('school') { <span i18n="@@project_type_school">Projet académique</span> }
                 } - {{ project.date }}
             </mat-card-subtitle>
         </mat-card-header>

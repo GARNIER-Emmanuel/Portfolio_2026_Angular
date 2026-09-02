@@ -21,7 +21,7 @@ export class Header {
   setLanguage(lang: 'fr' | 'en-US') {
     localStorage.setItem('preferred_locale', lang);
     document.cookie = `preferred_locale=${lang};path=/;max-age=31536000;SameSite=Lax`;
-    window.location.href = lang === 'fr' ? '/fr/' : '/en-US/';
+    window.location.href = lang === 'fr' ? '/' : '/en-US/';
   }
 
 }

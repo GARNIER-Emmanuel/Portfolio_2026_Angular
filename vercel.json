@@ -17,29 +17,19 @@
       "source": "/",
       "has": [
         {
-          "type": "cookie",
-          "key": "preferred_locale",
-          "value": "fr"
-        }
-      ],
-      "destination": "/fr/",
-      "permanent": false
-    },
-    {
-      "source": "/",
-      "has": [
-        {
           "type": "header",
           "key": "accept-language",
           "value": "(?i).*en.*"
         }
       ],
+      "missing": [
+        {
+          "type": "cookie",
+          "key": "preferred_locale",
+          "value": "fr"
+        }
+      ],
       "destination": "/en-US/",
-      "permanent": false
-    },
-    {
-      "source": "/",
-      "destination": "/fr/",
       "permanent": false
     }
   ],
@@ -49,8 +39,8 @@
       "destination": "/en-US/index.html"
     },
     {
-      "source": "/fr/(.*)",
-      "destination": "/fr/index.html"
+      "source": "/(.*)",
+      "destination": "/fr/$1"
     }
   ]
 }

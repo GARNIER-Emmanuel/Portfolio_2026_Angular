@@ -28,7 +28,7 @@ export const CERTIFICATIONS_DATA: Certification[] = [
     {
         id: '5',
         name: 'Claude Code',
-        image: 'certif-spring-boot.png',
+        image: '',
         obtained_date: '2026',
         description: $localize`:@@certif_5_desc:Maîtriser les fondamentaux des agents IA, LLM et de la boucle agentique Claude Code
 Structurer le contexte projet (CLAUDE.md, rules, prompts avancés et gestion des tokens)
@@ -41,7 +41,7 @@ Mener un projet de bout en bout : tests, CI/CD, Git, revues de code et vérifica
     {
         id: '3',
         name: 'HTML - CSS',
-        image: 'certif-spring-boot.png',
+        image: '',
         obtained_date: '2026',
         description: $localize`:@@certif_3_desc:Maîtriser les standards HTML5 sémantiques et le CSS3 moderne
 Concevoir des layouts fluides et responsives avec Flexbox et CSS Grid
@@ -54,7 +54,7 @@ Intégrer des interfaces complexes et adaptées à tous types d'écrans`,
     {
         id: '4',
         name: 'TypeScript',
-        image: 'certif-spring-boot.png',
+        image: '',
         obtained_date: '2026',
         description: $localize`:@@certif_4_desc:Typage statique avancé : interfaces, types personnalisés et génériques
 Configuration et maîtrise du compilateur TypeScript (tsc / tsconfig)
@@ -67,7 +67,7 @@ Débogage efficace et architecture d'applications robustes`,
     {
         id: '6',
         name: $localize`:@@certif_6_name:Principes de base de l'IA`,
-        image: 'certif-google-ai.png',
+        image: '',
         obtained_date: '2026',
         description: $localize`:@@certif_6_desc:Maîtriser les concepts fondamentaux de l'IA générative pour une utilisation professionnelle
 Rédiger des prompts structurés et efficaces pour générer des résultats pertinents et de haute qualité
@@ -80,7 +80,7 @@ Identifier les tâches à forte valeur ajoutée à automatiser dans son workflow
     {
         id: '7',
         name: $localize`:@@certif_7_name:Certificat Professionnel Google IA`,
-        image: 'certif-agile.png',
+        image: '',
         obtained_date: '2026',
         description: $localize`:@@certif_7_desc:Formuler des instructions claires pour l'utiliser comme un partenaire de travail
 Comprendre les mécanismes sous-jacents pour exploiter les outils avec confiance et éthique
@@ -92,20 +92,20 @@ Concevoir des solutions personnalisées via le vibe coding adaptées aux besoins
     },
     {
         id: '8',
-        name: 'AWS Certified Developer - Associate',
-        image: 'certif-spring-boot.png',
+        name: 'AWS Certified Developer',
+        image: '',
         obtained_date: '2026',
         description: $localize`:@@certif_8_desc:Déploiement et sécurisation d'applications et microservices dans le cloud AWS
 Gestion des services serverless (Lambda, API Gateway), bases de données (DynamoDB, RDS) et stockage S3
 Mise en place de pipelines CI/CD et surveillance applicative via CloudWatch et X-Ray`,
-        site: 'Amazon Web Services',
+        site: 'AWS',
         link: 'https://aws.amazon.com/certification/certified-developer-associate/',
         status: 'wish'
     },
     {
         id: '9',
         name: 'Oracle Certified Professional Java SE 17/21',
-        image: 'certif-spring-boot.png',
+        image: '',
         obtained_date: '2026',
         description: $localize`:@@certif_9_desc:Maîtrise approfondie des fonctionnalités avancées de Java moderne (Records, Pattern Matching, Sealed Classes)
 Programmation orientée objet, gestion de la mémoire, Garbage Collector et Concurrency`,
@@ -116,7 +116,7 @@ Programmation orientée objet, gestion de la mémoire, Garbage Collector et Conc
     {
         id: '10',
         name: 'Professional Scrum Master (PSM I)',
-        image: 'certif-spring-boot.png',
+        image: '',
         obtained_date: '2026',
         description: $localize`:@@certif_10_desc:Maîtrise approfondie du framework Scrum, des rôles, des artefacts et des événements
 Facilitation des processus agiles et résolution des blocages au sein des équipes de développement
@@ -128,7 +128,7 @@ Optimisation de la productivité et de la livraison de valeur continue`,
     {
         id: '11',
         name: 'Docker Certified Associate (DCA)',
-        image: 'certif-spring-boot.png',
+        image: '',
         obtained_date: '2026',
         description: $localize`:@@certif_11_desc:Création, optimisation et sécurisation des images de conteneurs Docker (Multi-stage builds)
 Orchestration multi-conteneurs avec Docker Compose et gestion des réseaux et volumes
