@@ -10,10 +10,10 @@ import { InfosCompany } from './exp-section/infos-company/infos-company';
 import { InfosSchool } from './edu-section/infos-school/infos-school';
 import { Contact } from './contact/contact';
 import { Projects } from './projects/projects';
-import { Centers } from './centers/centers';
+import { Interests } from './interests/interests';
 
 @Component({
-  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications, Educations, InfosSchool, Centers, Projects, Contact],
+  imports: [Skills, NgOptimizedImage, Experiences, InfosCompany, Certifications, Educations, InfosSchool, Interests, Projects, Contact],
   selector: 'app-homepage',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './homepage.css',

@@ -6,12 +6,12 @@ import { Interest } from '../../../shared/interfaces';
 
 @Component({
   imports: [MatButtonToggleModule, MatCardModule],
-  selector: 'app-centers',
+  selector: 'app-interests',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  styleUrl: './centers.css',
-  templateUrl: './centers.html',
+  styleUrl: './interests.css',
+  templateUrl: './interests.html',
 })
-export class Centers {
+export class Interests {
   protected readonly interests = signal<Interest[]>(INTERESTS_DATA);
 
   protected readonly selectedInterest = signal<Interest>(this.interests()[0]);
