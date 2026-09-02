@@ -1,6 +1,6 @@
 @for (skill of skills(); track skill.name) {
 <div class="inline-flex items-center justify-center text-3xl transition-transform duration-200 hover:scale-115"
-    [matTooltip]="skill.category ? (skill.name + ' - ' + skill.category) : skill.name" [attr.aria-label]="skill.name">
+    [matTooltip]="getTooltip(skill)" [attr.aria-label]="skill.name">
 
     @if (skill.icon?.startsWith('devicon-')) {
     <i [class]="skill.icon"></i>

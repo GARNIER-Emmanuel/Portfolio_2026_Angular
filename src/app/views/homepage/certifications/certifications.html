@@ -15,7 +15,7 @@
 <div class="max-w-screen-2xl w-full mx-auto mt-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
-            <h3 class="text-xl text-primary-90 sm:text-2xl md:text-3xl font-bold mb-4 text-center mt-10">En cours</h3>
+            <h3 class="text-xl text-primary-90 sm:text-2xl md:text-3xl font-bold mb-4 text-center mt-10" i18n="@@certif_status_inprogress">En cours</h3>
             <mat-accordion>
                 @for (certification of certifications(); track certification.id) {
                 @if (certification.status === 'in_progress') {
@@ -30,7 +30,7 @@
                         </p>
                         <a [href]="certification.link" target="_blank" rel="noopener noreferrer"
                             class="text-xs text-primary-10 hover:underline inline-flex items-center gap-1 font-medium w-fit">
-                            Consulter la formation sur {{ certification.site }} →
+                            <span i18n="@@certif_link_view">Consulter la formation sur</span> {{ certification.site }} →
                         </a>
                     </div>
                 </mat-expansion-panel>
@@ -38,7 +38,7 @@
             </mat-accordion>
         </div>
         <div>
-            <h3 class="text-xl text-primary-90 sm:text-2xl md:text-3xl font-bold mb-4 text-center mt-10">Souhaitées</h3>
+            <h3 class="text-xl text-primary-90 sm:text-2xl md:text-3xl font-bold mb-4 text-center mt-10" i18n="@@certif_status_wish">Souhaitées</h3>
             <mat-accordion>
                 @for (certification of certifications(); track certification.id) {
                 @if (certification.status === 'wish') {
@@ -53,7 +53,7 @@
                         </p>
                         <a [href]="certification.link" target="_blank" rel="noopener noreferrer"
                             class="text-xs text-primary-10 hover:underline inline-flex items-center gap-1 font-medium w-fit">
-                            Consulter la formation sur {{ certification.site }} →
+                            <span i18n="@@certif_link_view">Consulter la formation sur</span> {{ certification.site }} →
                         </a>
                     </div>
                 </mat-expansion-panel>

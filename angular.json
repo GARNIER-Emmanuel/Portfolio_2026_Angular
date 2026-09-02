@@ -10,12 +10,23 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
+      /* Déclaration de la langue source et des fichiers de traduction cibles */
+      "i18n": {
+        "sourceLocale": "fr",
+        "locales": {
+          "en-US": "src/locale/messages.en.xlf"
+        }
+      },
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            /* Génère un build séparé pour chacune des locales listées (ou true pour toutes) */
+            "localize": [
+              "en-US"
+            ],
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -24,7 +35,13 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/material-theme.scss", "src/styles.css"]
+            "styles": [
+              "src/material-theme.scss",
+              "src/styles.css"
+            ],
+            "polyfills": [
+              "@angular/localize/init"
+            ]
           },
           "configurations": {
             "production": {

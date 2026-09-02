@@ -24,10 +24,12 @@ import { Interests } from './interests/interests';
 })
 export class Homepage {
   protected readonly experiences = signal<Experience[]>(EXPERIENCES_DATA);
+  private readonly birthDate = new Date(2002, 6, 22);
 
   // Dérivés automatiques (évite les @if dans les templates)
   protected readonly workExperiences = computed(() => this.experiences().filter(e => !e.school));
   protected readonly schoolFormations = computed(() => this.experiences().filter(e => e.school));
+  private readonly careerStartDate = new Date(2021, 8, 1);
 
   // États de sélection indépendants
   protected readonly selectedExperience = signal<Experience>(this.workExperiences()[0]);
@@ -40,4 +42,19 @@ export class Homepage {
     this.selectedFormation.set(edu);
   }
 
+  protected readonly age = computed(() => {
+    const today = new Date();
+    let age = today.getFullYear() - this.birthDate.getFullYear();
+    const m = today.getMonth() - this.birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < this.birthDate.getDate())) age--;
+    return age;
+  });
+
+  protected readonly yearsOfExperience = computed(() => {
+    const today = new Date();
+    let years = today.getFullYear() - this.careerStartDate.getFullYear();
+    const m = today.getMonth() - this.careerStartDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < this.careerStartDate.getDate())) years--;
+    return Math.max(1, years);
+  });
 }

@@ -2,23 +2,23 @@ import { Interest } from "../interfaces";
 
 export const INTERESTS_DATA: Interest[] = [
     {
-        title: "IA",
+        title: $localize`:@@interest_1_title:Intelligence Artificielle`,
         logo: "🤖",
-        description: "Passionné par l'IA et les modèles génératifs : veille continue sur les avancées technologiques, agents autonomes et expérimentation des nouveaux outils."
+        description: $localize`:@@interest_1_desc:Passionné par l'IA et les modèles génératifs, je fais une veille technologique continue sur les avancées en IA, les agents autonomes et j'expérimente les nouveaux outils.`
     },
     {
-        title: "Espace & Aérospatial",
+        title: $localize`:@@interest_2_title:Espace & Aérospatial`,
         logo: "🚀",
-        description: "Passionné par SpaceX, ArianeGroup et les défis technologiques de la conquête martienne."
+        description: $localize`:@@interest_2_desc:Intéressé par SpaceX, ArianeGroup et les défis technologiques de la conquête martienne, je m'informe sur les événements d'actualité.`
     },
     {
-        title: "Production Musicale",
+        title: $localize`:@@interest_3_title:Production Musicale`,
         logo: "🎧",
-        description: '"Artiste" expérimental passionné sur Cubase pour moi-même : composition, enregistrement et ingénierie du son (Mix/Master).'
+        description: $localize`:@@interest_3_desc:Autodidacte sur Cubase, j'écris et produis de la musique pour moi-même, explorant diverses influences et techniques.`
     },
     {
-        title: "Cinéma",
+        title: $localize`:@@interest_4_title:Cinéma`,
         logo: "🎬",
-        description: "Amateur de cinéma, j'aime découvrir le cinéma en globalité, les films qui poussent à la réflexion et qui ne laissent aucun détail au hasard."
+        description: $localize`:@@interest_4_desc:Amateur de cinéma, j'aime découvrir le cinéma en globalité, la technique derrière les films, les réalisateurs qui poussent à la réflexion et qui ne laissent aucun détail au hasard.`
     }
 ];

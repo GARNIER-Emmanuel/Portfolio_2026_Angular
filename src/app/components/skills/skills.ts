@@ -15,4 +15,14 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 })
 export class Skills {
   readonly skills = input.required<Skill[]>();
+
+  getTooltip(skill: Skill): string {
+    if (!skill.category) {
+      return skill.name;
+    }
+    const categoryLabel = skill.category === 'tools'
+      ? $localize`:@@skill_cat_tools:Outils`
+      : skill.category;
+    return `${skill.name} - ${categoryLabel}`;
+  }
 }

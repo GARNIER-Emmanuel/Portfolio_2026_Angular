@@ -7,6 +7,7 @@ export const routes: Routes = [
         path: '',
         component: Homepage,
         pathMatch: 'full',
+        title: 'Emmanuel-GB Portfolio'
     },
     {
         path: '**',

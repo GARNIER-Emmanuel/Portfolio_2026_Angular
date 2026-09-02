@@ -23,19 +23,26 @@
             GARNIER BOIDUN
         </h2>
 
-        <p class="text-xl sm:text-2xl font-medium text-primary-60 mb-4">
+        <p class="text-xl sm:text-2xl font-medium text-primary-60 mb-4" i18n="@@hero_role">
             Développeur Full-Stack
         </p>
 
-        <p class="text-base sm:text-lg text-primary-90 leading-relaxed max-w-2xl mb-6">
-            Développeur junior depuis 5 ans, spécialisé en développement Full-Stack (Java / Spring Boot, Angular),
+        <p class="text-base sm:text-lg text-primary-90 leading-relaxed max-w-2xl mb-6" i18n="@@hero_bio">
+            Développeur junior depuis {{yearsOfExperience()}} ans, spécialisé en développement Full-Stack (Java / Spring
+            Boot, Angular),
             curieux et motivé par la decouverte de nouveautés techniques et technilogiques.
         </p>
 
         <div class="text-sm sm:text-base text-primary-90 space-y-1 border-l-2 border-white/30 pl-4">
-            <p><span class="text-primary-60">Niveau :</span> BAC + 5</p>
-            <p><span class="text-primary-60">Âge :</span> 24 ans (22 juillet 2002)</p>
-            <p><span class="text-primary-60">Téléphone :</span> 06 61 74 29 19</p>
+            <p><span class="text-primary-60 mr-1.5" i18n="@@hero_level_label">Niveau :</span> <span
+                    i18n="@@hero_level_val">BAC
+                    + 5</span></p>
+            <p><span class="text-primary-60 mr-1.5" i18n="@@hero_age_label">Âge :</span> <span i18n="@@hero_age_val">{{
+                    age()
+                    }}
+                    ans</span></p>
+            <p><span class="text-primary-60 mr-1.5" i18n="@@hero_phone_label">Téléphone :</span> <span
+                    i18n="@@val_phone">06 61 74 29 19</span></p>
         </div>
     </div>
 
@@ -43,7 +50,8 @@
 
 
 <!-- Section 2 :Expériences -->
-<h2 id="experiences" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center mt-10  ">
+<h2 id="experiences" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center mt-10"
+    i18n="@@section_experiences">
     Expériences
 </h2>
 
@@ -64,7 +72,8 @@
 
 
 <!-- Section 3 : Formations -->
-<h2 id="formations" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl  font-bold mb-8 text-center mt-10 ">
+<h2 id="formations" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl  font-bold mb-8 text-center mt-10"
+    i18n="@@section_formations">
     Formations
 </h2>
 
@@ -97,7 +106,8 @@
 
     <!-- Contenu au-dessus du fond -->
     <div id="certifications" class="relative min-h-screen z-10 text-white">
-        <h2 class="text-primary-90 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 mt-8 text-center">
+        <h2 class="text-primary-90 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 mt-8 text-center"
+            i18n="@@section_certifications">
             Mes Certifications
         </h2>
 

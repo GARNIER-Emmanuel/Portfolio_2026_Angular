@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="footer_role" datatype="html">
+        <source>Développeur Logiciel &amp; Web</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer_copyright" datatype="html">
+        <source>© 2026 Emmanuel Garnier Boidun. Tous droits réservés.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer_tech" datatype="html">
+        <source>Développé avec Angular &amp; Tailwind CSS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_about" datatype="html">
+        <source>À propos de moi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_experiences" datatype="html">
+        <source>Expériences</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_formations" datatype="html">
+        <source>Formations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_certifications" datatype="html">
+        <source>Certifications</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_projects" datatype="html">
+        <source>Mes projets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_interests" datatype="html">
+        <source>Centres d’intérêt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_cv" datatype="html">
+        <source>Voir mon CV</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav_contact" datatype="html">
+        <source>Me contacter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skill_cat_tools" datatype="html">
+        <source>Outils</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/skills/skills.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_1_desc" datatype="html">
+        <source>Certification validée sur Angular</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_2_desc" datatype="html">
+        <source>Certification validée sur Spring Boot</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_5_desc" datatype="html">
+        <source>Maîtriser les fondamentaux des agents IA, LLM et de la boucle agentique Claude Code
+Structurer le contexte projet (CLAUDE.md, rules, prompts avancés et gestion des tokens)
+Développer avec l&apos;écosystème : protocoles MCP, sous-agents parallèles, skills et hooks d&apos;automatisation
+Mener un projet de bout en bout : tests, CI/CD, Git, revues de code et vérification continue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_3_desc" datatype="html">
+        <source>Maîtriser les standards HTML5 sémantiques et le CSS3 moderne
+Concevoir des layouts fluides et responsives avec Flexbox et CSS Grid
+Structurer et optimiser ses feuilles de styles avec le préprocesseur Sass
+Intégrer des interfaces complexes et adaptées à tous types d&apos;écrans</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_4_desc" datatype="html">
+        <source>Typage statique avancé : interfaces, types personnalisés et génériques
+Configuration et maîtrise du compilateur TypeScript (tsc / tsconfig)
+Exploitation de l&apos;inférence de type et des fonctionnalités ESNext
+Débogage efficace et architecture d&apos;applications robustes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_6_name" datatype="html">
+        <source>Principes de base de l&apos;IA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_6_desc" datatype="html">
+        <source>Maîtriser les concepts fondamentaux de l&apos;IA générative pour une utilisation professionnelle
+Rédiger des prompts structurés et efficaces pour générer des résultats pertinents et de haute qualité
+Évaluer la précision et les biais des réponses de l&apos;IA pour garantir un usage éthique et responsable
+Identifier les tâches à forte valeur ajoutée à automatiser dans son workflow quotidien</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_7_name" datatype="html">
+        <source>Certificat Professionnel Google IA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_7_desc" datatype="html">
+        <source>Formuler des instructions claires pour l&apos;utiliser comme un partenaire de travail
+Comprendre les mécanismes sous-jacents pour exploiter les outils avec confiance et éthique
+Mobiliser l&apos;IA pour l&apos;analyse de données, la recherche documentaire et la communication professionnelle
+Concevoir des solutions personnalisées via le vibe coding adaptées aux besoins métiers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_8_desc" datatype="html">
+        <source>Déploiement et sécurisation d&apos;applications et microservices dans le cloud AWS
+Gestion des services serverless (Lambda, API Gateway), bases de données (DynamoDB, RDS) et stockage S3
+Mise en place de pipelines CI/CD et surveillance applicative via CloudWatch et X-Ray</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_9_desc" datatype="html">
+        <source>Maîtrise approfondie des fonctionnalités avancées de Java moderne (Records, Pattern Matching, Sealed Classes)
+Programmation orientée objet, gestion de la mémoire, Garbage Collector et Concurrency</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_10_desc" datatype="html">
+        <source>Maîtrise approfondie du framework Scrum, des rôles, des artefacts et des événements
+Facilitation des processus agiles et résolution des blocages au sein des équipes de développement
+Optimisation de la productivité et de la livraison de valeur continue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_11_desc" datatype="html">
+        <source>Création, optimisation et sécurisation des images de conteneurs Docker (Multi-stage builds)
+Orchestration multi-conteneurs avec Docker Compose et gestion des réseaux et volumes
+Déploiement, monitoring et maintenance d&apos;infrastructures conteneurisées</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_1_title" datatype="html">
+        <source>Développeur Java Full Stack (Alternance)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_1_period" datatype="html">
+        <source>09/2023 – 07/2026</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_1_resume" datatype="html">
+        <source>Développement Full Stack Java Spring Boot &amp; Angular au sein d&apos;une équipe Agile.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_1_desc" datatype="html">
+        <source>Conception et développement d&apos;APIs REST avec Java et Spring Boot
+Couverture de code et qualité logicielle avec tests unitaires et d&apos;intégration (JUnit, AssertJ, Mockito)
+Développement de formulaires, composants et interfaces sous Angular
+Conteneurisation des environnements et services avec Docker
+Collaboration active au sein d&apos;une équipe en méthodologie Agile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_2_title" datatype="html">
+        <source>Développeur Web (Stage)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_2_period" datatype="html">
+        <source>01/2023 – 02/2023</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_2_resume" datatype="html">
+        <source>Création de formulaires clients avec Symfony et initiation au développement web professionnel.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_2_desc" datatype="html">
+        <source>Conception et intégration de formulaires clients dynamiques avec le framework Symfony
+Initiation aux bonnes pratiques de développement web et d&apos;architecture
+Manipulation et requêtage de base de données MySQL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_3_title" datatype="html">
+        <source>Développeur Web (Stage)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_3_period" datatype="html">
+        <source>05/2022 – 06/2022</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_3_resume" datatype="html">
+        <source>Développement d&apos;une interface de mini-jeu web interactif en HTML, CSS, JavaScript et PHP pour un escape game.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_3_desc" datatype="html">
+        <source>Conception et programmation complète d&apos;une interface de mini-jeu web interactif pour les joueurs d&apos;escape game
+Développement de l&apos;UX interactive et des fonctionnalités de gameplay en JavaScript / CSS
+Traitement et gestion des scores</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_5_title" datatype="html">
+        <source>Master – Développeur Full Stack</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_5_period" datatype="html">
+        <source>08/2024 – Présent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_5_resume" datatype="html">
+        <source>Formation en développement Full Stack avancé.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_5_desc" datatype="html">
+        <source>Approfondissement des architectures logicielles
+Développement Full Stack avancé avec Java, Spring Boot, Angular et React
+Pratiques DevOps : conteneurisation, CI/CD, orchestration et cloud
+Pilotage de projets d&apos;envergure et méthodologies agiles avancées</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_6_title" datatype="html">
+        <source>Bachelor Concepteur Développeur d’Applications</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_6_period" datatype="html">
+        <source>09/2023 – 09/2024</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_6_resume" datatype="html">
+        <source>Conception, modélisation et déploiement d&apos;applications logicielles et web.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_6_desc" datatype="html">
+        <source>Conception et modélisation d&apos;architectures d&apos;applications sécurisées (UML, Merise)
+Développement d&apos;applications d&apos;entreprise en Java / Spring Boot et Angular
+Gestion et requêtage optimisé de bases de données relationnelles (MySQL)
+Mise en place de tests automatisés et intégration continue
+Pilotage de projets, gestion du temps, du budget et des choix techniques</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_7_title" datatype="html">
+        <source>BTS SIO (SLAM – Solutions Logicielles et Applications Métiers)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_7_period" datatype="html">
+        <source>08/2021 – 06/2023</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_7_resume" datatype="html">
+        <source>Fondamentaux du développement logiciel, modélisation de données et web.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_7_desc" datatype="html">
+        <source>Programmation orientée objet et algorithmique (Java, PHP, JavaScript)
+Modélisation, administration et requêtage de bases de données SQL
+Développement d&apos;interfaces web responsives (HTML5, CSS3, JS) et frameworks PHP
+Travail en équipe, gestion de versions avec Git et gestion de projets informatiques</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_8_title" datatype="html">
+        <source>BAC STI2D (Sciences et Technologies de l’Industrie et du Dév. Durable)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_8_period" datatype="html">
+        <source>08/2019 – 06/2021</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_8_resume" datatype="html">
+        <source>Formation technologique axée sur les systèmes numériques et l&apos;innovation.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_8_desc" datatype="html">
+        <source>Initiation à l&apos;algorithmique, à la logique de programmation et aux microcontrôleurs
+Découverte des réseaux informatiques et de la transmission de données
+Découverte des langages Python et HTML / CSS / JS
+Travail en mode projet, modélisation et démarches d&apos;éco-conception</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skill_algo" datatype="html">
+        <source>Algorithmique</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skill_sys_num" datatype="html">
+        <source>Systèmes numériques</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skill_reseaux" datatype="html">
+        <source>Réseaux</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interest_1_title" datatype="html">
+        <source>Intelligence Artificielle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/interest.data.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interest_1_desc" datatype="html">
+        <source>Passionné par l&apos;IA et les modèles génératifs, je fais une veille technologique continue sur les avancées en IA, les agents autonomes et j&apos;expérimente les nouveaux outils.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/interest.data.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interest_2_title" datatype="html">
+        <source>Espace &amp; Aérospatial</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/interest.data.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interest_2_desc" datatype="html">
+        <source>Intéressé par SpaceX, ArianeGroup et les défis technologiques de la conquête martienne, je m&apos;informe sur les événements d&apos;actualité.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/interest.data.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interest_3_title" datatype="html">
+        <source>Production Musicale</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/interest.data.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interest_3_desc" datatype="html">
+        <source>Autodidacte sur Cubase, j&apos;écris et produis de la musique pour moi-même, explorant diverses influences et techniques.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/interest.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interest_4_title" datatype="html">
+        <source>Cinéma</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/interest.data.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interest_4_desc" datatype="html">
+        <source>Amateur de cinéma, j&apos;aime découvrir le cinéma en globalité, la technique derrière les films, les réalisateurs qui poussent à la réflexion et qui ne laissent aucun détail au hasard.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/interest.data.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_1_name" datatype="html">
+        <source>Certification Angular</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_1_desc" datatype="html">
+        <source>Certification Dyma validée en 2026
+Maîtrise approfondie des Standalone Components, Signals réactifs, Control Flow et formulaires typés</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_2_name" datatype="html">
+        <source>Certification Spring Boot</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_2_desc" datatype="html">
+        <source>Certification Dyma validée
+Développement d’APIs REST sécurisées, persistance relationnelle avec JPA / Hibernate et Spring Security</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_3_desc" datatype="html">
+        <source>Plateforme modulaire de suivi des candidatures
+Backend Spring Boot 3 &amp; Neon PostgreSQL (Flyway, TDD)
+Frontend Angular Standalone (Signals, PrimeNG)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_4_desc" datatype="html">
+        <source>Site web de recommandation cinématographique interactive (swipe duo synchronisé, roulette 3D, flux Letterboxd)
+Frontend Angular Glassmorphism
+Backend NestJS &amp; TMDB API sous Docker</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_5_desc" datatype="html">
+        <source>PWA de coaching et suivi de musculation hors-ligne
+Calculs métaboliques avancés (BMR, TDEE, 1RM)
+Pour ma routine sportive personnelle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_6_desc" datatype="html">
+        <source>Agrégateur de flux RSS intelligent avec catégorisation thématique des actualités
+Développé avec React et Next.js
+Pour ma veille personnelle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_7_desc" datatype="html">
+        <source>Application mobile Android de gestion locative et réservation de villas
+Modélisation SQL avec JMerise et gestion de projet via diagramme de Gantt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_8_desc" datatype="html">
+        <source>Gestion de cabinet dentaire (dossiers patients, planification des rendez-vous et rôles sécurisés)
+Développée avec Symfony 6.2, Doctrine ORM, Twig, Bootstrap et MySQL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_status_inprogress" datatype="html">
+        <source>En cours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/certifications/certifications.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_link_view" datatype="html">
+        <source>Consulter la formation sur</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/certifications/certifications.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/certifications/certifications.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_status_wish" datatype="html">
+        <source>Souhaitées</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/certifications/certifications.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_dialog_in" datatype="html">
+        <source>en</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/certifications/dialog-certif/dialog-certif.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_dialog_on" datatype="html">
+        <source>sur</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/certifications/dialog-certif/dialog-certif.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_dialog_btn_original" datatype="html">
+        <source> Voir l&apos;original ↗ </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/certifications/dialog-certif/dialog-certif.html</context>
+          <context context-type="linenumber">20,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_dialog_btn_close" datatype="html">
+        <source>Fermer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/certifications/dialog-certif/dialog-certif.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_dialog_failed_title" datatype="html">
+        <source>Oups... Un problème est survenu.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact-dialog-failed/contact-dialog-failed.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_dialog_failed_content" datatype="html">
+        <source> Votre message n&apos;a pas été envoyé.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Veuillez réessayer plus tard ou me contacter directement par email.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Merci de votre compréhension.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact-dialog-failed/contact-dialog-failed.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_dialog_success_title" datatype="html">
+        <source>Message bien envoyé</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact-dialog/contact-dialog.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_dialog_success_content" datatype="html">
+        <source> Votre message a été envoyé avec succès !<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Je reviens vers vous au plus vite.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact-dialog/contact-dialog.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_title" datatype="html">
+        <source> Me Contacter
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_subtitle" datatype="html">
+        <source>Une question ou une opportunité ?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_intro" datatype="html">
+        <source> N&apos;hésitez pas à me contacter via ce formulaire ou directement <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> sur mon email ou téléphone.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Je vous répondrai dans les plus brefs délais ! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_dt_phone" datatype="html">
+        <source>Téléphone</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="val_phone" datatype="html">
+        <source>06 61 74 29 19</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_dt_email" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_dt_location" datatype="html">
+        <source>Location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_location_val" datatype="html">
+        <source>Bordeaux - Le Bouscat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_label_lastname" datatype="html">
+        <source>Nom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_ph_lastname" datatype="html">
+        <source>Votre Nom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_label_firstname" datatype="html">
+        <source>Prénom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">81,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_ph_firstname" datatype="html">
+        <source>Votre Prénom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_label_email" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">98,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_ph_email" datatype="html">
+        <source>Votre Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_label_message" datatype="html">
+        <source>Message</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">114,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_ph_message" datatype="html">
+        <source>Votre Message</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">118,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_btn_submit" datatype="html">
+        <source> Envoyer le Message </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
+          <context context-type="linenumber">132,133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_err_lastname" datatype="html">
+        <source>Le nom est requis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_err_firstname" datatype="html">
+        <source>Le prénom est requis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_err_email" datatype="html">
+        <source>L&apos;email est requis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_err_message" datatype="html">
+        <source>Le message est requis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact_err_email_invalid" datatype="html">
+        <source>L&apos;email est invalide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/contact/contact.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero_role" datatype="html">
+        <source> Développeur Full-Stack </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero_bio" datatype="html">
+        <source> Développeur junior depuis <x id="INTERPOLATION" equiv-text="{{yearsOfExperience()}}"/> ans, spécialisé en développement Full-Stack (Java / Spring Boot, Angular), curieux et motivé par la decouverte de nouveautés techniques et technilogiques. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero_level_label" datatype="html">
+        <source>Niveau :</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero_level_val" datatype="html">
+        <source>BAC + 5</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero_age_label" datatype="html">
+        <source>Âge :</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero_age_val" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{
+                    age()
+                    }}"/> ans</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">41,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero_phone_label" datatype="html">
+        <source>Téléphone :</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="section_experiences" datatype="html">
+        <source> Expériences
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">55,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="section_formations" datatype="html">
+        <source> Formations
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">77,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="section_certifications" datatype="html">
+        <source> Mes Certifications </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
+          <context context-type="linenumber">111,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="interests_title" datatype="html">
+        <source> Centres d&apos;intérêt
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/interests/interests.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects_title" datatype="html">
+        <source> Mes Projets
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_type_formation" datatype="html">
+        <source>Formation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_type_personal" datatype="html">
+        <source>Projet personnel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_type_school" datatype="html">
+        <source>Projet académique</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects_btn_repo" datatype="html">
+        <source>Voir le repo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects_btn_live" datatype="html">
+        <source>Voir le site</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects_btn_none" datatype="html">
+        <source>Aucun lien disponible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

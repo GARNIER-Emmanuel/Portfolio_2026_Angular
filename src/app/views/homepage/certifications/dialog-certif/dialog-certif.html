@@ -10,15 +10,15 @@
     </div>
     @if (certification.description) {
     <p class="text-sm !text-secondary whitespace-pre-line text-center">
-        {{ certification.description }} en {{certification.obtained_date}} sur {{certification.site}}
+        {{ certification.description }} <span i18n="@@certif_dialog_in">en</span> {{certification.obtained_date}} <span i18n="@@certif_dialog_on">sur</span> {{certification.site}}
     </p>
     }
 </mat-dialog-content>
 <mat-dialog-actions align="end" class="gap-2">
     @if (certification.pdf) {
-    <a [href]="certification.pdf" target="_blank" rel="noopener noreferrer" matButton>
+    <a [href]="certification.pdf" target="_blank" rel="noopener noreferrer" matButton i18n="@@certif_dialog_btn_original">
         Voir l'original ↗
     </a>
     }
-    <button matButton mat-dialog-close>Fermer</button>
+    <button matButton mat-dialog-close i18n="@@certif_dialog_btn_close">Fermer</button>
 </mat-dialog-actions>

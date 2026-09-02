@@ -4,10 +4,10 @@ import { ContactService } from '../../../shared/services/contact-service';
 import { ContactForm } from '../../../shared/interfaces/contact-form.interface';
 import { MatDialog } from '@angular/material/dialog';
 import { ContactDialog } from './contact-dialog/contact-dialog';
-import { MatTooltip } from '@angular/material/tooltip';
+import { ContactDialogFailed } from './contact-dialog-failed/contact-dialog-failed';
 
 @Component({
-  imports: [FormRoot, FormField, MatTooltip],
+  imports: [FormRoot, FormField],
   selector: 'app-contact',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './contact.css',
@@ -25,32 +25,26 @@ export class Contact {
   })
 
   contactForm = form(this.contactModel, (schemaPath) => {
-    required(schemaPath.lastname, { message: 'Le nom est requis' })
-    required(schemaPath.firstname, { message: 'Le prénom est requis' })
-    required(schemaPath.email, { message: 'L\'email est requis' })
-    required(schemaPath.message, { message: 'Le message est requis' })
-    email(schemaPath.email, { message: 'L\'email est invalide' })
-
-
+    required(schemaPath.lastname, { message: $localize`:@@contact_err_lastname:Le nom est requis` })
+    required(schemaPath.firstname, { message: $localize`:@@contact_err_firstname:Le prénom est requis` })
+    required(schemaPath.email, { message: $localize`:@@contact_err_email:L'email est requis` })
+    required(schemaPath.message, { message: $localize`:@@contact_err_message:Le message est requis` })
+    email(schemaPath.email, { message: $localize`:@@contact_err_email_invalid:L'email est invalide` })
   }, {
     submission: {
       action: async (contactForm) => {
-        await this.contactService.sendEmail(contactForm().value());
-        this.contactDialog.open(ContactDialog);
-        this.contactModel.set({ lastname: '', firstname: '', email: '', message: '' });
+        try {
+          await this.contactService.sendEmail(contactForm().value());
+          this.contactDialog.open(ContactDialog);
+          this.contactModel.set({ lastname: '', firstname: '', email: '', message: '' });
+        } catch {
+          this.contactDialog.open(ContactDialogFailed);
+        }
       },
       onInvalid: (form) => {
         console.warn('Formulaire invalide :', form().errors);
+        this.contactDialog.open(ContactDialogFailed);
       }
     }
-  }
-
-  )
-
-
-
-
-
-
-
+  });
 }

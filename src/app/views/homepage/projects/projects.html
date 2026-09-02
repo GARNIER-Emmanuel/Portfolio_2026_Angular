@@ -1,4 +1,5 @@
-<h2 id="projects" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center mt-10 px-4">
+<h2 id="projects" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center mt-10 px-4"
+    i18n="@@projects_title">
     Mes Projets
 </h2>
 
@@ -11,13 +12,19 @@
         appearance="outlined">
         <mat-card-header>
             <mat-card-title class="!text-primary-20">{{ project.name }}</mat-card-title>
-            <mat-card-subtitle>{{ project.type }} - {{ project.date }}</mat-card-subtitle>
+            <mat-card-subtitle>
+                @switch (project.type) {
+                    @case ('formation') { <span i18n="@@project_type_formation">Formation</span> }
+                    @case ('personal') { <span i18n="@@project_type_personal">Projet personnel</span> }
+                    @case ('school') { <span i18n="@@project_type_school">Projet académique</span> }
+                } - {{ project.date }}
+            </mat-card-subtitle>
         </mat-card-header>
 
         <div class="flex-1 flex flex-col justify-between gap-4">
             <mat-card-content>
                 <div>
-                    <p class="mb-5 text-secondary">
+                    <p class="mb-5 text-secondary whitespace-pre-line">
                         {{ project.description }}
                     </p>
                     <app-skills [skills]="project.skills" />
@@ -25,14 +32,18 @@
             </mat-card-content>
             <mat-card-actions>
                 @if (project.repo && project.live) {
-                <a matButton [href]="project.repo" target="_blank" rel="noopener noreferrer">Voir le repo</a>
-                <a matButton [href]="project.live" target="_blank" rel="noopener noreferrer">Voir le site</a>
+                <a matButton [href]="project.repo" target="_blank" rel="noopener noreferrer"
+                    i18n="@@projects_btn_repo">Voir le repo</a>
+                <a matButton [href]="project.live" target="_blank" rel="noopener noreferrer"
+                    i18n="@@projects_btn_live">Voir le site</a>
                 } @else if (project.repo) {
-                <a matButton [href]="project.repo" target="_blank" rel="noopener noreferrer">Voir le repo</a>
+                <a matButton [href]="project.repo" target="_blank" rel="noopener noreferrer"
+                    i18n="@@projects_btn_repo">Voir le repo</a>
                 } @else if (project.live) {
-                <a matButton [href]="project.live" target="_blank" rel="noopener noreferrer">Voir le site</a>
+                <a matButton [href]="project.live" target="_blank" rel="noopener noreferrer"
+                    i18n="@@projects_btn_live">Voir le site</a>
                 } @else {
-                <a matButton disabled>Aucun lien disponible</a>
+                <a matButton disabled i18n="@@projects_btn_none">Aucun lien disponible</a>
                 }
             </mat-card-actions>
         </div>

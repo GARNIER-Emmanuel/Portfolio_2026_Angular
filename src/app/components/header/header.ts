@@ -1,9 +1,10 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, LOCALE_ID, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDivider } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
-  imports: [MatButtonModule, MatMenuModule],
+  imports: [MatButtonModule, MatMenuModule, MatDivider],
   selector: 'app-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './header.css',
@@ -12,4 +13,14 @@ import { MatMenuModule } from '@angular/material/menu';
   },
   templateUrl: './header.html',
 })
-export class Header { }
+export class Header {
+  protected readonly currentLocale = inject(LOCALE_ID);
+
+  protected isOpen = signal(false);
+
+  setLanguage(lang: 'fr' | 'en-US') {
+    window.location.href = lang === 'fr' ? '/' : '/en-US/';
+  }
+
+
+}
