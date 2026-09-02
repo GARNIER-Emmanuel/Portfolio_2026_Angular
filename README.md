@@ -20,7 +20,6 @@ Ce projet est ma vitrine professionnelle pour l'année 2026. Conçu pour reflét
 * **Internationalisation (i18n)** :
   * Bilingue complet **Français / Anglais** via l'outil natif `@angular/localize`.
   * Détection automatique de la langue du navigateur et mémorisation du choix utilisateur (`cookie` + `localStorage`).
-* **Tests unitaires** : [Vitest](https://vitest.dev/) + `jsdom`.
 * **Déploiement** : [Vercel](https://vercel.com/) avec redirection intelligente Edge et support SPA multi-locales (`vercel.json`).
 
 ---
@@ -42,31 +41,6 @@ Ce projet est ma vitrine professionnelle pour l'année 2026. Conçu pour reflét
 ### Prérequis
 * [Node.js](https://nodejs.org/) (version 20+ recommandée)
 * [npm](https://www.npmjs.com/)
-
-### Installation
-```bash
-# Cloner le projet
-git clone https://github.com/GARNIER-Emmanuel/Portfolio_2026_Angular.git
-
-# Se positionner dans le dossier
-cd Portfolio_2026_Angular
-
-# Installer les dépendances
-npm install
-```
-
-### Commandes disponibles
-```bash
-npm start          # Lance le serveur de développement (ng serve) sur http://localhost:4200/
-npm run build      # Compile le projet en production avec les deux locales (fr et en-US)
-npm test           # Exécute les tests unitaires avec Vitest
-```
-
-### Gestion de l'i18n
-Pour extraire de nouveaux textes marqués avec `i18n` ou `$localize` :
-```bash
-npx ng extract-i18n --output-path src/locale
-```
 
 ---
 
