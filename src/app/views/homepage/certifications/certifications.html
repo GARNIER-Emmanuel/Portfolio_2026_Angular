@@ -1,8 +1,8 @@
-<div class="flex flex-row flex-wrap justify-center space-x-4">
+<div class="flex flex-row flex-wrap justify-center gap-3 sm:gap-4">
     @for (certification of certifications(); track certification.id) {
     @if (certification.status === 'obtained') {
     <a (click)="openDialogCertif(certification)" [matTooltip]="certification.name + ' - '+ certification.site"
-        class="block group transition hover:-translate-y-1 mb-5 w-80 cursor-pointer">
+        class="block group transition hover:-translate-y-1 mb-5 w-40 sm:w-60 md:w-80 cursor-pointer">
 
         <img alt="image certification" [ngSrc]="certification.image_minimize!" width="650" height="452"
             class="w-full rounded-se-3xl rounded-es-3xl object-cover bg-white shadow-xs" />
