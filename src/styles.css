@@ -48,6 +48,13 @@ html {
 
 }
 
+.mat-expansion-panel-header {
+    height: auto !important;
+    min-height: 48px;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+}
+
 .mat-expansion-panel-header .mat-content {
     justify-content: space-between !important;
 }
