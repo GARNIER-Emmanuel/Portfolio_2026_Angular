@@ -19,11 +19,11 @@
         </context-group>
       </trans-unit>
       <trans-unit id="footer_tech" datatype="html">
-        <source>Développé avec Angular &amp; Tailwind CSS</source>
-        <target>Built with Angular &amp; Tailwind CSS</target>
+        <source> Développé avec Angular &amp; Tailwind CSS (Code source ↗) </source>
+        <target>Built with Angular &amp; Tailwind CSS (Source code ↗)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/footer/footer.html</context>
-          <context context-type="linenumber">53,55</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav_about" datatype="html">
@@ -630,6 +630,18 @@ Project-based learning, system modeling, and eco-design practices</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/interest.data.ts</context>
           <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_portfolio_desc" datatype="html">
+        <source>Portfolio personnel bilingue (FR/EN)
+Architecture moderne Angular Signals &amp; Zoneless
+Stylisé avec Tailwind CSS v4 &amp; Material Theming</source>
+        <target>Bilingual personal portfolio (FR/EN)
+Modern Angular Signals &amp; Zoneless architecture
+Styled with Tailwind CSS v4 &amp; Material Theming</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_1_name" datatype="html">

@@ -17,10 +17,10 @@
         </context-group>
       </trans-unit>
       <trans-unit id="footer_tech" datatype="html">
-        <source>Développé avec Angular &amp; Tailwind CSS</source>
+        <source> Développé avec Angular &amp; Tailwind CSS (Code source ↗) </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/footer/footer.html</context>
-          <context context-type="linenumber">53,55</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav_about" datatype="html">
@@ -525,11 +525,20 @@ Travail en mode projet, modélisation et démarches d&apos;éco-conception</sour
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="project_portfolio_desc" datatype="html">
+        <source>Portfolio personnel bilingue (FR/EN)
+Architecture moderne Angular Signals &amp; Zoneless
+Stylisé avec Tailwind CSS v4 &amp; Material Theming</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="project_1_name" datatype="html">
         <source>Certification Angular</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_1_desc" datatype="html">
@@ -537,14 +546,14 @@ Travail en mode projet, modélisation et démarches d&apos;éco-conception</sour
 Maîtrise approfondie des Standalone Components, Signals réactifs, Control Flow et formulaires typés</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">9,10</context>
+          <context context-type="linenumber">25,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_2_name" datatype="html">
         <source>Certification Spring Boot</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_2_desc" datatype="html">
@@ -552,7 +561,7 @@ Maîtrise approfondie des Standalone Components, Signals réactifs, Control Flow
 Développement d’APIs REST sécurisées, persistance relationnelle avec JPA / Hibernate et Spring Security</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">40,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_3_desc" datatype="html">
@@ -561,7 +570,7 @@ Backend Spring Boot 3 &amp; Neon PostgreSQL (Flyway, TDD)
 Frontend Angular Standalone (Signals, PrimeNG)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_4_desc" datatype="html">
@@ -570,7 +579,7 @@ Frontend Angular Glassmorphism
 Backend NestJS &amp; TMDB API sous Docker</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_5_desc" datatype="html">
@@ -579,7 +588,7 @@ Calculs métaboliques avancés (BMR, TDEE, 1RM)
 Pour ma routine sportive personnelle</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">74</context>
+          <context context-type="linenumber">90</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_6_desc" datatype="html">
@@ -588,7 +597,7 @@ Développé avec React et Next.js
 Pour ma veille personnelle</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="linenumber">107</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_7_desc" datatype="html">
@@ -596,7 +605,7 @@ Pour ma veille personnelle</source>
 Modélisation SQL avec JMerise et gestion de projet via diagramme de Gantt</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_8_desc" datatype="html">
@@ -604,7 +613,7 @@ Modélisation SQL avec JMerise et gestion de projet via diagramme de Gantt</sour
 Développée avec Symfony 6.2, Doctrine ORM, Twig, Bootstrap et MySQL</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">120</context>
+          <context context-type="linenumber">136</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_status_inprogress" datatype="html">

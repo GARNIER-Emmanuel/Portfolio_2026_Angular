@@ -2,6 +2,22 @@ import { Project } from "../interfaces";
 
 export const PROJECT_DATA: Project[] = [
     {
+        id: 'portfolio-2026',
+        name: 'Portfolio 2026',
+        date: '2026',
+        image: 'wood_background.jpg',
+        description: $localize`:@@project_portfolio_desc:Portfolio personnel bilingue (FR/EN)
+Architecture moderne Angular Signals & Zoneless
+Stylisé avec Tailwind CSS v4 & Material Theming`,
+        repo: 'https://github.com/GARNIER-Emmanuel/Portfolio_2026_Angular',
+        type: 'personal',
+        skills: [
+            { name: 'Angular', icon: 'devicon-angularjs-plain colored', category: 'frontend' },
+            { name: 'TypeScript', icon: 'devicon-typescript-plain colored', category: 'frontend' },
+            { name: 'Tailwind CSS', icon: 'devicon-tailwindcss-plain colored', category: 'frontend' },
+        ],
+    },
+    {
         id: '1',
         name: $localize`:@@project_1_name:Certification Angular`,
         image: 'certif-angular-640-452.png',
