@@ -46,11 +46,19 @@ html {
     --color-error: var(--mat-sys-error);
     --color-on-error: var(--mat-sys-on-error);
 
-    /* Surface */
-    --color-surface: var(--mat-sys-surface);
-    --color-on-surface: var(--mat-sys-on-surface);
 }
 
-.mat-mdc-dialog-surface {
-    background-color: var(--mat-sys-primary-90) !important;
+.mat-expansion-panel-header .mat-content {
+    justify-content: space-between !important;
+}
+
+.mat-expansion-panel-header-title {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+.mat-expansion-panel-header-description {
+    flex: 0 0 auto !important;
+    justify-content: flex-end !important;
+    margin-left: 1rem !important;
 }

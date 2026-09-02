@@ -9,6 +9,22 @@
 html {
   height: 100%;
 
+  @include mat.expansion-overrides((container-background-color: var(--mat-sys-primary-90),
+      header-text-color: var(--mat-sys-primary-10),
+      header-description-color: var(--mat-sys-primary-50),
+      header-indicator-color: var(--mat-sys-primary-30),
+    ));
+
+  @include mat.card-overrides((outlined-container-color: var(--mat-sys-primary-100), subtitle-text-color: var(--mat-sys-secondary-20),
+      outlined-outline-color: var(--mat-sys-secondary-100),
+    ));
+
+  @include mat.button-overrides((text-label-text-color: var(--mat-sys-primary-20),
+      text-state-layer-color: var(--mat-sys-primary-90),
+      text-hover-state-layer-opacity: 1,
+    ));
+
+
   @each $palette-name, $palette in theme.$palettes {
     @each $tone, $color in $palette {
       --mat-sys-#{$palette-name}-#{$tone}: #{$color};

@@ -11,7 +11,7 @@
         appearance="outlined">
         <mat-card-header>
             <mat-card-title class="!text-primary-20">{{ project.name }}</mat-card-title>
-            <mat-card-subtitle class="!text-primary-10">{{ project.type }} - {{ project.date }}</mat-card-subtitle>
+            <mat-card-subtitle>{{ project.type }} - {{ project.date }}</mat-card-subtitle>
         </mat-card-header>
 
         <div class="flex-1 flex flex-col justify-between gap-4">
@@ -32,7 +32,7 @@
                 } @else if (project.live) {
                 <a matButton [href]="project.live" target="_blank" rel="noopener noreferrer">Voir le site</a>
                 } @else {
-                <p class="text-xs text-gray-500">Aucun lien disponible</p>
+                <a matButton disabled>Aucun lien disponible</a>
                 }
             </mat-card-actions>
         </div>

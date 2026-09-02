@@ -20,19 +20,16 @@
                 @for (certification of certifications(); track certification.id) {
                 @if (certification.status === 'in_progress') {
                 <mat-expansion-panel>
-                    <mat-expansion-panel-header class="!h-auto !py-3">
-                        <mat-panel-title class="!whitespace-normal break-words pr-2"> {{certification.name}}
-                        </mat-panel-title>
-                        <mat-panel-description>
-                            {{certification.site}}
-                        </mat-panel-description>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title> {{certification.name}}</mat-panel-title>
+                        <mat-panel-description> {{certification.site}}</mat-panel-description>
                     </mat-expansion-panel-header>
-                    <div class="border-t border-black bg-white p-4 flex flex-col gap-3">
+                    <div class="border-t border-black p-4 flex flex-col gap-3">
                         <p class="whitespace-pre-line text-sm text-gray-700 leading-relaxed">
                             {{ certification.description }}
                         </p>
                         <a [href]="certification.link" target="_blank" rel="noopener noreferrer"
-                            class="text-xs text-blue-600 hover:underline inline-flex items-center gap-1 font-medium w-fit">
+                            class="text-xs text-primary-10 hover:underline inline-flex items-center gap-1 font-medium w-fit">
                             Consulter la formation sur {{ certification.site }} →
                         </a>
                     </div>
@@ -46,19 +43,16 @@
                 @for (certification of certifications(); track certification.id) {
                 @if (certification.status === 'wish') {
                 <mat-expansion-panel>
-                    <mat-expansion-panel-header class="!h-auto !py-3">
-                        <mat-panel-title class="!whitespace-normal break-words pr-2">{{certification.name}}
-                        </mat-panel-title>
-                        <mat-panel-description>
-                            {{certification.site}}
-                        </mat-panel-description>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title> {{certification.name}}</mat-panel-title>
+                        <mat-panel-description> {{certification.site}}</mat-panel-description>
                     </mat-expansion-panel-header>
-                    <div class="border-t border-black bg-white p-4 flex flex-col gap-3">
+                    <div class="border-t border-black p-4 flex flex-col gap-3">
                         <p class="whitespace-pre-line text-sm text-gray-700 leading-relaxed">
                             {{ certification.description }}
                         </p>
                         <a [href]="certification.link" target="_blank" rel="noopener noreferrer"
-                            class="text-xs text-blue-600 hover:underline inline-flex items-center gap-1 font-medium w-fit">
+                            class="text-xs text-primary-10 hover:underline inline-flex items-center gap-1 font-medium w-fit">
                             Consulter la formation sur {{ certification.site }} →
                         </a>
                     </div>

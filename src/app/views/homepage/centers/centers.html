@@ -4,23 +4,22 @@
 
 <div class="flex flex-col w-full min-h-[calc(28svh-4rem)] mx-auto px-4 items-center">
     <div class="w-full overflow-x-auto text-center pb-2 mb-5">
-        <mat-button-toggle-group class="!bg-white/95 !shadow-md rounded-lg">
+        <mat-button-toggle-group class="!bg-primary-100 !shadow-md rounded-lg">
             @for (item of interests(); track $index) {
             <mat-button-toggle (click)="selectInterest(item)" value="{{$index}}"
-                class="!text-primary-10">{{item.title}}</mat-button-toggle>
+                class="!text-primary-20">{{item.title}}</mat-button-toggle>
             }
         </mat-button-toggle-group>
     </div>
     <mat-card class="w-full min-h-40 max-w-3xl" appearance="outlined">
         <mat-card-header>
             <div class="text-4xl" mat-card-avatar>{{selectedInterest().logo}}</div>
-            <mat-card-title class="!text-primary-20">{{ selectedInterest().title }}</mat-card-title>
-            <!-- <mat-card-subtitle>{{ selectedInterest().description }}</mat-card-subtitle> -->
+            <mat-card-title class="!text-primary-10">{{ selectedInterest().title }}</mat-card-title>
         </mat-card-header>
-        <mat-card-content>
-            <p class="!text-secondary">
+        <div class="p-4">
+            <p class="text-secondary">
                 {{ selectedInterest().description }}
             </p>
-        </mat-card-content>
+        </div>
     </mat-card>
 </div>
