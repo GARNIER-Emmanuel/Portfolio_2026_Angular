@@ -1,59 +1,81 @@
-# CV2026
+# 🚀 Portfolio 2026 — Emmanuel Garnier Boidun
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.2.
+Bienvenue sur le dépôt de mon portfolio personnel ! 
 
-## Development server
+Ce projet est ma vitrine professionnelle pour l'année 2026. Conçu pour refléter mes compétences en développement web et logiciel, il met en pratique les toutes dernières fonctionnalités de l'écosystème **Angular** et les standards actuels de performance et d'architecture front-end.
 
-To start a local development server, run:
+---
 
+## 🛠️ Stack Technique
+
+* **Framework** : [Angular 22+](https://angular.dev/)
+  * Architecture **100% Standalone** (aucun `NgModule`).
+  * Gestion d'état réactive basée sur les **Signals** (`signal`, `computed`, `input()`, `output()`).
+  * Mode **Zoneless** pour des performances de rendu et un cycle de vie ultra-optimisés.
+  * Nouveau **Control Flow** natif (`@if`, `@for`, `@switch`).
+* **Styling** : [Tailwind CSS v4](https://tailwindcss.com/) & [Angular Material M3](https://material.angular.dev/)
+  * Configuration moderne avec tokens de thème CSS (`@theme`).
+  * Thème Material Theming sur mesure, adapté aux couleurs de mon identité visuelle.
+  * Responsive design soigné (Desktop, Tablette, Mobile).
+* **Internationalisation (i18n)** :
+  * Bilingue complet **Français / Anglais** via l'outil natif `@angular/localize`.
+  * Détection automatique de la langue du navigateur et mémorisation du choix utilisateur (`cookie` + `localStorage`).
+* **Tests unitaires** : [Vitest](https://vitest.dev/) + `jsdom`.
+* **Déploiement** : [Vercel](https://vercel.com/) avec redirection intelligente Edge et support SPA multi-locales (`vercel.json`).
+
+---
+
+## ✨ Fonctionnalités clés
+
+- **Hero & Présentation** : calcul automatique des années d'expérience et de l'âge via les `computed()` signals.
+- **Parcours & Formations** : timeline interactive des expériences professionnelles et cursus académiques avec affichage détaillé des compétences associées.
+- **Certifications** : galerie visuelle avec modale plein écran pour les certifications obtenues, et accordéons responsives pour les certifications en cours et ciblées.
+- **Projets** : catalogue des projets (professionnels, personnels, académiques) avec compétences utilisées, liens vers les dépôts GitHub et démos lives (PWA).
+- **Centres d'intérêt** : sélecteur toggle dynamique présentant mes passions hors code (IA générative, aérospatial, musique, cinéma).
+- **Formulaire de contact** : formulaire réactif avec validation en temps réel, gestion des erreurs et retours modaux.
+- **Sélecteur de langue** : bascule fluide instantanée entre le français et l'anglais.
+
+---
+
+## 💻 Démarrage en local
+
+### Prérequis
+* [Node.js](https://nodejs.org/) (version 20+ recommandée)
+* [npm](https://www.npmjs.com/)
+
+### Installation
 ```bash
-ng serve
+# Cloner le projet
+git clone https://github.com/GARNIER-Emmanuel/Portfolio_2026_Angular.git
+
+# Se positionner dans le dossier
+cd Portfolio_2026_Angular
+
+# Installer les dépendances
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### Commandes disponibles
 ```bash
-ng generate component component-name
+npm start          # Lance le serveur de développement (ng serve) sur http://localhost:4200/
+npm run build      # Compile le projet en production avec les deux locales (fr et en-US)
+npm test           # Exécute les tests unitaires avec Vitest
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+### Gestion de l'i18n
+Pour extraire de nouveaux textes marqués avec `i18n` ou `$localize` :
 ```bash
-ng generate --help
+npx ng extract-i18n --output-path src/locale
 ```
 
-## Building
+---
 
-To build the project run:
+## 📬 Me contacter
 
-```bash
-ng build
-```
+* **LinkedIn** : [Emmanuel Garnier Boidun](https://www.linkedin.com/in/emmanuel-garnier-boidun-456a85208/)
+* **GitHub** : [@GARNIER-Emmanuel](https://github.com/GARNIER-Emmanuel)
+* **Email** : [manu.boidun@gmail.com](mailto:manu.boidun@gmail.com)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+*Développé avec passion par Emmanuel Garnier Boidun.*
