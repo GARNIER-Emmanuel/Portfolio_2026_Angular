@@ -17,6 +17,9 @@ import { Centers } from './centers/centers';
   selector: 'app-homepage',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './homepage.css',
+  host: {
+    class: 'bg-primary-90'
+  },
   templateUrl: './homepage.html',
 })
 export class Homepage {
@@ -36,4 +39,5 @@ export class Homepage {
   onSelectFormation(edu: Experience) {
     this.selectedFormation.set(edu);
   }
+
 }

@@ -8,7 +8,7 @@ import { MatMenuModule } from '@angular/material/menu';
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './header.css',
   host: {
-    class: 'sticky top-0 z-50 block w-full',
+    class: 'fixed md:sticky top-0 left-0 right-0 z-50 block w-full pointer-events-none md:pointer-events-auto',
   },
   templateUrl: './header.html',
 })

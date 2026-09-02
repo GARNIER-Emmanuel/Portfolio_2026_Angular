@@ -1,30 +1,40 @@
 <!-- Section 1 : Hero / Présentation (Plein écran) -->
 <section
-    class="relative min-h-svh md:min-h-[calc(100svh-4rem)] flex flex-col justify-center overflow-hidden pt-16 md:pt-0">
+    class="relative isolate min-h-svh md:min-h-[calc(100svh-4rem)] flex flex-col justify-center overflow-hidden pt-16 md:pt-0">
 
     <!-- Image de fond optimisée -->
-    <img ngSrc="wood_background.jpg" fill priority alt="Image de fond" class="object-cover -z-10 brightness-50" />
+    <img ngSrc="wood_background.jpg" fill priority alt="Image de fond" class="object-cover -z-10 brightness-40" />
+
+    <!-- Source de lumière fine en haut à droite -->
+    <div
+        class="pointer-events-none absolute -top-100 -right-90 -z-5 size-96 md:size-[1000px] rounded-full bg-radial from-white/15 via-primary-80/10 to-transparent blur-3xl">
+    </div>
+
+    <!-- Ma photo détourée collée en bas à droite (z-0) -->
+    <img ngSrc="mypicture.png" width="600" height="800" priority alt="Emmanuel Garnier Boidun"
+        class="absolute bottom-0 right-0 z-0 h-auto max-h-[75svh] md:max-h-[90svh] w-auto object-contain pointer-events-none select-none hidden md:block brightness-60" />
+
 
     <!-- Contenu texte (au-dessus du fond) -->
-    <div class="ml-6 sm:ml-12 md:ml-16 relative z-10 text-white py-12">
+    <div class="ml-6 sm:ml-12 md:ml-16 relative z-10 text-primary-90 py-12">
         <h2 class="text-4xl sm:text-6xl md:text-8xl font-bold mb-3">
-            GARNIER BOIDUN Emmanuel
+            Emmanuel GARNIER BOIDUN
         </h2>
 
-        <p class="text-xl sm:text-2xl text-gray-300 font-medium mb-4">
+        <p class="text-xl sm:text-2xl font-medium text-primary-60 mb-4">
             Développeur Full-Stack
         </p>
 
-        <p class="text-base sm:text-lg text-gray-200 leading-relaxed max-w-2xl mb-6">
+        <p class="text-base sm:text-lg text-primary-90 leading-relaxed max-w-2xl mb-6">
             Développeur passionné par la conception d'applications performantes et intuitives.
             Spécialisé en Full-Stack (Java / Spring Boot, Angular, React, Node.js), motivé par le travail en équipe, la
             résolution de problèmes et l'apprentissage continu.
         </p>
 
-        <div class="text-sm sm:text-base text-gray-300 space-y-1 border-l-2 border-white/30 pl-4">
-            <p><span class="text-gray-400">Niveau :</span> BAC + 5</p>
-            <p><span class="text-gray-400">Âge :</span> 24 ans (22 juillet 2002)</p>
-            <p><span class="text-gray-400">Téléphone :</span> 06 61 74 29 19</p>
+        <div class="text-sm sm:text-base text-primary-90 space-y-1 border-l-2 border-white/30 pl-4">
+            <p><span class="text-primary-60">Niveau :</span> BAC + 5</p>
+            <p><span class="text-primary-60">Âge :</span> 24 ans (22 juillet 2002)</p>
+            <p><span class="text-primary-60">Téléphone :</span> 06 61 74 29 19</p>
         </div>
     </div>
 
@@ -32,7 +42,7 @@
 
 
 <!-- Section 2 :Expériences -->
-<h2 id="experiences" class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10 ">
+<h2 id="experiences" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center mt-10 ">
     Expériences
 </h2>
 
@@ -49,11 +59,11 @@
 </section>
 
 
-<hr class="w-1/2 mx-auto my-12 border-t-2 border-black" />
+<hr class="w-1/2 text-primary-10 mx-auto my-12 border-t-2" />
 
 
 <!-- Section 3 : Formations -->
-<h2 id="formations" class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10">
+<h2 id="formations" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl  font-bold mb-8 text-center mt-10">
     Formations
 </h2>
 
@@ -70,14 +80,14 @@
 
 
 <!-- Section 4 : Certifications -->
-<section class="relative py-16 px-4 overflow-hidden ">
+<section class="relative isolate py-16 px-4 overflow-hidden ">
 
     <!-- Image de fond optimisée -->
     <img ngSrc="wood_background.jpg" fill alt="Image de fond certifications" class="object-cover -z-10 brightness-50" />
 
     <!-- Contenu au-dessus du fond -->
     <div id="certifications" class="relative min-h-screen z-10 text-white">
-        <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center">
+        <h2 class="text-primary-90 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center">
             Mes Certifications
         </h2>
 
@@ -93,7 +103,7 @@
 </section>
 
 <!-- Section 6 : Centers -->
-<section class="relative py-16 px-4 overflow-hidden">
+<section class="relative isolate py-16 px-4 overflow-hidden">
     <!-- Image de fond optimisée -->
     <img ngSrc="wood_background.jpg" fill alt="Image de fond certifications" class="object-cover -z-10 brightness-50" />
     <div class="relative z-10 ">

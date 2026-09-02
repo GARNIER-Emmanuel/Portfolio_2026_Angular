@@ -1,5 +1,5 @@
-<h2 mat-dialog-title>{{certification.name}} -
-    <span class="font-normal text-gray-500">{{ certification.site }}</span>
+<h2 class="!text-primary-20" mat-dialog-title>{{certification.name}} -
+    <span class="font-normal !text-primary-40">{{ certification.site }}</span>
 </h2>
 
 <mat-dialog-content class="flex flex-col items-center gap-4 !p-4">
@@ -9,7 +9,7 @@
             class="w-full h-auto object-contain bg-black/5" />
     </div>
     @if (certification.description) {
-    <p class="text-sm text-gray-700 whitespace-pre-line text-center">
+    <p class="text-sm !text-secondary whitespace-pre-line text-center">
         {{ certification.description }} en {{certification.obtained_date}} sur {{certification.site}}
     </p>
     }

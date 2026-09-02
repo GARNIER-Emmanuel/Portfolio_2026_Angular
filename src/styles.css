@@ -1,10 +1,56 @@
 @import 'tailwindcss';
 
-
-
 html {
     scroll-padding-top: 5rem;
     /* ~80px (hauteur du header + marge) */
     scroll-behavior: smooth;
     /* Défilement fluide */
+}
+
+@theme {
+    /* Primary */
+    --color-primary-10: var(--mat-sys-primary-10);
+    --color-primary-20: var(--mat-sys-primary-20);
+    --color-primary-30: var(--mat-sys-primary-30);
+    --color-primary-40: var(--mat-sys-primary-40);
+    --color-primary-60: var(--mat-sys-primary-60);
+    --color-primary-70: var(--mat-sys-primary-70);
+    --color-primary-80: var(--mat-sys-primary-80);
+    --color-primary-90: var(--mat-sys-primary-90);
+    --color-primary-100: var(--mat-sys-primary-100);
+    --color-primary: var(--mat-sys-primary);
+    --color-on-primary: var(--mat-sys-on-primary);
+
+    /* Secondary */
+    --color-secondary-10: var(--mat-sys-secondary-10);
+    --color-secondary-20: var(--mat-sys-secondary-20);
+    --color-secondary-30: var(--mat-sys-secondary-30);
+    --color-secondary-70: var(--mat-sys-secondary-70);
+    --color-secondary-80: var(--mat-sys-secondary-80);
+    --color-secondary: var(--mat-sys-secondary);
+    --color-on-secondary: var(--mat-sys-on-secondary);
+
+    /* Tertiary */
+    --color-tertiary-10: var(--mat-sys-tertiary-10);
+    --color-tertiary-20: var(--mat-sys-tertiary-20);
+    --color-tertiary-30: var(--mat-sys-tertiary-30);
+    --color-tertiary-70: var(--mat-sys-tertiary-70);
+    --color-tertiary: var(--mat-sys-tertiary);
+    --color-on-tertiary: var(--mat-sys-on-tertiary);
+
+    /* Error */
+    --color-error-10: var(--mat-sys-error-10);
+    --color-error-20: var(--mat-sys-error-20);
+    --color-error-30: var(--mat-sys-error-30);
+    --color-error-70: var(--mat-sys-error-70);
+    --color-error: var(--mat-sys-error);
+    --color-on-error: var(--mat-sys-on-error);
+
+    /* Surface */
+    --color-surface: var(--mat-sys-surface);
+    --color-on-surface: var(--mat-sys-on-surface);
+}
+
+.mat-mdc-dialog-surface {
+    background-color: var(--mat-sys-primary-90) !important;
 }

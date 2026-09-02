@@ -1,12 +1,12 @@
-<div class="text-left lg:text-right min-h-[180px] sm:min-h-[160px]">
-    <h2 class="text-2xl md:text-3xl font-bold mb-5">{{ experience().name }}</h2>
+<div class="text-left text-primary lg:text-right min-h-[180px] sm:min-h-[160px]">
+    <h2 class="text-2xl md:text-3xl md:text-primary-20 font-bold mb-5">{{ experience().name }}</h2>
     <div class="flex flex-col sm:flex-row lg:flex-row-reverse items-start gap-6">
         <img [ngSrc]="experience().logo" width="160" height="160" [alt]="experience().name + ' logo'"
             class="w-40 h-40 shrink-0 object-contain shadow-2xl rounded-lg" />
         <div class="flex-1">
-            <time class="block text-xs text-gray-500">{{ experience().period }}</time>
-            <h3 class="font-medium text-gray-900 sm:text-lg">{{experience().title}}</h3>
-            <p class="mt-2 text-sm/relaxed text-gray-600 whitespace-pre-line">
+            <time class="block text-xs ">{{ experience().period }}</time>
+            <h3 class="font-medium text-primary-10 sm:text-lg">{{experience().title}}</h3>
+            <p class="mt-2 text-sm/relaxed text-secondary-30 whitespace-pre-line">
                 {{experience().description}}
             </p>
         </div>

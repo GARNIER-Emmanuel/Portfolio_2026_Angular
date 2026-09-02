@@ -1,4 +1,4 @@
-<h2 id="projects" class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10 px-4">
+<h2 id="projects" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center mt-10 px-4">
     Mes Projets
 </h2>
 
@@ -10,14 +10,14 @@
     <mat-card class="w-[85vw] max-w-[340px] shrink-0 snap-center sm:w-auto sm:max-w-none flex flex-col justify-between"
         appearance="outlined">
         <mat-card-header>
-            <mat-card-title>{{ project.name }}</mat-card-title>
-            <mat-card-subtitle class="!text-black/50">{{ project.type }} - {{ project.date }}</mat-card-subtitle>
+            <mat-card-title class="!text-primary-20">{{ project.name }}</mat-card-title>
+            <mat-card-subtitle class="!text-primary-10">{{ project.type }} - {{ project.date }}</mat-card-subtitle>
         </mat-card-header>
 
         <div class="flex-1 flex flex-col justify-between gap-4">
             <mat-card-content>
                 <div>
-                    <p class="mb-5">
+                    <p class="mb-5 text-secondary">
                         {{ project.description }}
                     </p>
                     <app-skills [skills]="project.skills" />

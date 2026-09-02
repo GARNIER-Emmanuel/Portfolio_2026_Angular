@@ -12,10 +12,10 @@
     }
 </div>
 
-<div class="max-w-screen-2xl  w-full mx-auto mt-8">
+<div class="max-w-screen-2xl w-full mx-auto mt-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
-            <h3 class="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-center mt-10">En cours</h3>
+            <h3 class="text-xl text-primary-90 sm:text-2xl md:text-3xl font-bold mb-4 text-center mt-10">En cours</h3>
             <mat-accordion>
                 @for (certification of certifications(); track certification.id) {
                 @if (certification.status === 'in_progress') {
@@ -41,7 +41,7 @@
             </mat-accordion>
         </div>
         <div>
-            <h3 class="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-center mt-10">Souhaitées</h3>
+            <h3 class="text-xl text-primary-90 sm:text-2xl md:text-3xl font-bold mb-4 text-center mt-10">Souhaitées</h3>
             <mat-accordion>
                 @for (certification of certifications(); track certification.id) {
                 @if (certification.status === 'wish') {

@@ -1,12 +1,12 @@
-<h2 id="contact" class="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 text-center mt-10 px-4 ">
+<h2 id="contact" class="text-primary-10 text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center mt-10 px-4 ">
     Me Contacter
 </h2>
 <div class="mx-auto max-w-7xl min-h-[calc(47svh-4rem)] px-4 py-8 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div class="md:py-4">
-            <h3 class="text-2xl font-bold text-gray-900 sm:text-3xl">Un projet ou une opportunité ?</h3>
+            <h3 class="text-primary-20 text-2xl font-bold sm:text-3xl">Un projet ou une opportunité ?</h3>
 
-            <p class="mt-4 text-gray-700">
+            <p class="mt-4 text-secondary">
                 N'hésitez pas à me contacter via le formulaire ou directement par email / téléphone.<br />
                 Je vous répondrai dans les plus brefs délais !
             </p>
@@ -24,7 +24,7 @@
                                 d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                         </svg>
 
-                        <span class="font-medium">+33 6 61 74 29 19</span>
+                        <span class="text-primary-30 font-medium">06 61 74 29 19</span>
                     </dd>
                 </div>
 
@@ -38,7 +38,7 @@
                                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                         </svg>
 
-                        <span class="font-medium">manu.boidun@gmail.com</span>
+                        <span class="text-primary-30 font-medium">manu.boidun@gmail.com</span>
                     </dd>
                 </div>
 
@@ -52,7 +52,7 @@
                                 d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                         </svg>
 
-                        <span class="font-medium">Bordeaux - Le Bouscat</span>
+                        <span class="text-primary-30 font-medium">Bordeaux - Le Bouscat</span>
                     </dd>
                 </div>
             </dl>
@@ -61,10 +61,10 @@
         <form [formRoot]="contactForm">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div class="w-full">
-                    <label class="block text-sm font-medium text-gray-900" for="lastname">Nom</label>
+                    <label class="block text-sm font-medium text-primary-20" for="lastname">Nom</label>
 
                     <input [formField]="contactForm.lastname"
-                        class="mt-1 mb-1 w-full rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all px-4 py-2"
+                        class="!bg-primary-100 text-primary-20 placeholder:text-primary-70 mt-1 mb-1 w-full rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all px-4 py-2"
                         id="lastname" type="text" placeholder="Votre Nom" />
                     <div class="min-h-5">
                         @if (contactForm.lastname().touched()) {
@@ -75,10 +75,10 @@
                     </div>
                 </div>
                 <div class="w-full">
-                    <label class="block text-sm font-medium text-gray-900" for="firstname">Prénom</label>
+                    <label class="block text-sm font-medium text-primary-20" for="firstname">Prénom</label>
 
                     <input [formField]="contactForm.firstname"
-                        class="mt-1 mb-1 w-full rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all px-4 py-2"
+                        class="!bg-primary-100 text-primary-20 placeholder:text-primary-70 mt-1 mb-1 w-full rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all px-4 py-2"
                         id="firstname" type="text" placeholder="Votre Prénom" />
                     <div class="min-h-5">
                         @if (contactForm.firstname().touched()) {
@@ -90,10 +90,10 @@
                 </div>
             </div>
             <div>
-                <label class="block text-sm font-medium text-gray-900" for="email">Email</label>
+                <label class="block text-sm font-medium text-primary-20" for="email">Email</label>
 
                 <input [formField]="contactForm.email"
-                    class="mt-1 mb-1 w-full rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all px-4 py-2"
+                    class="!bg-primary-100 text-primary-20 placeholder:text-primary-70 mt-1 mb-1 w-full rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all px-4 py-2"
                     id="email" type="email" placeholder="Votre Email" />
                 <div class="min-h-5">
                     @if (contactForm.email().touched()) {
@@ -105,10 +105,10 @@
             </div>
 
             <div>
-                <label class="block text-sm font-medium text-gray-900" for="message">Message</label>
+                <label class="block text-sm font-medium text-primary-20" for="message">Message</label>
 
                 <textarea [formField]="contactForm.message"
-                    class="mt-1 w-full resize-none rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all px-4 py-2"
+                    class="!bg-primary-100 text-primary-20 placeholder:text-primary-70 mt-1 w-full resize-none rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all px-4 py-2"
                     id="message" rows="4" placeholder="Votre Message"></textarea>
                 <div class="min-h-5">
                     @if (contactForm.message().touched()) {
@@ -119,14 +119,12 @@
                 </div>
             </div>
 
-            <div [matTooltip]="'Veuillez remplir tous les champs du formulaire'"
-                [matTooltipDisabled]="contactForm().valid()" matTooltipPosition="right" class="w-full">
-                <button [disabled]="contactForm().invalid()"
-                    class="block w-full rounded-lg border border-gray-300 bg-white px-12 py-3 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-300/50 disabled:opacity-50 disabled:cursor-not-allowed"
-                    type="submit">
-                    Envoyer le Message
-                </button>
-            </div>
+            <button [disabled]="contactForm().invalid()"
+                class="block w-full rounded-lg bg-primary-30 text-primary-90 px-12 py-3 text-sm font-medium transition-all duration-300 hover:bg-primary-60 hover:text-primary-30 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                type="submit">
+                Envoyer le Message
+            </button>
+
 
         </form>
     </div>
