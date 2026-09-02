@@ -10,7 +10,6 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      /* Déclaration de la langue source et des fichiers de traduction cibles */
       "i18n": {
         "sourceLocale": "fr",
         "locales": {
@@ -23,10 +22,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            /* Génère un build séparé pour chacune des locales listées (ou true pour toutes) */
-            "localize": [
-              "en-US"
-            ],
+            "localize": true,
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
