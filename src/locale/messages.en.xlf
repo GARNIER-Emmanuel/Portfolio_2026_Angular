@@ -1188,6 +1188,55 @@ Built with Symfony 6.2, Doctrine ORM, Twig, Bootstrap, and MySQL</target>
           <context context-type="linenumber">46,48</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="notfound_badge" datatype="html">
+        <source>Erreur 404</source>
+        <target>404 Error</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/notfound/notfound.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notfound_title" datatype="html">
+        <source>Page introuvable</source>
+        <target>Page Not Found</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/notfound/notfound.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notfound_description" datatype="html">
+        <source>Désolé, la page que vous recherchez n'existe pas, a été déplacée ou l'adresse saisie est incorrecte.</source>
+        <target>Sorry, the page you are looking for does not exist, has been moved, or the URL was mistyped.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/notfound/notfound.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notfound_back_home_title" datatype="html">
+        <source>Retourner à la page d'accueil</source>
+        <target>Return to home page</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/notfound/notfound.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notfound_btn_home" datatype="html">
+        <source>Retour à l'accueil</source>
+        <target>Back to Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/notfound/notfound.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notfound_contact_title" datatype="html">
+        <source>Contacter Emmanuel Garnier Boidun</source>
+        <target>Contact Emmanuel Garnier Boidun</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/notfound/notfound.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notfound_btn_contact" datatype="html">
+        <source>Me contacter</source>
+        <target>Contact Me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/notfound/notfound.html</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

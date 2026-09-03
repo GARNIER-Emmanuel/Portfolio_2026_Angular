@@ -1,7 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [RouterLink],
   selector: 'app-notfound',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './notfound.css',

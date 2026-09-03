@@ -1,1 +1,54 @@
-<p>notfound works!</p>
+<main
+    class="relative isolate flex-1 flex flex-col items-center justify-center px-4 py-20 sm:py-28 text-center overflow-hidden">
+    <!-- Halo lumineux sobre en arrière-plan -->
+    <div
+        class="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 -z-10 size-96 sm:size-[500px] rounded-full bg-radial from-primary-80/30 via-primary-90/20 to-transparent blur-3xl">
+    </div>
+
+    <!-- Badge d'état -->
+    <span
+        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary-90/90 text-primary-20 border border-primary-80/80 mb-4"
+        i18n="@@notfound_badge">
+        Erreur 404
+    </span>
+
+    <!-- Grand code 404 stylisé -->
+    <h1 class="text-7xl sm:text-8xl md:text-9xl font-extrabold tracking-tight text-primary-10/90 mb-2">
+        404
+    </h1>
+
+    <!-- Titre principal -->
+    <h2 class="text-2xl sm:text-3xl font-bold text-primary-10 mb-3" i18n="@@notfound_title">
+        Page introuvable
+    </h2>
+
+    <!-- Description sobre -->
+    <p class="text-base sm:text-lg text-secondary-20 max-w-md mx-auto mb-8 leading-relaxed"
+        i18n="@@notfound_description">
+        Désolé, la page que vous recherchez n'existe pas, a été déplacée ou l'adresse saisie est incorrecte.
+    </p>
+
+    <!-- Boutons d'action -->
+    <div class="flex flex-wrap items-center justify-center gap-4">
+        <a routerLink="/"
+            class="inline-flex items-center gap-2 rounded-xl bg-primary-30 text-primary-90 px-6 py-3 text-sm font-medium transition-all duration-300 hover:bg-primary-60 hover:text-primary-10 cursor-pointer shadow-sm hover:shadow"
+            i18n-title="@@notfound_back_home_title" title="Retourner à la page d'accueil">
+            <svg class="size-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+            <span i18n="@@notfound_btn_home">Retour à l'accueil</span>
+        </a>
+
+        <a routerLink="/" fragment="contact"
+            class="inline-flex items-center gap-2 rounded-xl bg-primary-90/80 text-primary-20 hover:bg-primary-80 px-6 py-3 text-sm font-medium transition-all duration-300 cursor-pointer border border-primary-80/60"
+            i18n-title="@@notfound_contact_title" title="Contacter Emmanuel Garnier Boidun">
+            <svg class="size-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+            <span i18n="@@notfound_btn_contact">Me contacter</span>
+        </a>
+    </div>
+</main>
