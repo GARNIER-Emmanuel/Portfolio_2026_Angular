@@ -58,7 +58,7 @@ Structurer et optimiser ses feuilles de styles avec le préprocesseur Sass
 Intégrer des interfaces complexes et adaptées à tous types d'écrans`,
         site: 'Dyma',
         link: 'https://dyma.fr/',
-        status: 'in_progress'
+        status: 'wish'
     },
     {
         id: '4',
@@ -84,7 +84,7 @@ Rédiger des prompts structurés et efficaces pour générer des résultats pert
 Identifier les tâches à forte valeur ajoutée à automatiser dans son workflow quotidien`,
         site: 'Coursera',
         link: 'https://www.coursera.org/learn/google-ai-fundamentals',
-        status: 'wish'
+        status: 'in_progress'
     },
     {
         id: '7',
@@ -97,7 +97,7 @@ Mobiliser l'IA pour l'analyse de données, la recherche documentaire et la commu
 Concevoir des solutions personnalisées via le vibe coding adaptées aux besoins métiers`,
         site: 'Coursera',
         link: 'https://www.coursera.org/professional-certificates/google-ai',
-        status: 'wish'
+        status: 'in_progress'
     },
     {
         id: '8',
