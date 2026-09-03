@@ -4,12 +4,11 @@
 </h2>
 
 <div class="flex flex-col w-full min-h-[calc(28svh-4rem)] mx-auto px-4 items-center">
-    <div class="w-full flex justify-center pb-2 mb-5">
-        <mat-button-toggle-group
-            class="!bg-primary-90 !shadow-md rounded-lg max-w-full overflow-x-auto snap-x snap-mandatory flex-nowrap scroll-smooth">
+    <div class="w-full overflow-x-auto pb-2 mb-5 flex justify-start md:justify-center">
+        <mat-button-toggle-group class="!bg-primary-90 !shadow-md rounded-lg shrink-0 flex-nowrap">
             @for (item of interests(); track $index) {
             <mat-button-toggle (click)="selectInterest(item)" value="{{$index}}"
-                class="!text-primary-20 snap-center shrink-0 whitespace-nowrap">{{item.title}}</mat-button-toggle>
+                class="!text-primary-20 shrink-0 whitespace-nowrap">{{item.title}}</mat-button-toggle>
             }
         </mat-button-toggle-group>
     </div>
