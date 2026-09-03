@@ -119,63 +119,33 @@
         </context-group>
       </trans-unit>
       <trans-unit id="certif_1_desc" datatype="html">
-        <source>• Architecture Angular, cycle de vie et modes de rendu (SSR / SSG)
-• Composants modulaires, liaisons de données, directives et pipes personnalisés
-• Requêtes HTTP, consommation d&apos;APIs REST, routeur Angular et lazy loading
-• Formulaires réactifs (ReactiveFormsModule) et validation fine des données
-• Tests automatisés, composants Angular Material et internationalisation (i18n)</source>
+        <source>Architecture Angular, cycle de vie et modes de rendu (SSR / SSG)
+Composants modulaires, liaisons de données, directives et pipes personnalisés
+Requêtes HTTP, consommation d&apos;APIs REST, routeur Angular et lazy loading
+Formulaires réactifs (ReactiveFormsModule) et validation fine des données
+Tests automatisés, composants Angular Material et internationalisation (i18n)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_2_desc" datatype="html">
-        <source>• Architecture applicative en couches et structuration de projets Java modernes
-• Développement d&apos;APIs RESTful avec contrôleurs Spring MVC et routage
-• Persistance des données et gestion des entités avec Spring Data JPA / Hibernate
-• Sécurisation applicative avec Spring Security (authentification &amp; autorisations)
-• Validation des données, gestion centralisée des erreurs et tests unitaires / d&apos;intégration
-• Conteneurisation Docker, déploiement Cloud et principes Clean Code &amp; SOLID</source>
+        <source>Architecture applicative en couches et structuration de projets Java modernes
+Développement d&apos;APIs RESTful avec contrôleurs Spring MVC et routage
+Persistance des données et gestion des entités avec Spring Data JPA / Hibernate
+Sécurisation applicative avec Spring Security (authentification &amp; autorisations)
+Validation des données, gestion centralisée des erreurs et tests unitaires / d&apos;intégration
+Conteneurisation Docker, déploiement Cloud et principes Clean Code &amp; SOLID</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
           <context context-type="linenumber">26</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="certif_5_desc" datatype="html">
-        <source>Maîtriser les fondamentaux des agents IA, LLM et de la boucle agentique Claude Code
-Structurer le contexte projet (CLAUDE.md, rules, prompts avancés et gestion des tokens)
-Développer avec l&apos;écosystème : protocoles MCP, sous-agents parallèles, skills et hooks d&apos;automatisation
-Mener un projet de bout en bout : tests, CI/CD, Git, revues de code et vérification continue</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">42</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="certif_3_desc" datatype="html">
-        <source>Maîtriser les standards HTML5 sémantiques et le CSS3 moderne
-Concevoir des layouts fluides et responsives avec Flexbox et CSS Grid
-Structurer et optimiser ses feuilles de styles avec le préprocesseur Sass
-Intégrer des interfaces complexes et adaptées à tous types d&apos;écrans</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">55</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="certif_4_desc" datatype="html">
-        <source>Typage statique avancé : interfaces, types personnalisés et génériques
-Configuration et maîtrise du compilateur TypeScript (tsc / tsconfig)
-Exploitation de l&apos;inférence de type et des fonctionnalités ESNext
-Débogage efficace et architecture d&apos;applications robustes</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_6_name" datatype="html">
         <source>Principes de base de l&apos;IA</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">78</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_6_desc" datatype="html">
@@ -185,14 +155,14 @@ Rédiger des prompts structurés et efficaces pour générer des résultats pert
 Identifier les tâches à forte valeur ajoutée à automatiser dans son workflow quotidien</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_7_name" datatype="html">
         <source>Certificat Professionnel Google IA</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_7_desc" datatype="html">
@@ -202,7 +172,37 @@ Mobiliser l&apos;IA pour l&apos;analyse de données, la recherche documentaire e
 Concevoir des solutions personnalisées via le vibe coding adaptées aux besoins métiers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_5_desc" datatype="html">
+        <source>Maîtriser les fondamentaux des agents IA, LLM et de la boucle agentique Claude Code
+Structurer le contexte projet (CLAUDE.md, rules, prompts avancés et gestion des tokens)
+Développer avec l&apos;écosystème : protocoles MCP, sous-agents parallèles, skills et hooks d&apos;automatisation
+Mener un projet de bout en bout : tests, CI/CD, Git, revues de code et vérification continue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_3_desc" datatype="html">
+        <source>Maîtriser les standards HTML5 sémantiques et le CSS3 moderne
+Concevoir des layouts fluides et responsives avec Flexbox et CSS Grid
+Structurer et optimiser ses feuilles de styles avec le préprocesseur Sass
+Intégrer des interfaces complexes et adaptées à tous types d&apos;écrans</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_4_desc" datatype="html">
+        <source>Typage statique avancé : interfaces, types personnalisés et génériques
+Configuration et maîtrise du compilateur TypeScript (tsc / tsconfig)
+Exploitation de l&apos;inférence de type et des fonctionnalités ESNext
+Débogage efficace et architecture d&apos;applications robustes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_8_desc" datatype="html">
@@ -211,7 +211,7 @@ Gestion des services serverless (Lambda, API Gateway), bases de données (Dynamo
 Mise en place de pipelines CI/CD et surveillance applicative via CloudWatch et X-Ray</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">108</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_9_desc" datatype="html">
@@ -219,7 +219,7 @@ Mise en place de pipelines CI/CD et surveillance applicative via CloudWatch et X
 Programmation orientée objet, gestion de la mémoire, Garbage Collector et Concurrency</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">119</context>
+          <context context-type="linenumber">120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_10_desc" datatype="html">
@@ -228,7 +228,7 @@ Facilitation des processus agiles et résolution des blocages au sein des équip
 Optimisation de la productivité et de la livraison de valeur continue</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">130</context>
+          <context context-type="linenumber">131</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_11_desc" datatype="html">
@@ -237,7 +237,7 @@ Orchestration multi-conteneurs avec Docker Compose et gestion des réseaux et vo
 Déploiement, monitoring et maintenance d&apos;infrastructures conteneurisées</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">142</context>
+          <context context-type="linenumber">143</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_1_title" datatype="html">

@@ -131,37 +131,37 @@
         </context-group>
       </trans-unit>
       <trans-unit id="certif_1_desc" datatype="html">
-        <source>• Architecture Angular, cycle de vie et modes de rendu (SSR / SSG)
-• Composants modulaires, liaisons de données, directives et pipes personnalisés
-• Requêtes HTTP, consommation d&apos;APIs REST, routeur Angular et lazy loading
-• Formulaires réactifs (ReactiveFormsModule) et validation fine des données
-• Tests automatisés, composants Angular Material et internationalisation (i18n)</source>
-        <target>• Angular architecture, component lifecycle, and rendering modes (SSR / SSG)
-• Modular components, data binding, custom directives, and pipes
-• HTTP requests, REST API consumption, Angular Router, and lazy loading
-• Reactive forms (ReactiveFormsModule) and fine-grained data validation
-• Automated testing, Angular Material components, and internationalization (i18n)</target>
+        <source>Architecture Angular, cycle de vie et modes de rendu (SSR / SSG)
+Composants modulaires, liaisons de données, directives et pipes personnalisés
+Requêtes HTTP, consommation d&apos;APIs REST, routeur Angular et lazy loading
+Formulaires réactifs (ReactiveFormsModule) et validation fine des données
+Tests automatisés, composants Angular Material et internationalisation (i18n)</source>
+        <target>Angular architecture, component lifecycle, and rendering modes (SSR / SSG)
+Modular components, data binding, custom directives, and pipes
+HTTP requests, REST API consumption, Angular Router, and lazy loading
+Reactive forms (ReactiveFormsModule) and fine-grained data validation
+Automated testing, Angular Material components, and internationalization (i18n)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_2_desc" datatype="html">
-        <source>• Architecture applicative en couches et structuration de projets Java modernes
-• Développement d&apos;APIs RESTful avec contrôleurs Spring MVC et routage
-• Persistance des données et gestion des entités avec Spring Data JPA / Hibernate
-• Sécurisation applicative avec Spring Security (authentification &amp; autorisations)
-• Validation des données, gestion centralisée des erreurs et tests unitaires / d&apos;intégration
-• Conteneurisation Docker, déploiement Cloud et principes Clean Code &amp; SOLID</source>
-        <target>• Layered application architecture and modern Java project structuring
-• RESTful API development with Spring MVC controllers and routing
-• Data persistence and entity management with Spring Data JPA / Hibernate
-• Application security with Spring Security (authentication &amp; authorization)
-• Data validation, centralized error handling, and unit / integration testing
-• Docker containerization, Cloud deployment, and Clean Code &amp; SOLID principles</target>
+        <source>Architecture applicative en couches et structuration de projets Java modernes
+Développement d&apos;APIs RESTful avec contrôleurs Spring MVC et routage
+Persistance des données et gestion des entités avec Spring Data JPA / Hibernate
+Sécurisation applicative avec Spring Security (authentification &amp; autorisations)
+Validation des données, gestion centralisée des erreurs et tests unitaires / d&apos;intégration
+Conteneurisation Docker, déploiement Cloud et principes Clean Code &amp; SOLID</source>
+        <target>Layered application architecture and modern Java project structuring
+RESTful API development with Spring MVC controllers and routing
+Data persistence and entity management with Spring Data JPA / Hibernate
+Application security with Spring Security (authentication &amp; authorization)
+Data validation, centralized error handling, and unit / integration testing
+Docker containerization, Cloud deployment, and Clean Code &amp; SOLID principles</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_5_desc" datatype="html">

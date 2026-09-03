@@ -7,11 +7,11 @@ export const CERTIFICATIONS_DATA: Certification[] = [
         image: 'certif-angular.png',
         image_minimize: 'certif-angular-640-452.png',
         obtained_date: '2026',
-        description: $localize`:@@certif_1_desc:• Architecture Angular, cycle de vie et modes de rendu (SSR / SSG)
-• Composants modulaires, liaisons de données, directives et pipes personnalisés
-• Requêtes HTTP, consommation d'APIs REST, routeur Angular et lazy loading
-• Formulaires réactifs (ReactiveFormsModule) et validation fine des données
-• Tests automatisés, composants Angular Material et internationalisation (i18n)`,
+        description: $localize`:@@certif_1_desc:Architecture Angular, cycle de vie et modes de rendu (SSR / SSG)
+Composants modulaires, liaisons de données, directives et pipes personnalisés
+Requêtes HTTP, consommation d'APIs REST, routeur Angular et lazy loading
+Formulaires réactifs (ReactiveFormsModule) et validation fine des données
+Tests automatisés, composants Angular Material et internationalisation (i18n)`,
         site: 'Dyma',
         link: 'https://dyma.fr/',
         pdf: 'certification-angular-GARNIER-BOIDUN-Emmanuel.pdf',
@@ -23,16 +23,43 @@ export const CERTIFICATIONS_DATA: Certification[] = [
         image: 'certif-spring-boot.png',
         image_minimize: 'certif-spring-boot-640-452.png',
         obtained_date: '2026',
-        description: $localize`:@@certif_2_desc:• Architecture applicative en couches et structuration de projets Java modernes
-• Développement d'APIs RESTful avec contrôleurs Spring MVC et routage
-• Persistance des données et gestion des entités avec Spring Data JPA / Hibernate
-• Sécurisation applicative avec Spring Security (authentification & autorisations)
-• Validation des données, gestion centralisée des erreurs et tests unitaires / d'intégration
-• Conteneurisation Docker, déploiement Cloud et principes Clean Code & SOLID`,
+        description: $localize`:@@certif_2_desc:Architecture applicative en couches et structuration de projets Java modernes
+Développement d'APIs RESTful avec contrôleurs Spring MVC et routage
+Persistance des données et gestion des entités avec Spring Data JPA / Hibernate
+Sécurisation applicative avec Spring Security (authentification & autorisations)
+Validation des données, gestion centralisée des erreurs et tests unitaires / d'intégration
+Conteneurisation Docker, déploiement Cloud et principes Clean Code & SOLID`,
         site: 'Dyma',
         link: 'https://dyma.fr/',
         pdf: 'certification-spring-boot-GARNIER-BOIDUN-Emmanuel.pdf',
         status: 'obtained'
+    },
+    {
+        id: '6',
+        name: $localize`:@@certif_6_name:Principes de base de l'IA`,
+        image: 'Certif-Google-IA-1.png',
+        image_minimize: 'Certif-Google-IA-1-640-452.png',
+        obtained_date: '2026',
+        description: $localize`:@@certif_6_desc:Maîtriser les concepts fondamentaux de l'IA générative pour une utilisation professionnelle
+Rédiger des prompts structurés et efficaces pour générer des résultats pertinents et de haute qualité
+Évaluer la précision et les biais des réponses de l'IA pour garantir un usage éthique et responsable
+Identifier les tâches à forte valeur ajoutée à automatiser dans son workflow quotidien`,
+        site: 'Google',
+        link: 'https://coursera.org/share/c932a51353dfe23a77a3ddc1d8d6cd7f',
+        status: 'obtained'
+    },
+    {
+        id: '7',
+        name: $localize`:@@certif_7_name:Certificat Professionnel Google IA`,
+        image: '',
+        obtained_date: '2026',
+        description: $localize`:@@certif_7_desc:Formuler des instructions claires pour l'utiliser comme un partenaire de travail
+Comprendre les mécanismes sous-jacents pour exploiter les outils avec confiance et éthique
+Mobiliser l'IA pour l'analyse de données, la recherche documentaire et la communication professionnelle
+Concevoir des solutions personnalisées via le vibe coding adaptées aux besoins métiers`,
+        site: 'Google',
+        link: 'https://www.coursera.org/professional-certificates/google-ai',
+        status: 'in_progress'
     },
     {
         id: '5',
@@ -71,32 +98,6 @@ Exploitation de l'inférence de type et des fonctionnalités ESNext
 Débogage efficace et architecture d'applications robustes`,
         site: 'Dyma',
         link: 'https://dyma.fr/',
-        status: 'in_progress'
-    },
-    {
-        id: '6',
-        name: $localize`:@@certif_6_name:Principes de base de l'IA`,
-        image: '',
-        obtained_date: '2026',
-        description: $localize`:@@certif_6_desc:Maîtriser les concepts fondamentaux de l'IA générative pour une utilisation professionnelle
-Rédiger des prompts structurés et efficaces pour générer des résultats pertinents et de haute qualité
-Évaluer la précision et les biais des réponses de l'IA pour garantir un usage éthique et responsable
-Identifier les tâches à forte valeur ajoutée à automatiser dans son workflow quotidien`,
-        site: 'Coursera',
-        link: 'https://www.coursera.org/learn/google-ai-fundamentals',
-        status: 'in_progress'
-    },
-    {
-        id: '7',
-        name: $localize`:@@certif_7_name:Certificat Professionnel Google IA`,
-        image: '',
-        obtained_date: '2026',
-        description: $localize`:@@certif_7_desc:Formuler des instructions claires pour l'utiliser comme un partenaire de travail
-Comprendre les mécanismes sous-jacents pour exploiter les outils avec confiance et éthique
-Mobiliser l'IA pour l'analyse de données, la recherche documentaire et la communication professionnelle
-Concevoir des solutions personnalisées via le vibe coding adaptées aux besoins métiers`,
-        site: 'Coursera',
-        link: 'https://www.coursera.org/professional-certificates/google-ai',
         status: 'in_progress'
     },
     {
