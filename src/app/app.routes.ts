@@ -8,7 +8,7 @@ export const routes: Routes = [
         path: '',
         component: Homepage,
         pathMatch: 'full',
-        title: 'Emmanuel-GB Portfolio'
+        title: 'Emmanuel GARNIER-BOIDUN Portfolio'
     },
     {
         path: 'cv-refonte',
