@@ -2,21 +2,28 @@
     <span class="font-normal !text-primary-40">{{ certification.site }}</span>
 </h2>
 
-<mat-dialog-content class="flex flex-col items-center gap-4 !p-4">
-    <!-- Image en grand format avec ratio préservé -->
-    <div class="rounded-lg shadow-lg mb-5">
+<mat-dialog-content class="flex flex-col gap-3 sm:gap-4 !p-3 sm:!p-4">
+    <div class="rounded-lg shadow-lg mb-2 overflow-hidden mx-auto w-full">
         <img [ngSrc]="certification.image" width="1684" height="1191" priority [alt]="certification.name"
             class="w-full h-auto object-contain bg-black/5" />
     </div>
     @if (certification.description) {
-    <p class="text-sm !text-secondary whitespace-pre-line text-center">
-        {{ certification.description }} <span i18n="@@certif_dialog_in">en</span> {{certification.obtained_date}} <span i18n="@@certif_dialog_on">sur</span> {{certification.site}}
-    </p>
+    <div class="w-full text-left p-3 sm:p-4 md:p-6">
+        <p class="text-xs sm:text-sm !text-secondary-20 whitespace-pre-line text-left leading-relaxed">
+            {{ certification.description }}
+        </p>
+        <p
+            class="text-[11px] sm:text-xs text-secondary-30 mt-3 pt-2 border-t border-primary-80/30 text-left font-medium">
+            <span i18n="@@certif_dialog_obtained">Obtenue en</span> {{certification.obtained_date}} <span
+                i18n="@@certif_dialog_on">sur</span> {{certification.site}}
+        </p>
+    </div>
     }
 </mat-dialog-content>
 <mat-dialog-actions align="end" class="gap-2">
     @if (certification.pdf) {
-    <a [href]="certification.pdf" target="_blank" rel="noopener noreferrer" matButton i18n="@@certif_dialog_btn_original">
+    <a [href]="certification.pdf" target="_blank" rel="noopener noreferrer" matButton
+        i18n="@@certif_dialog_btn_original">
         Voir l'original ↗
     </a>
     }

@@ -1,0 +1,332 @@
+<div class="no-print mx-auto max-w-[210mm] w-full px-4 pt-6 pb-4 flex items-center justify-between gap-4">
+
+    <button (click)="printCv()"
+        class="inline-flex items-center gap-2 rounded-lg bg-primary-30 text-primary-90 px-4 py-2 text-xs font-medium transition-all hover:bg-primary-60 hover:text-primary-10 shadow-sm cursor-pointer"
+        type="button">
+        <svg class="size-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.72 13.829c-.24-1.076-.641-2.073-1.185-2.957m13.01 2.957a15.753 15.753 0 00-1.186-2.957M3 13.5v-3a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 10.5v3m-3 0h.008v.008H18V13.5zm-12 0h.008v.008H6V13.5zm3 0h6m-9 3.75h12A2.25 2.25 0 0021 15v3a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-3a2.25 2.25 0 012.25-2.25z" />
+        </svg>
+        <span>Imprimer / Télécharger en PDF</span>
+    </button>
+</div>
+
+<div class="cv-page-wrapper pb-12">
+    <article class="cv-a4 bg-white text-primary-10 font-sans shadow-md mx-auto print:m-0 print:left-0"
+        aria-label="Curriculum Vitae Emmanuel Garnier Boidun">
+
+        <header class="relative -mx-[2px] w-[calc(100%+4px)] px-[12mm] pt-[7mm] pb-[7mm] text-primary-80">
+            <div class="absolute inset-0 bg-primary-10 pointer-events-none"
+                style="clip-path: polygon(-2px 0, calc(100% + 2px) 0, calc(100% + 2px) calc(100% - 12px), -2px 100%); -webkit-clip-path: polygon(-2px 0, calc(100% + 2px) 0, calc(100% + 2px) calc(100% - 12px), -2px 100%);">
+            </div>
+
+            <div class="relative z-10 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                <h1 class="text-2xl font-bold tracking-tight text-white uppercase">
+                    Emmanuel GARNIER BOIDUN
+                </h1>
+                <p class="text-sm font-semibold tracking-wide text-primary-80 uppercase">
+                    DÉVELOPPEUR JAVA FULL STACK
+                </p>
+            </div>
+
+            <address
+                class="relative z-10 not-italic mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-[10.5px] text-primary-80 font-medium">
+                <span>06 61 74 29 19</span>
+                <span class="text-primary-60">•</span>
+                <a href="mailto:manu.boidun@gmail.com"
+                    class="hover:text-white text-primary-80 transition-colors">manu.boidun@gmail.com</a>
+                <span class="text-primary-60">•</span>
+                <span>Bordeaux</span>
+                <span class="text-primary-60">•</span>
+                <span>23 ans</span>
+                <span class="text-primary-60">•</span>
+                <a href="https://www.linkedin.com/in/emmanuel-garnier-boidun-456a85208/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white text-primary-80 transition-colors">LinkedIn</a>
+                <span class="text-primary-60">•</span>
+                <a href="https://github.com/GARNIER-Emmanuel" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-white text-primary-80 transition-colors">GitHub</a>
+                <span class="text-primary-60">•</span>
+                <a href="https://emmanuel-garnier-boidun.com" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-white text-primary-80 transition-colors">emmanuel-garnier-boidun.com</a>
+            </address>
+        </header>
+
+        <main class="flex-1 px-[12mm] pt-[2.5mm] pb-[1mm]">
+            <section class="mb-1.5" aria-labelledby="sec-resume">
+                <h2 id="sec-resume" class="section-title">
+                    PROFIL PROFESSIONNEL
+                </h2>
+                <p class="text-[10px] leading-relaxed text-secondary-10 mt-0.5">
+                    Développeur Full Stack avec 3 ans d'alternance chez CGI Bordeaux sur des projets Java Spring Boot et
+                    Angular. Curieux et autodidacte, je cherche à apprendre continuellement et à améliorer mon expertise
+                    technique.
+                </p>
+            </section>
+
+            <section class="mb-1.5" aria-labelledby="sec-exp">
+                <h2 id="sec-exp" class="section-title">
+                    EXPÉRIENCES PROFESSIONNELLES
+                </h2>
+
+                <div class="space-y-1 mt-0.5">
+                    <div class="item-block">
+                        <div class="flex justify-between items-baseline text-[10.5px]">
+                            <h3 class="font-bold text-primary-10">
+                                Développeur Java Full Stack – Alternance
+                            </h3>
+                            <span class="text-[9.5px] font-medium text-secondary-30">09/2023 – Présent</span>
+                        </div>
+                        <div class="text-[10px] font-semibold text-primary-40">CGI – Bordeaux</div>
+                        <ul class="list-disc ml-4 text-[9.5px] text-secondary-10 space-y-0.5 mt-0.5 leading-snug">
+                            <li><strong class="text-primary-20 font-semibold">Projet éditique desktop (Java / Swing)
+                                    :</strong> <br /> Modernisation d'un logiciel de comparaison de documents PDF et
+                                détection
+                                d'anomalies, passage d'une comparaison unitaire à un moteur de traitement
+                                multi-fichiers,
+                                refonte ergonomique,
+                                réduction des temps de traitement, démarche TDD et tests d'intégration (JUnit, AssertJ)
+                                au sein d'une équipe Scrum de 3 développeurs</li>
+                            <li><strong class="text-primary-20 font-semibold">Projets web grands comptes (Spring Boot &
+                                    Angular) :</strong> <br />Conception de formulaires dynamiques complexes et
+                                évolutions
+                                applicatives métier, développement d'APIs REST sécurisées connectées à MySQL, mise en
+                                place
+                                de tests automatisés (TU & TI avec JUnit, AssertJ, Mockito), intégration front-end
+                                réactive et
+                                conteneurisation Docker</li>
+                            <li><strong class="text-primary-20 font-semibold">Méthodologie :</strong> <br /> Pratique
+                                active
+                                des rituels agiles (sprints de 2 semaines, démos client interne, revues de code)</li>
+                        </ul>
+                    </div>
+
+                    <div class="item-block">
+                        <div class="flex justify-between items-baseline text-[10.5px]">
+                            <h3 class="font-bold text-primary-10">Développeur Web – Stage</h3>
+                            <span class="text-[9.5px] font-medium text-secondary-30">01/2023 – 02/2023</span>
+                        </div>
+                        <div class="text-[10px] font-semibold text-primary-40">ElementRoot – Pau</div>
+                        <ul class="list-disc ml-4 text-[9px] text-secondary-10 space-y-0.5 mt-0.5 leading-snug">
+                            <li>Conception et intégration de formulaires dynamiques complexes avec Symfony et PHP</li>
+                            <li>Validation des données, traitement serveur et requêtage MySQL via Doctrine ORM selon
+                                l'architecture MVC</li>
+                        </ul>
+                    </div>
+
+                    <div class="item-block">
+                        <div class="flex justify-between items-baseline text-[10.5px]">
+                            <h3 class="font-bold text-primary-10">Développeur Web – Stage</h3>
+                            <span class="text-[9.5px] font-medium text-secondary-30">05/2022 – 06/2022</span>
+                        </div>
+                        <div class="text-[10px] font-semibold text-primary-40">Madness Escape Game – Pau</div>
+                        <ul class="list-disc ml-4 text-[9px] text-secondary-10 space-y-0.5 mt-0.5 leading-snug">
+                            <li>Développement complet d'une application web de mini-jeu interactif avec mécaniques en
+                                temps réel en JS vanilla</li>
+                            <li>Back-end PHP pour la logique métier et modélisation de la base de données MySQL pour le
+                                classement des scores</li>
+                        </ul>
+                    </div>
+
+                    <div class="item-block">
+                        <div class="flex justify-between items-baseline text-[10.5px]">
+                            <h3 class="font-bold text-primary-10">
+                                Caissier polyvalent – CDI temps partiel
+                            </h3>
+                            <span class="text-[9.5px] font-medium text-secondary-30">08/2022 – 06/2023</span>
+                        </div>
+                        <div class="text-[10px] font-semibold text-primary-40">Intermarché – Pau</div>
+                        <p class="text-[9px] text-secondary-10 leading-tight mt-0.5">Relation client, encaissement en
+                            contexte à fort flux, autonomie et gestion du temps menées en parallèle des études</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-1.5">
+                <div class="space-y-1.5">
+                    <section aria-labelledby="sec-projects">
+                        <h2 id="sec-projects" class="section-title">
+                            PROJETS CLÉS
+                        </h2>
+                        <div class="space-y-1 mt-0.5">
+                            <div class="item-block">
+                                <div class="flex justify-between items-baseline text-[10.5px]">
+                                    <h3 class="font-bold text-primary-10">
+                                        JobTracker — Suivi de candidatures
+                                        <span class="text-[9.5px] font-normal text-primary-40">(Spring Boot 3, Neon
+                                            PostgreSQL, Angular, Docker)</span>
+                                    </h3>
+                                    <span class="text-[9.5px] font-medium text-secondary-30">2026</span>
+                                </div>
+                                <p class="text-[9px] text-secondary-10 mt-0.5 leading-snug">
+                                    Plateforme modulaire complète : architecture RESTful, migrations Flyway, couverture
+                                    TDD complète, interface moderne réactive en Angular Signals & PrimeNG.
+                                </p>
+                            </div>
+                            <div class="item-block">
+                                <div class="flex justify-between items-baseline text-[10.5px]">
+                                    <h3 class="font-bold text-primary-10">
+                                        Portfolio 2026 — Vitrine Full Stack
+                                        <span class="text-[9.5px] font-normal text-primary-40">(Angular 20+, TypeScript,
+                                            Tailwind CSS v4, Material 3)</span>
+                                    </h3>
+                                    <span class="text-[9.5px] font-medium text-secondary-30">2026</span>
+                                </div>
+                                <p class="text-[9px] text-secondary-10 mt-0.5 leading-snug">
+                                    Application web bilingue (FR/EN), architecture Zoneless avec Signals, design system
+                                    personnalisé Tailwind v4 et rendu haute performance.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section aria-labelledby="sec-certif">
+                        <h2 id="sec-certif" class="section-title">
+                            CERTIFICATIONS
+                        </h2>
+                        <div class="space-y-1 mt-0.5">
+                            <div class="item-block">
+                                <div class="flex justify-between items-baseline text-[10.5px]">
+                                    <h3 class="font-bold text-primary-10">Certification Angular — Dyma</h3>
+                                    <span class="text-[9.5px] font-semibold text-secondary-30">2026</span>
+                                </div>
+                                <p class="text-[9px] text-secondary-10 mt-0.5 leading-snug">
+                                    Architecture Angular & SSR/SSG, composants, requêtes HTTP / API REST, routeur & lazy
+                                    loading, ReactiveFormsModule, directives, pipes, Material et tests.
+                                </p>
+                            </div>
+                            <div class="item-block">
+                                <div class="flex justify-between items-baseline text-[10.5px]">
+                                    <h3 class="font-bold text-primary-10">Certification Spring Boot — Dyma</h3>
+                                    <span class="text-[9.5px] font-semibold text-secondary-30">2026</span>
+                                </div>
+                                <p class="text-[9px] text-secondary-10 mt-0.5 leading-snug">
+                                    Architecture applicative en couches, APIs REST & Spring MVC, Spring Data JPA /
+                                    Hibernate, sécurité Spring Security, tests complets (TU/TI), Docker et SOLID.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section aria-labelledby="sec-form">
+                    <h2 id="sec-form" class="section-title">
+                        FORMATIONS
+                    </h2>
+                    <div class="space-y-1.5 mt-0.5">
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <h3 class="font-bold text-primary-10 text-[10px]">Master – Développeur Full Stack</h3>
+                                <span class="text-[9.5px] font-medium text-secondary-30">08/2024 – Présent</span>
+                            </div>
+                            <p class="text-[9px] font-semibold text-primary-40">Sup de Vinci – Bordeaux</p>
+                            <p class="text-[8.5px] text-secondary-10 leading-tight mt-0.5">
+                                Architectures distribuées, Java Spring Boot, Angular, DevOps (Docker, CI/CD, Cloud AWS)
+                                et
+                                méthodologies agiles avancées
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <h3 class="font-bold text-primary-10 text-[10px]">Bachelor Concepteur Développeur
+                                    d'Applications</h3>
+                                <span class="text-[9.5px] font-medium text-secondary-30">09/2023 – 09/2024</span>
+                            </div>
+                            <p class="text-[9px] font-semibold text-primary-40">CESI – Bordeaux</p>
+                            <p class="text-[8.5px] text-secondary-10 leading-tight mt-0.5">
+                                Modélisation d'architectures (UML), applications d'entreprise Java / Angular, BDD MySQL
+                                et tests automatisés (TU/TI)
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <h3 class="font-bold text-primary-10 text-[10px]">BTS SIO (SLAM — Solutions
+                                    Logicielles)</h3>
+                                <span class="text-[9.5px] font-medium text-secondary-30">08/2021 – 06/2023</span>
+                            </div>
+                            <p class="text-[9px] font-semibold text-primary-40">Lycée Saint-John Perse – Pau</p>
+                            <p class="text-[8.5px] text-secondary-10 leading-tight mt-0.5">
+                                Programmation orientée objet (Java, PHP), modélisation relationnelle SQL, développement
+                                web et gestion Git
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <h3 class="font-bold text-primary-10 text-[10px]">BAC STI2D (Sciences de l'Ingénieur &
+                                    Numérique)</h3>
+                                <span class="text-[9.5px] font-medium text-secondary-30">08/2019 – 06/2021</span>
+                            </div>
+                            <p class="text-[9px] font-semibold text-primary-40">Lycée Saint Cricq – Pau</p>
+                            <p class="text-[8.5px] text-secondary-10 leading-tight mt-0.5">
+                                Algorithmique, logique de programmation (Python, web), systèmes d'information et réseaux
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="mb-1.5" aria-labelledby="sec-skills">
+                <h2 id="sec-skills" class="section-title">
+                    COMPÉTENCES TECHNIQUES
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 mt-0.5 text-[9.5px] text-secondary-10">
+                    <p>
+                        <strong class="text-primary-10 font-bold">Back-end :</strong>
+                        Java (POO, 17/21), Spring Boot, Spring Security, Spring Data JPA / Hibernate, APIs RESTful
+                    </p>
+                    <p>
+                        <strong class="text-primary-10 font-bold">Front-end :</strong>
+                        Angular (Signals, Standalone), TypeScript, JavaScript, HTML5 / CSS3, Tailwind CSS, Angular
+                        Material
+                    </p>
+                    <p>
+                        <strong class="text-primary-10 font-bold">Données & DevOps :</strong>
+                        MySQL, PostgreSQL (Neon), Docker, Cloud AWS (notions), Git / GitHub, CI/CD, Postman, Linux
+                    </p>
+                    <p>
+                        <strong class="text-primary-10 font-bold">Qualité & Méthodes :</strong>
+                        JUnit 5, Mockito, AssertJ, TDD, Clean Code / Principes SOLID, Agile (Scrum)
+                    </p>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <section aria-labelledby="sec-lang">
+                    <h2 id="sec-lang" class="section-title">
+                        LANGUES
+                    </h2>
+                    <div class="flex flex-wrap gap-4 mt-0.5 text-[9.5px] text-secondary-10">
+                        <p><span class="font-bold text-primary-20">Français :</span> Natif</p>
+                        <p><span class="font-bold text-primary-20">Anglais :</span> B1</p>
+                        <p><span class="font-bold text-primary-20">Espagnol :</span> A2</p>
+                    </div>
+                </section>
+
+                <section aria-labelledby="sec-interests">
+                    <h2 id="sec-interests" class="section-title">
+                        CENTRES D’INTÉRÊT
+                    </h2>
+                    <p
+                        class="text-[9.5px] text-secondary-10 mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 leading-relaxed">
+                        <span>Intelligence Artificielle</span>
+                        <span class="text-primary-80">•</span>
+                        <span>Production musicale (MAO)</span>
+                        <span class="text-primary-80">•</span>
+                        <span>Espace & Aérospacial</span>
+                        <span class="text-primary-80">•</span>
+                        <span>Musculation</span>
+                        <span class="text-primary-80">•</span>
+                        <span>Cinéma</span>
+                    </p>
+                </section>
+            </div>
+        </main>
+
+        <footer class="mt-auto h-8 bg-primary-10 -mx-[2px] w-[calc(100%+4px)] shrink-0"
+            style="clip-path: polygon(-2px 12px, calc(100% + 2px) 0, calc(100% + 2px) calc(100% + 2px), -2px calc(100% + 2px)); -webkit-clip-path: polygon(-2px 12px, calc(100% + 2px) 0, calc(100% + 2px) calc(100% + 2px), -2px calc(100% + 2px));">
+        </footer>
+
+    </article>
+</div>

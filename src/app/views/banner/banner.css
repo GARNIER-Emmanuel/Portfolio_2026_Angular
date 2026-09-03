@@ -1,0 +1,31 @@
+:host {
+    display: block;
+    min-height: 80vh;
+}
+
+.linkedin-banner {
+    font-family: 'DynaPuff', system-ui, sans-serif;
+    max-width: 1584px;
+    max-height: 396px;
+    background-color: var(--color-primary-10, #221a14);
+}
+
+.stack-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    background-color: rgba(211, 196, 186, 0.15);
+    color: var(--color-primary-90, #f0dfd5);
+    border: 1px solid rgba(211, 196, 186, 0.25);
+    letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+    .stack-badge {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+}

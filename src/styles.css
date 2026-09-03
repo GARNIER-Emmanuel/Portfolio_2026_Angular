@@ -55,6 +55,10 @@ html {
     padding-bottom: 0.75rem !important;
 }
 
+.mat-mdc-dialog-container {
+    color-scheme: light;
+}
+
 .mat-expansion-panel-header .mat-content {
     justify-content: space-between !important;
 }
@@ -68,4 +72,32 @@ html {
     flex: 0 0 auto !important;
     justify-content: flex-end !important;
     margin-left: 1rem !important;
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 0 !important;
+    }
+
+    app-header,
+    app-footer {
+        display: none !important;
+    }
+
+    html, body {
+        background: #ffffff !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        overflow: visible !important;
+    }
+
+    app-root,
+    app-root > div {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
 }

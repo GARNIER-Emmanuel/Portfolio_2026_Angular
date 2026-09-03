@@ -7,7 +7,11 @@ export const CERTIFICATIONS_DATA: Certification[] = [
         image: 'certif-angular.png',
         image_minimize: 'certif-angular-640-452.png',
         obtained_date: '2026',
-        description: $localize`:@@certif_1_desc:Certification validée sur Angular`,
+        description: $localize`:@@certif_1_desc:• Architecture Angular, cycle de vie et modes de rendu (SSR / SSG)
+• Composants modulaires, liaisons de données, directives et pipes personnalisés
+• Requêtes HTTP, consommation d'APIs REST, routeur Angular et lazy loading
+• Formulaires réactifs (ReactiveFormsModule) et validation fine des données
+• Tests automatisés, composants Angular Material et internationalisation (i18n)`,
         site: 'Dyma',
         link: 'https://dyma.fr/',
         pdf: 'certification-angular-GARNIER-BOIDUN-Emmanuel.pdf',
@@ -19,7 +23,12 @@ export const CERTIFICATIONS_DATA: Certification[] = [
         image: 'certif-spring-boot.png',
         image_minimize: 'certif-spring-boot-640-452.png',
         obtained_date: '2026',
-        description: $localize`:@@certif_2_desc:Certification validée sur Spring Boot`,
+        description: $localize`:@@certif_2_desc:• Architecture applicative en couches et structuration de projets Java modernes
+• Développement d'APIs RESTful avec contrôleurs Spring MVC et routage
+• Persistance des données et gestion des entités avec Spring Data JPA / Hibernate
+• Sécurisation applicative avec Spring Security (authentification & autorisations)
+• Validation des données, gestion centralisée des erreurs et tests unitaires / d'intégration
+• Conteneurisation Docker, déploiement Cloud et principes Clean Code & SOLID`,
         site: 'Dyma',
         link: 'https://dyma.fr/',
         pdf: 'certification-spring-boot-GARNIER-BOIDUN-Emmanuel.pdf',
