@@ -39,6 +39,14 @@
       "destination": "/en-US/index.html"
     },
     {
+      "source": "/fr/(.*)",
+      "destination": "/fr/index.html"
+    },
+    {
+      "source": "/((?!.*\\.[\\w]+$).*)",
+      "destination": "/fr/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/fr/$1"
     }
