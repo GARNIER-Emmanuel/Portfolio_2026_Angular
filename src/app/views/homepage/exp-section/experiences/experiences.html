@@ -1,17 +1,18 @@
 <ol
-    class="relative space-y-8 before:absolute before:-ms-px before:h-full before:w-0.5 before:rounded-full before:bg-primary-70">
+    class="relative lg:min-h-[620px]  space-y-8 before:absolute before:left-0 lg:before:left-auto lg:before:right-0 before:h-full before:w-0.5 before:rounded-full before:bg-primary-70">
     @for (exp of experiences(); track exp.id) {
     <li (click)="selectExperience(exp)" (keydown.enter)="selectExperience(exp)" role="button" tabindex="0"
         [class.focus-visible:ring-primary-20]="exp.id === selectedExperienceId()"
         [class.focus-visible:ring-primary-70]="exp.id !== selectedExperienceId()"
-        class="relative flex items-start gap-4 cursor-pointer transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 rounded-lg p-4">
-        <span class="size-3 shrink-0 rounded-full -ms-5.5" [class.bg-primary-70]="exp.id !== selectedExperienceId()"
+        class="relative flex flex-row lg:flex-row-reverse items-start gap-4 cursor-pointer transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 rounded-lg p-4">
+        <span class="size-3 shrink-0 rounded-full -ms-5.5 lg:ms-0 lg:-mr-5.5"
+            [class.bg-primary-70]="exp.id !== selectedExperienceId()"
             [class.bg-primary-20]="exp.id === selectedExperienceId()"></span>
-        <div class="-mt-3 flex-1 text-primary">
+        <div class="-mt-3 text-primary text-left lg:text-right flex-1">
             <time class="text-xs/none font-medium ">{{ exp.period }}</time>
-            <h3 class="text-lg text-primary-20 font-bold ">{{ exp.title }}</h3>
-            <p class="text-sm text-primary-10 font-medium">{{ exp.name }}</p>
-            <p class="whitespace-pre-line text-secondary text-sm leading-relaxed">
+            <h3 class="text-lg font-bold text-primary-20">{{ exp.title }}</h3>
+            <p class="text-sm font-medium text-primary-10">{{ exp.name }}</p>
+            <p class="whitespace-pre-line text-sm text-secondary leading-relaxed">
                 {{ exp.resume }}
             </p>
         </div>

@@ -1,18 +1,17 @@
 <ol
-    class="relative space-y-8 before:absolute before:left-0 lg:before:left-auto lg:before:right-0 before:h-full before:w-0.5 before:rounded-full before:bg-primary-70">
+    class="relative space-y-8 before:absolute before:-ms-px before:h-full before:w-0.5 before:rounded-full before:bg-primary-70">
     @for (edu of formations(); track edu.id) {
     <li (click)="selectFormation(edu)" (keydown.enter)="selectFormation(edu)" role="button" tabindex="0"
         [class.focus-visible:ring-primary-20]="edu.id === selectedFormationId()"
         [class.focus-visible:ring-primary-70]="edu.id !== selectedFormationId()"
-        class="relative flex flex-row lg:flex-row-reverse items-start gap-4 cursor-pointer transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 rounded-lg p-4">
-        <span class="size-3 shrink-0 rounded-full -ms-5.5 lg:ms-0 lg:-mr-5.5"
-            [class.bg-primary-70]="edu.id !== selectedFormationId()"
+        class="relative flex items-start gap-4 cursor-pointer transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 rounded-lg p-4">
+        <span class="size-3 shrink-0 rounded-full -ms-5.5" [class.bg-primary-70]="edu.id !== selectedFormationId()"
             [class.bg-primary-20]="edu.id === selectedFormationId()"></span>
-        <div class="-mt-3 text-primary text-left lg:text-right flex-1">
+        <div class="-mt-3 flex-1 text-primary">
             <time class="text-xs/none font-medium ">{{ edu.period }}</time>
-            <h3 class="text-lg font-bold text-primary-20">{{ edu.title }}</h3>
-            <p class="text-sm font-medium text-primary-10">{{ edu.name }}</p>
-            <p class="whitespace-pre-line text-sm text-secondary leading-relaxed">
+            <h3 class="text-lg text-primary-20 font-bold ">{{ edu.title }}</h3>
+            <p class="text-sm text-primary-10 font-medium">{{ edu.name }}</p>
+            <p class="whitespace-pre-line text-secondary text-sm leading-relaxed">
                 {{ edu.resume }}
             </p>
         </div>
