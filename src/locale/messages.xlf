@@ -27,7 +27,7 @@
         <source>À propos de moi</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
-          <context context-type="linenumber">7,8</context>
+          <context context-type="linenumber">8,9</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
@@ -42,7 +42,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
-          <context context-type="linenumber">63,64</context>
+          <context context-type="linenumber">64,65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav_formations" datatype="html">
@@ -53,7 +53,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
-          <context context-type="linenumber">64,65</context>
+          <context context-type="linenumber">66,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav_certifications" datatype="html">
@@ -64,18 +64,18 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
-          <context context-type="linenumber">65,66</context>
+          <context context-type="linenumber">68,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav_projects" datatype="html">
         <source>Mes projets</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">16,17</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
-          <context context-type="linenumber">66,67</context>
+          <context context-type="linenumber">70,71</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav_interests" datatype="html">
@@ -86,7 +86,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
-          <context context-type="linenumber">67,68</context>
+          <context context-type="linenumber">72,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav_cv" datatype="html">
@@ -97,7 +97,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
-          <context context-type="linenumber">68,69</context>
+          <context context-type="linenumber">73,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav_contact" datatype="html">
@@ -108,7 +108,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.html</context>
-          <context context-type="linenumber">70</context>
+          <context context-type="linenumber">75,76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skill_cat_tools" datatype="html">
@@ -948,7 +948,7 @@ Développée avec Symfony 6.2, Doctrine ORM, Twig, Bootstrap et MySQL</source>
         <source> Mes Certifications </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
-          <context context-type="linenumber">111,114</context>
+          <context context-type="linenumber">110,113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="interests_title" datatype="html">
