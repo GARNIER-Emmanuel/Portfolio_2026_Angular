@@ -24,4 +24,31 @@ export class Header {
     window.location.href = lang === 'fr' ? '/' : '/en-US/';
   }
 
+  scrollTo(event: Event, elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      event.preventDefault();
+      const headerOffset = 70;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      history.pushState(null, '', `#${elementId}`);
+    }
+  }
+
+  scrollToTop(event: Event): void {
+    const isHome = window.location.pathname === '/' || window.location.pathname === '/fr/' || window.location.pathname === '/en-US/';
+    if (isHome) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      history.pushState(null, '', window.location.pathname);
+    }
+  }
 }
