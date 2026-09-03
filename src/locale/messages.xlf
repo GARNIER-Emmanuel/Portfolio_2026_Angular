@@ -141,38 +141,34 @@ Conteneurisation Docker, déploiement Cloud et principes Clean Code &amp; SOLID<
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="certif_6_name" datatype="html">
+      <trans-unit id="certif_3_name" datatype="html">
         <source>Principes de base de l&apos;IA</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="certif_6_desc" datatype="html">
+      <trans-unit id="certif_3_desc" datatype="html">
         <source>Maîtriser les concepts fondamentaux de l&apos;IA générative pour une utilisation professionnelle
 Rédiger des prompts structurés et efficaces pour générer des résultats pertinents et de haute qualité
 Évaluer la précision et les biais des réponses de l&apos;IA pour garantir un usage éthique et responsable
 Identifier les tâches à forte valeur ajoutée à automatiser dans son workflow quotidien</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="certif_7_name" datatype="html">
+      <trans-unit id="certif_4_name" datatype="html">
         <source>Certificat Professionnel Google IA</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="certif_7_desc" datatype="html">
+      <trans-unit id="certif_4_desc" datatype="html">
         <source>Formuler des instructions claires pour l&apos;utiliser comme un partenaire de travail
 Comprendre les mécanismes sous-jacents pour exploiter les outils avec confiance et éthique
 Mobiliser l&apos;IA pour l&apos;analyse de données, la recherche documentaire et la communication professionnelle
 Concevoir des solutions personnalisées via le vibe coding adaptées aux besoins métiers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_5_desc" datatype="html">
@@ -182,27 +178,24 @@ Développer avec l&apos;écosystème : protocoles MCP, sous-agents parallèles, 
 Mener un projet de bout en bout : tests, CI/CD, Git, revues de code et vérification continue</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="certif_3_desc" datatype="html">
-        <source>Maîtriser les standards HTML5 sémantiques et le CSS3 moderne
-Concevoir des layouts fluides et responsives avec Flexbox et CSS Grid
-Structurer et optimiser ses feuilles de styles avec le préprocesseur Sass
-Intégrer des interfaces complexes et adaptées à tous types d&apos;écrans</source>
+      <trans-unit id="certif_6_desc" datatype="html">
+        <source>Fonctionnement interne : cycle de vie des beans, ApplicationContext et configurations conditionnelles
+Architecture modulaire et structuration d&apos;applications Spring Boot d&apos;entreprise
+Microservices avec Spring Cloud : découverte de services, communication inter-services, résilience et API Gateway
+Stratégies de tests (unitaires, intégration, E2E), automatisation CI et observabilité</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">82</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="certif_4_desc" datatype="html">
-        <source>Typage statique avancé : interfaces, types personnalisés et génériques
-Configuration et maîtrise du compilateur TypeScript (tsc / tsconfig)
-Exploitation de l&apos;inférence de type et des fonctionnalités ESNext
-Débogage efficace et architecture d&apos;applications robustes</source>
+      <trans-unit id="certif_7_desc" datatype="html">
+        <source>Ingénierie de prompts avancée pour développeurs et pair-programming avec LLM
+Génération assistée de code, refactoring et écriture de tests unitaires
+Revue de code automatisée, débogage et détection de failles de sécurité
+Intégration d&apos;assistants IA dans l&apos;IDE et automatisation du workflow de dev</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_8_desc" datatype="html">
@@ -211,33 +204,32 @@ Gestion des services serverless (Lambda, API Gateway), bases de données (Dynamo
 Mise en place de pipelines CI/CD et surveillance applicative via CloudWatch et X-Ray</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">108</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_9_desc" datatype="html">
-        <source>Maîtrise approfondie des fonctionnalités avancées de Java moderne (Records, Pattern Matching, Sealed Classes)
-Programmation orientée objet, gestion de la mémoire, Garbage Collector et Concurrency</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">120</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="certif_10_desc" datatype="html">
-        <source>Maîtrise approfondie du framework Scrum, des rôles, des artefacts et des événements
-Facilitation des processus agiles et résolution des blocages au sein des équipes de développement
-Optimisation de la productivité et de la livraison de valeur continue</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">131</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="certif_11_desc" datatype="html">
         <source>Création, optimisation et sécurisation des images de conteneurs Docker (Multi-stage builds)
 Orchestration multi-conteneurs avec Docker Compose et gestion des réseaux et volumes
 Déploiement, monitoring et maintenance d&apos;infrastructures conteneurisées</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
-          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_10_desc" datatype="html">
+        <source>Conception et déploiement d&apos;applications cloud-natives scalables sur GCP
+Conteneurisation et orchestration managée avec Cloud Run et Google Kubernetes Engine (GKE)
+Persistance avec bases managées : Cloud SQL, Cloud Spanner et Firestore
+Automatisation CI/CD avec Cloud Build et monitoring via Google Cloud Observability</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_11_desc" datatype="html">
+        <source>Conception orientée objet avancée et application rigoureuse des principes SOLID
+Maîtrise des Design Patterns du GoF (Création, Structure, Comportement)
+Architectures logicielles modernes : microservices, SOA, événementielle et modélisation UML
+Gestion de la dette technique, découplage et maintenabilité des systèmes distribués</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_1_title" datatype="html">
