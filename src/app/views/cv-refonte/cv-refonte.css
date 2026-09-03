@@ -29,7 +29,7 @@
     font-weight: 800;
     letter-spacing: 0.05em;
     color: var(--color-primary-10, #221a14);
-    border-bottom: 1.5px solid var(--color-primary-80, #d3c4ba);
+    border-bottom: 1.5px solid var(--color-primary-60, #9c8e85);
     padding-bottom: 1.5px;
     margin-bottom: 2px;
     text-transform: uppercase;
