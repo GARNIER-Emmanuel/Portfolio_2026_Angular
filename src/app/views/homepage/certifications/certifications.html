@@ -1,19 +1,25 @@
-<div class="grid grid-cols-2 sm:flex sm:flex-row sm:flex-wrap justify-center gap-3 sm:gap-4 max-w-5xl mx-auto lg:mb-32">
-    @for (certification of certifications(); track certification.id) {
-    @if (certification.status === 'obtained') {
-    <a (click)="openDialogCertif(certification)" role="button" tabindex="0"
-        (keydown.enter)="openDialogCertif(certification)" [matTooltip]="certification.name + ' - '+ certification.site"
-        class="block group transition-all duration-200 hover:-translate-y-1 w-full sm:w-60 md:w-80 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-se-3xl rounded-es-3xl">
+<div>
+    @for (group of obtainedBySite(); track group.site) {
+    <div class="flex flex-col gap-4 w-full">
+        <h3 class="text-primary-90 text-2xl font-bold">Certifications {{ group.site }}</h3>
 
-        <img alt="image certification" [ngSrc]="certification.image_minimize!" width="650" height="452"
-            class="w-full rounded-se-3xl rounded-es-3xl object-cover bg-white shadow-xs" />
-    </a>
-    }
-    }
-</div>
+        <div
+            class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 sm:grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 sm:overflow-visible">
+            @for (certification of group.items; track certification.id) {
+            <a (click)="openDialogCertif(certification)" role="button" tabindex="0"
+                (keydown.enter)="openDialogCertif(certification)" [matTooltip]="certification.name"
+                class="w-[44vw] max-w-[150px] snap-start shrink-0 snap-center sm:w-full sm:max-w-none block group transition-all duration-200 hover:-translate-y-1 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-se-3xl rounded-es-3xl">
 
-<div class="max-w-screen-2xl w-full mx-auto mt-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <img alt="image certification" [ngSrc]="certification.image_minimize!" width="650" height="452"
+                    class="w-full rounded-se-3xl rounded-es-3xl object-cover bg-white shadow-xs" />
+            </a>
+            }
+        </div>
+    </div>
+    }
+
+
+    <div class=" grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
             <h3 class="text-xl text-primary-90 sm:text-2xl md:text-3xl font-bold mb-4 text-center mt-10"
                 i18n="@@certif_status_inprogress">En cours</h3>

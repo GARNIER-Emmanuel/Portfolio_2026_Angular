@@ -1284,6 +1284,229 @@ Built with Symfony 6.2, Doctrine ORM, Twig, Bootstrap, and MySQL</target>
           <context context-type="sourcefile">src/app/views/notfound/notfound.html</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="certif_1_desc" datatype="html">
+        <source>Adopter une posture de collaborateur : formuler des instructions claires pour guider l&apos;IA comme un partenaire métier
+Comprendre le fonctionnement et les limites des modèles pour un usage éthique, fiable et responsable
+Maîtriser les cas d&apos;usage clés : analyse de données, recherche documentaire, communication et automatisation
+Concevoir des applications personnalisées adaptées aux besoins métiers via le vibe coding</source>
+        <target>Adopt a collaborator mindset: formulate clear instructions to guide AI as a strategic business partner
+Understand model mechanics and limitations for ethical, reliable, and responsible usage
+Master key use cases: data analysis, document research, communication, and automation
+Design custom applications tailored to business needs through vibe coding</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_2_desc" datatype="html">
+        <source>Transformer une idée en plan structuré et générer un premier prototype interactif assisté par l&apos;IA
+Tester, débugger avec l&apos;IA et itérer rapidement pour fiabiliser le prototype
+Préparer le déploiement applicatif : ancrage sur documents réels, gestion des accès et onboarding utilisateur
+Utiliser Google AI Studio pour orchestrer l&apos;ensemble du cycle de vie de l&apos;application</source>
+        <target>Transform concepts into structured plans and generate initial AI-assisted interactive prototypes
+Test, debug with AI, and rapidly iterate to make prototypes production-ready
+Prepare application deployment: grounding on real documents, access management, and user onboarding
+Leverage Google AI Studio to orchestrate the end-to-end application lifecycle</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_3_desc" datatype="html">
+        <source>Analyser les workflows professionnels pour cibler les tâches à forte valeur ajoutée à automatiser
+Construire des applications web fonctionnelles grâce aux techniques de vibe coding
+Traduire les besoins métiers exprimés en langage naturel en code opérationnel et robuste
+Concevoir des solutions sur mesure avec des outils avancés comme Google AI Studio</source>
+        <target>Analyze workflows to identify high-impact automation opportunities
+Build functional web applications using vibe coding techniques
+Translate natural language business requirements into robust, operational code
+Design tailor-made solutions using advanced tools like Google AI Studio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_4_desc" datatype="html">
+        <source>Définir les métriques de performance et indicateurs clés alignés sur les objectifs métiers
+Nettoyer, structurer et normaliser des données brutes grâce à des prompts ciblés
+Générer et optimiser des formules complexes dans Google Sheets avec Gemini
+Créer des visualisations de données percutantes pour communiquer efficacement les insights</source>
+        <target>Define performance metrics and KPIs aligned with core business objectives
+Clean, structure, and normalize raw data through targeted prompts
+Generate and optimize complex formulas in Google Sheets using Gemini
+Build impactful data visualizations to effectively communicate actionable insights</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_5_desc" datatype="html">
+        <source>Générer des assets visuels et vidéos haute définition à partir de concepts créatifs avec Gemini
+Concevoir des présentations professionnelles et captivantes avec Gemini dans Google Slides
+Définir des chartes et directives graphiques pour garantir la cohérence de marque
+Évaluer et affiner les livrables créatifs grâce à des revues guidées par critères de design</source>
+        <target>Generate high-definition visual and video assets from creative concepts using Gemini
+Craft engaging, professional presentations with Gemini in Google Slides
+Establish design guidelines and criteria to ensure brand consistency
+Evaluate and refine creative deliverables through criteria-guided design reviews</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_6_desc" datatype="html">
+        <source>Synthétiser les réunions avec Gemini dans Google Meet : résumés exécutifs et plans d&apos;action clairs
+Affiner la rédaction et préparer les prises de parole stratégiques grâce aux retours critiques de l&apos;IA
+Adapter le ton, le style et le persona selon les audiences cibles avec Gemini Canvas
+Simuler des scénarios professionnels et jeux de rôles en temps réel avec Gemini Live</source>
+        <target>Synthesize meetings with Gemini in Google Meet: executive summaries and clear action items
+Refine writing and prepare for strategic presentations with critical AI feedback
+Tailor tone, style, and persona to target audiences using Gemini Canvas
+Simulate workplace scenarios and real-time role-playing with Gemini Live</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_7_desc" datatype="html">
+        <source>Synthétiser de multiples sources documentaires avec Gemini Deep Research pour générer des rapports complets
+Créer un centre de connaissances centralisé avec Gemini Notebook pour analyser des entrées multimodales
+Configurer des assistants experts sur mesure avec Gemini pour challenger les réflexions
+Vérifier l&apos;exactitude des sources et ancrer les synthèses sur des données fiables et vérifiées</source>
+        <target>Synthesize multiple documentary sources using Gemini Deep Research for comprehensive reports
+Build a centralized knowledge hub in Gemini Notebook to analyze multimodal inputs
+Configure custom AI experts with Gemini to challenge and expand ideas
+Verify source accuracy and ground all findings in reliable, validated documentation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_8_desc" datatype="html">
+        <source>Explorer et stimuler l&apos;innovation en utilisant l&apos;IA comme sparring-partner créatif
+Évaluer et prioriser les idées selon des grilles d&apos;analyse et critères de décision objectifs
+Consolider les plans de projet en anticipant les risques, dépendances et points critiques
+Centraliser et structurer la documentation projet au sein d&apos;une base de connaissances unifiée</source>
+        <target>Foster innovation and ideation by leveraging AI as a creative partner
+Evaluate and prioritize concepts against objective decision criteria and frameworks
+Strengthen project plans by identifying risks, dependencies, and critical milestones
+Centralize and organize project documentation within a unified knowledge hub</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_9_desc" datatype="html">
+        <source>Maîtriser les concepts fondamentaux de l&apos;IA générative et son application en contexte pro
+Structurer des prompts efficaces et contextualisés pour obtenir des résultats précis et pertinents
+Évaluer la fiabilité, la précision et les biais des réponses pour un usage éthique
+Identifier les opportunités clés d&apos;intégration de l&apos;IA dans son flux de travail quotidien</source>
+        <target>Master fundamental generative AI concepts and their practical professional applications
+Construct structured, contextual prompts to produce accurate, high-quality outputs
+Evaluate output accuracy, reliability, and biases to ensure ethical usage
+Identify high-impact opportunities to integrate AI into everyday workflows</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_10_desc" datatype="html">
+        <source>Architecture Angular, cycle de vie et modes de rendu (SSR / SSG)
+Composants modulaires, liaisons de données, directives et pipes personnalisés
+Requêtes HTTP, consommation d&apos;APIs REST, routeur Angular et lazy loading
+Formulaires réactifs (ReactiveFormsModule) et validation fine des données
+Tests automatisés, composants Angular Material et internationalisation (i18n)</source>
+        <target>Angular architecture, lifecycle, and rendering modes (SSR / SSG)
+Modular components, data binding, custom directives, and pipes
+HTTP requests, REST API integration, Angular Router, and lazy loading
+Reactive forms (ReactiveFormsModule) and fine-grained data validation
+Automated testing, Angular Material components, and internationalization (i18n)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_11_desc" datatype="html">
+        <source>Architecture applicative en couches et structuration de projets Java modernes
+Développement d&apos;APIs RESTful avec contrôleurs Spring MVC et routage
+Persistance des données et gestion des entités avec Spring Data JPA / Hibernate
+Sécurisation applicative avec Spring Security (authentification &amp; autorisations)
+Validation des données, gestion centralisée des erreurs et tests unitaires / d&apos;intégration
+Conteneurisation Docker, déploiement Cloud et principes Clean Code &amp; SOLID</source>
+        <target>Layered application architecture and modern Java project structuring
+RESTful API development with Spring MVC controllers and routing
+Data persistence and entity management with Spring Data JPA / Hibernate
+Application security with Spring Security (authentication &amp; authorization)
+Data validation, global exception handling, and unit / integration testing
+Docker containerization, cloud deployment, and Clean Code &amp; SOLID principles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_12_desc" datatype="html">
+        <source>Maîtriser les fondamentaux des agents IA, LLM et de la boucle agentique Claude Code
+Structurer le contexte projet (CLAUDE.md, rules, prompts avancés et gestion des tokens)
+Développer avec l&apos;écosystème : protocoles MCP, sous-agents parallèles, skills et hooks d&apos;automatisation
+Mener un projet de bout en bout : tests, CI/CD, Git, revues de code et vérification continue</source>
+        <target>Master AI agents fundamentals, LLMs, and Claude Code agentic loop
+Structure project context (CLAUDE.md, rules, advanced prompt engineering, token management)
+Develop with the ecosystem: MCP protocols, parallel subagents, skills, and automation hooks
+End-to-end project lifecycle: testing, CI/CD, Git, code reviews, and continuous verification</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_13_desc" datatype="html">
+        <source>Fonctionnement interne : cycle de vie des beans, ApplicationContext et configurations conditionnelles
+Architecture modulaire et structuration d&apos;applications Spring Boot d&apos;entreprise
+Microservices avec Spring Cloud : découverte de services, communication inter-services, résilience et API Gateway
+Stratégies de tests (unitaires, intégration, E2E), automatisation CI et observabilité</source>
+        <target>Internal mechanics: bean lifecycles, ApplicationContext, and conditional configuration
+Modular architecture and enterprise Spring Boot application structuring
+Microservices with Spring Cloud: service discovery, inter-service communication, resilience, and API Gateway
+Testing strategies (unit, integration, E2E), CI automation, and observability</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_14_desc" datatype="html">
+        <source>Ingénierie de prompts avancée pour développeurs et pair-programming avec LLM
+Génération assistée de code, refactoring et écriture de tests unitaires
+Revue de code automatisée, débogage et détection de failles de sécurité
+Intégration d&apos;assistants IA dans l&apos;IDE et automatisation du workflow de dev</source>
+        <target>Advanced prompt engineering for developers and pair-programming with LLMs
+AI-assisted code generation, refactoring, and unit test authoring
+Automated code reviews, debugging, and security vulnerability detection
+IDE AI assistant integration and developer workflow automation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_15_desc" datatype="html">
+        <source>Déploiement et sécurisation d&apos;applications et microservices dans le cloud AWS
+Gestion des services serverless (Lambda, API Gateway), bases de données (DynamoDB, RDS) et stockage S3
+Mise en place de pipelines CI/CD et surveillance applicative via CloudWatch et X-Ray</source>
+        <target>Deploying and securing applications and microservices in the AWS Cloud
+Managing serverless services (Lambda, API Gateway), databases (DynamoDB, RDS), and S3 storage
+Setting up CI/CD pipelines and application monitoring with CloudWatch and X-Ray</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_16_desc" datatype="html">
+        <source>Création, optimisation et sécurisation des images de conteneurs Docker (Multi-stage builds)
+Orchestration multi-conteneurs avec Docker Compose et gestion des réseaux et volumes
+Déploiement, monitoring et maintenance d&apos;infrastructures conteneurisées</source>
+        <target>Creating, optimizing, and securing Docker container images (Multi-stage builds)
+Multi-container orchestration with Docker Compose, networks, and volumes management
+Deploying, monitoring, and maintaining containerized infrastructures</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="certif_17_desc" datatype="html">
+        <source>Conception orientée objet avancée et application rigoureuse des principes SOLID
+Maîtrise des Design Patterns du GoF (Création, Structure, Comportement)
+Architectures logicielles modernes : microservices, SOA, événementielle et modélisation UML
+Gestion de la dette technique, découplage et maintenabilité des systèmes distribués</source>
+        <target>Advanced object-oriented design and rigorous application of SOLID principles
+Mastery of GoF Design Patterns (Creational, Structural, Behavioral)
+Modern software architectures: microservices, SOA, event-driven, and UML modeling
+Technical debt management, decoupling, and distributed system maintainability</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
