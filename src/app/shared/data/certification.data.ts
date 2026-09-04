@@ -126,19 +126,6 @@ Déploiement, monitoring et maintenance d'infrastructures conteneurisées`,
     },
     {
         id: '10',
-        name: 'Google Cloud Professional Cloud Developer',
-        image: '',
-        obtained_date: '2026',
-        description: $localize`:@@certif_10_desc:Conception et déploiement d'applications cloud-natives scalables sur GCP
-Conteneurisation et orchestration managée avec Cloud Run et Google Kubernetes Engine (GKE)
-Persistance avec bases managées : Cloud SQL, Cloud Spanner et Firestore
-Automatisation CI/CD avec Cloud Build et monitoring via Google Cloud Observability`,
-        site: 'Google Cloud',
-        link: 'https://www.coursera.org/professional-certificates/preparing-for-google-cloud-cloud-developer-professional-certificate',
-        status: 'in_progress'
-    },
-    {
-        id: '11',
         name: 'Software Design and Architecture Specialization',
         image: '',
         obtained_date: '2026',
