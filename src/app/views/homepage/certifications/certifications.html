@@ -4,17 +4,20 @@
         <h3 class="text-primary-90 text-2xl font-bold">Certifications {{ group.site }}</h3>
 
         <div
-            class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 sm:grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 sm:overflow-visible">
+            class="flex overflow-x-auto touch-pan-x snap-x snap-mandatory gap-4 pb-4 sm:grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 sm:overflow-visible">
             @for (certification of group.items; track certification.id) {
             <a (click)="openDialogCertif(certification)" role="button" tabindex="0"
-                (keydown.enter)="openDialogCertif(certification)" [matTooltip]="certification.name"
-                class="w-[44vw] max-w-[150px] snap-start shrink-0 snap-center sm:w-full sm:max-w-none block group transition-all duration-200 hover:-translate-y-1 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-se-3xl rounded-es-3xl">
+                (keydown.enter)="openDialogCertif(certification)"
+                [matTooltip]="certification.name + ' - ' + certification.site"
+                class="w-[44vw] max-w-[150px] snap-start shrink-0 select-none sm:w-full sm:max-w-none block group transition-all duration-200 hover:-translate-y-1 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-se-3xl rounded-es-3xl">
 
                 <img alt="image certification" [ngSrc]="certification.image_minimize!" width="650" height="452"
-                    class="w-full rounded-se-3xl rounded-es-3xl object-cover bg-white shadow-xs" />
+                    draggable="false"
+                    class="w-full pointer-events-none rounded-se-3xl rounded-es-3xl object-cover bg-white shadow-xs select-none" />
             </a>
             }
         </div>
+
     </div>
     }
 
