@@ -860,28 +860,10 @@ Développée avec Symfony 6.2, Doctrine ORM, Twig, Bootstrap et MySQL</source>
         </context-group>
       </trans-unit>
       <trans-unit id="contact_intro" datatype="html">
-        <source> N&apos;hésitez pas à me contacter via ce formulaire ou directement <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> sur mon email ou téléphone.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Je vous répondrai dans les plus brefs délais ! </source>
+        <source> N&apos;hésitez pas à me contacter via ce formulaire ou directement <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> par email.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Je vous répondrai dans les plus brefs délais ! </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
           <context context-type="linenumber">12,13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="contact_dt_phone" datatype="html">
-        <source>Téléphone</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
-          <context context-type="linenumber">18,20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="val_phone" datatype="html">
-        <source>06 61 74 29 19</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/homepage/contact/contact.html</context>
-          <context context-type="linenumber">27,28</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
-          <context context-type="linenumber">45,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact_dt_email" datatype="html">
@@ -1045,13 +1027,6 @@ Développée avec Symfony 6.2, Doctrine ORM, Twig, Bootstrap et MySQL</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
           <context context-type="linenumber">41,43</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="hero_phone_label" datatype="html">
-        <source>Téléphone :</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
-          <context context-type="linenumber">44,45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="section_experiences" datatype="html">
