@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot-Image
+Disallow: /mypicture.png
+
 Sitemap: https://emmanuel-garnier-boidun.com/sitemap.xml
