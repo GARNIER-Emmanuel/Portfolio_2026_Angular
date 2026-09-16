@@ -993,7 +993,7 @@ Développée avec Symfony 6.2, Doctrine ORM, Twig, Bootstrap et MySQL</source>
         </context-group>
       </trans-unit>
       <trans-unit id="hero_bio" datatype="html">
-        <source> Développeur junior depuis <x id="INTERPOLATION" equiv-text="{{yearsOfExperience()}}"/> ans, spécialisé en développement Full-Stack (Java / Spring Boot, Angular), curieux et motivé par la decouverte de nouveautés techniques et technilogiques. </source>
+        <source> Développeur junior depuis <x id="INTERPOLATION" equiv-text="{{yearsOfExperience()}}"/> ans, spécialisé en développement Full-Stack (Java / Spring Boot, Angular), curieux et motivé par la découverte de nouveautés techniques et technologiques. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/homepage.html</context>
           <context context-type="linenumber">31,33</context>
