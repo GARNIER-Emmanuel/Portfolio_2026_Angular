@@ -3,9 +3,14 @@
 html {
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
+    font-family: 'Geist', 'Segoe UI', sans-serif;
+    font-optical-sizing: auto;
+    font-synthesis: none;
 }
 
 @theme {
+    --font-sans: 'Geist', 'Segoe UI', sans-serif;
+
     /* Primary */
     --color-primary-10: var(--mat-sys-primary-10);
     --color-primary-20: var(--mat-sys-primary-20);
@@ -99,4 +104,11 @@ html {
         padding: 0 !important;
         width: 100% !important;
     }
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
 }

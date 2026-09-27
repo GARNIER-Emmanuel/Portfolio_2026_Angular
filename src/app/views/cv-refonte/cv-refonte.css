@@ -16,7 +16,7 @@
     padding: 0;
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.08);
-    font-family: 'DynaPuff', system-ui, sans-serif;
+    font-family: 'Geist', 'Segoe UI', sans-serif;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
     overflow: hidden;
@@ -25,7 +25,7 @@
 }
 
 .section-title {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 800;
     letter-spacing: 0.05em;
     color: var(--color-primary-10, #221a14);
@@ -48,11 +48,11 @@
 }
 
 .skill-item {
+    font-size: 30px;
     background-color: #faf7f5;
     border: 1px solid #ebdcd3;
     border-radius: 4px;
     padding: 1.5px 4px;
-    font-size: 10px;
     font-weight: 500;
     color: var(--color-primary-20, #382f28);
     text-align: center;
