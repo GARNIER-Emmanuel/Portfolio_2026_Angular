@@ -322,39 +322,61 @@ Technical debt management, decoupling, and maintainability of distributed system
         </context-group>
       </trans-unit>
       <trans-unit id="exp_1_resume" datatype="html">
-        <source>Développement Full Stack Java Spring Boot &amp; Angular et refonte d&apos;applications logicielles en équipe Agile</source>
-        <target>Full Stack Java Spring Boot &amp; Angular development and software modernization within an Agile team</target>
+        <source>Développement d&apos;applications web Java / Spring Boot / Angular et modernisation d&apos;un logiciel desktop Java Swing en environnement Agile.</source>
+        <target>Development of Java / Spring Boot / Angular web applications and modernization of Java Swing desktop software in an Agile environment.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_1_desc" datatype="html">
-        <source>Projet éditique &amp; traitement documentaire (Java / Swing) :
-Modernisation d&apos;une application desktop de comparaison de documents PDF et détection automatisée d&apos;anomalies de mise en page
-Développement du moteur de comparaison en masse, navigation ergonomique des résultats et génération de rapports
-Réduction significative des temps de traitement et refonte validée par le client interne
-Pratique du TDD sur les nouveaux modules, tests d&apos;intégration (JUnit, AssertJ, Mockito) et revues de code systématiques
-Travail en équipe de 3 en méthodologie Scrum (sprints de 2 semaines, démos et ajustements continus des priorités)
+        <source>PROJET 1 : Développement d&apos;applications web métiers (Spring Boot / Angular)
 
-Projets web Full Stack pour grands comptes (Spring Boot &amp; Angular) :
-Conception et développement de formulaires dynamiques complexes et évolutions applicatives métier
-Développement d&apos;APIs REST avec Java / Spring Boot connectées à une base de données MySQL
-Intégration front-end sous Angular, composants modulaires, validation réactive et conteneurisation Docker</source>
-        <target>Document publishing &amp; processing project (Java / Swing):
-Modernization of a desktop application for PDF comparison and automated layout anomaly detection
-Development of batch comparison engine, ergonomic results navigation, and report generation
-Significant processing time reduction and refactoring validated by internal client
-TDD practice on new modules, integration testing (JUnit, AssertJ, Mockito), and systematic code reviews
-Teamwork in a Scrum team of 3 (2-week sprints, demos, and continuous backlog adjustments)
+Participation au développement et à l&apos;évolution d&apos;applications web métiers sur des projets grands comptes.
 
-Enterprise Web Full Stack projects (Spring Boot &amp; Angular):
-Design and development of complex dynamic forms and core business feature evolutions
-Development of secure REST APIs with Java / Spring Boot connected to MySQL database
-Front-end integration with Angular, modular components, reactive validation, and Docker containerization</target>
+Réalisations :
+- Conception et développement de fonctionnalités métiers et de formulaires dynamiques avec Angular.
+- Développement d&apos;API REST sécurisées avec Spring Boot et intégration avec MySQL.
+- Développement de tests unitaires et d&apos;intégration avec JUnit, Mockito et AssertJ, notamment selon une démarche TDD.
+- Intégration front-end et conteneurisation des applications avec Docker.
+- Participation aux revues de code et aux cérémonies Agile Scrum.
+
+PROJET 2 : Modernisation d&apos;une application desktop (Java / Swing)
+
+Modernisation d&apos;un logiciel de comparaison de documents PDF et de détection d&apos;anomalies, au sein d&apos;une équipe Scrum de trois développeurs.
+
+Réalisations :
+- Évolution du moteur de comparaison pour permettre le traitement multifichiers.
+- Refonte ergonomique de l&apos;interface utilisateur en Java Swing.
+- Développement d&apos;une fonctionnalité de génération de rapports Excel répertoriant les anomalies détectées.
+- Optimisation des traitements et développement de tests automatisés selon une démarche TDD.
+- Réduction des temps de traitement et automatisation de la production des rapports.
+</source>
+        <target>PROJECT 1: Business web application development (Spring Boot / Angular)
+
+Contribution to the development and evolution of enterprise business web applications for key accounts.
+
+Achievements:
+- Design and development of business features and dynamic forms with Angular.
+- Development of secure REST APIs with Spring Boot and MySQL integration.
+- Development of unit and integration tests with JUnit, Mockito, and AssertJ, notably following a TDD approach.
+- Front-end integration and application containerization with Docker.
+- Participation in code reviews and Agile Scrum ceremonies.
+
+PROJECT 2: Desktop application modernization (Java / Swing)
+
+Modernization of a PDF document comparison and anomaly detection software, within a Scrum team of three developers.
+
+Achievements:
+- Enhancement of the comparison engine to enable multi-file processing.
+- Ergonomic redesign of the user interface in Java Swing.
+- Development of an Excel report generation feature detailing detected anomalies.
+- Processing optimization and automated test development following a TDD approach.
+- Reduction of processing times and automation of report generation.
+</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">11,12</context>
+          <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_2_title" datatype="html">
@@ -362,7 +384,7 @@ Front-end integration with Angular, modular components, reactive validation, and
         <target>Web Developer (Internship)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_2_period" datatype="html">
@@ -370,31 +392,37 @@ Front-end integration with Angular, modular components, reactive validation, and
         <target>01/2023 – 02/2023</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">108</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_2_resume" datatype="html">
-        <source>Développement de fonctionnalités back-end et intégration de formulaires dynamiques sous Symfony et PHP</source>
-        <target>Back-end feature development and integration of dynamic forms with Symfony and PHP</target>
+        <source>Développement d&apos;une application web de gestion de cabinet dentaire avec PHP, Symfony et Doctrine ORM.</source>
+        <target>Development of a dental practice management web application with PHP, Symfony, and Doctrine ORM.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">110</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_2_desc" datatype="html">
-        <source>Conception et développement de formulaires clients dynamiques et sécurisés avec le framework Symfony
-Validation des entrées utilisateurs et traitement côté serveur en PHP
-Modélisation, requêtage et persistance des données sous MySQL via Doctrine ORM
-Intégration d&apos;interfaces web responsives et ergonomiques en HTML5 / CSS3
-Application des principes d&apos;architecture MVC et initiation aux bonnes pratiques de développement logiciel professionnel</source>
-        <target>Design and development of dynamic and secured customer forms with Symfony framework
-User input validation and server-side processing in PHP
-Data modeling, querying, and persistence on MySQL via Doctrine ORM
-Integration of responsive and ergonomic web interfaces with HTML5 / CSS3
-Application of MVC architecture principles and software engineering best practices</target>
+        <source>Développement d&apos;une application web de gestion de cabinet dentaire permettant la saisie et la gestion des dossiers patients.
+
+Réalisations :
+- Conception et intégration de formulaires de gestion des patients avec Symfony.
+- Développement des traitements back-end en PHP pour la validation et le traitement des données.
+- Gestion de la persistance des données avec Doctrine ORM et MySQL.
+- Intégration des interfaces utilisateur avec Twig, HTML, CSS et Bootstrap.
+- Réalisation de fonctionnalités de saisie, de consultation et de gestion des dossiers patients.</source>
+        <target>Development of a dental practice management web application enabling entry and management of patient records.
+
+Achievements:
+- Design and integration of patient management forms with Symfony.
+- Development of back-end processing in PHP for data validation and processing.
+- Data persistence management with Doctrine ORM and MySQL.
+- Integration of user interfaces with Twig, HTML, CSS, and Bootstrap.
+- Implementation of patient record entry, consultation, and management features.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">112</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_3_title" datatype="html">
@@ -402,7 +430,7 @@ Application of MVC architecture principles and software engineering best practic
         <target>Web Developer (Internship)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">169</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_3_period" datatype="html">
@@ -410,31 +438,41 @@ Application of MVC architecture principles and software engineering best practic
         <target>05/2022 – 06/2022</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">171</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_3_resume" datatype="html">
-        <source>Développement d&apos;une application web interactive de mini-jeu en JavaScript, PHP et MySQL pour un escape game</source>
-        <target>Development of an interactive web mini-game application with JavaScript, PHP, and MySQL for an escape game</target>
+        <source>Conception et développement d&apos;un mini-jeu web interactif en HTML, CSS, JavaScript, PHP et MySQL.</source>
+        <target>Design and development of an interactive web mini-game with HTML, CSS, JavaScript, PHP, and MySQL.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">173</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_3_desc" datatype="html">
-        <source>Conception et programmation complète d&apos;une application web de mini-jeu interactive destinée aux joueurs de l&apos;escape game
-Développement des mécaniques de gameplay en temps réel et animations fluides en JavaScript vanilla
-Création d&apos;une interface utilisateur immersive et responsive avec HTML5 et CSS3
-Développement back-end en PHP pour le traitement des énigmes et la logique métier
-Conception de la base de données MySQL pour l&apos;enregistrement et le classement dynamique des scores des équipes</source>
-        <target>Full design and programming of an interactive web mini-game application for escape game players
-Development of real-time gameplay mechanics and smooth animations with vanilla JavaScript
-Creation of an immersive and responsive UI using HTML5 and CSS3
-Back-end development in PHP for riddle logic and gameplay rules
-MySQL database modeling for team score registration and dynamic leaderboard rankings</target>
+        <source>Développement d&apos;un mini-jeu web interactif destiné aux joueurs d&apos;un escape game, intégrant des mécaniques de jeu et un système de classement des équipes.
+
+Réalisations :
+- Conception et développement de l&apos;interface utilisateur en HTML5 et CSS3.
+- Développement des mécaniques interactives en JavaScript vanilla.
+- Implémentation de la logique métier côté serveur en PHP.
+- Conception d&apos;une base de données MySQL pour l&apos;enregistrement et le classement des scores.
+
+Résultat :
+- Réalisation d&apos;un mini-jeu web fonctionnel intégrant un système de classement des équipes.</source>
+        <target>Development of an interactive web mini-game for escape game players, featuring gameplay mechanics and a team leaderboard system.
+
+Achievements:
+- Design and development of the user interface in HTML5 and CSS3.
+- Development of interactive mechanics in vanilla JavaScript.
+- Implementation of server-side business logic in PHP.
+- Design of a MySQL database for score recording and team ranking.
+
+Result:
+- Delivery of a fully functional web mini-game featuring a team leaderboard system.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">175</context>
         </context-group>
       </trans-unit>
       <trans-unit id="exp_5_title" datatype="html">
