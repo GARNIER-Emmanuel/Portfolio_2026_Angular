@@ -84,13 +84,13 @@ Backend NestJS & TMDB API sous Docker`,
     },
     {
         id: '5',
-        name: "Gem's Coach",
+        name: "Koacher",
         date: '2026',
         image: 'SportPro.png',
-        description: $localize`:@@project_5_desc:PWA de coaching et suivi de musculation hors-ligne
-Calculs métaboliques avancés (BMR, TDEE, 1RM)
-Pour ma routine sportive personnelle`,
-        live: 'https://gem-s-coach.vercel.app/',
+        description: $localize`:@@project_5_desc:PWA de suivi de musculation avec programmes personnalisables
+Séances guidées, historique et suivi des progrès
+Sauvegarde hors ligne et synchronisation via Supabase`,
+        live: 'https://koacher.party/',
         type: 'personal',
         skills: [
             { name: 'React 19 / Vite', icon: 'devicon-react-original colored', category: 'frontend' },

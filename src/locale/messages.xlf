@@ -670,9 +670,9 @@ Backend NestJS &amp; TMDB API sous Docker</source>
         </context-group>
       </trans-unit>
       <trans-unit id="project_5_desc" datatype="html">
-        <source>PWA de coaching et suivi de musculation hors-ligne
-Calculs métaboliques avancés (BMR, TDEE, 1RM)
-Pour ma routine sportive personnelle</source>
+        <source>PWA de suivi de musculation avec programmes personnalisables
+Séances guidées, historique et suivi des progrès
+Sauvegarde hors ligne et synchronisation via Supabase</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
           <context context-type="linenumber">90</context>
