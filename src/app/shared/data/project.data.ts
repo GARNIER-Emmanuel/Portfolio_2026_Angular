@@ -48,6 +48,24 @@ Développement d’APIs REST sécurisées, persistance relationnelle avec JPA / 
         ],
     },
     {
+        id: 'supbro',
+        name: 'SupBro',
+        date: '2026',
+        image: 'SupBro.png',
+        description: $localize`:@@project_supbro_desc:Petit projet d’apprentissage Angular / Spring Boot pour découvrir Selenium
+Création et consultation d’amis avec PostgreSQL et migrations Flyway
+Tests unitaires, d’intégration et de bout en bout automatisés avec GitHub Actions`,
+        repo: 'https://github.com/GARNIER-Emmanuel/SupBro',
+        type: 'personal',
+        skills: [
+            { name: 'Angular / TypeScript', icon: 'devicon-angularjs-plain colored', category: 'frontend' },
+            { name: 'Java / Spring Boot', icon: 'devicon-spring-original colored', category: 'backend' },
+            { name: 'PostgreSQL / Flyway', icon: 'devicon-postgresql-plain colored', category: 'backend' },
+            { name: 'Selenium / JUnit', icon: 'science', category: 'tools' },
+            { name: 'Docker / GitHub Actions', icon: 'devicon-docker-plain colored', category: 'tools' },
+        ],
+    },
+    {
         id: '3',
         name: 'JobTracker',
         date: '2026',
