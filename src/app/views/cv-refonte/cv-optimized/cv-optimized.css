@@ -1,0 +1,49 @@
+:host { display: block; }
+.cv-a4 {
+  box-sizing: border-box;
+  width: 210mm;
+  max-width: 100%;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 9mm;
+  background: var(--color-primary-100);
+  color: var(--color-primary-10);
+  box-shadow: 0 8px 32px color-mix(in srgb, var(--color-primary-10) 10%, transparent);
+  font: 14px/1.4 var(--font-sans);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+p, h1, h2, h3, ul { margin: 0; }
+a { color: inherit; text-decoration: none; overflow-wrap: anywhere; }
+a:hover, a:focus-visible { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--color-primary-40); outline-offset: 2px; }
+h1 { font-size: 28px; font-weight: 700; line-height: 1.2; }
+.cv-role { margin-top: 4px; font-size: 20px; font-weight: 700; line-height: 1.3; }
+.cv-contact { margin-top: 8px; color: var(--color-primary-30); font-size: 12px; font-style: normal; }
+.cv-contact p + p { margin-top: 3px; }
+section { margin-top: 4mm; }
+h2 { margin-bottom: 6px; padding-bottom: 4px; border-bottom: 1px solid var(--color-primary-60); font-size: 15px; font-weight: 700; line-height: 1.3; }
+h3 { font-size: 14px; font-weight: 700; line-height: 1.35; }
+.cv-entry-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 8px; }
+.cv-entry-date { color: var(--color-secondary-30); font-size: 12.5px; white-space: nowrap; }
+.cv-entry-meta { margin-top: 2px; margin-bottom: 4px; color: var(--color-secondary-30); font-size: 12.5px; }
+.cv-entry + .cv-entry { margin-top: 9px; }
+.cv-context { margin-bottom: 4px; }
+ul { padding-left: 16px; list-style: disc; }
+li + li { margin-top: 3px; }
+.cv-entry-tools { margin-top: 4px; color: var(--color-secondary-30); font-size: 12.5px; }
+.cv-skills p + p, section > p + p { margin-top: 4px; }
+.cv-education-entry + .cv-education-entry { margin-top: 6px; }
+
+@media screen and (max-width: 700px) {
+  .cv-a4 { min-height: 0; padding: 20px; }
+  h1 { font-size: 24px; }
+  .cv-role { font-size: 19px; }
+}
+
+@media print {
+  .cv-a4 { page: cv-candidature; width: auto; max-width: none; min-height: 0; padding: 0; box-shadow: none; }
+  h2, .cv-entry-heading, .cv-entry-meta, .cv-context { break-after: avoid; }
+  .cv-header, .cv-entry, .cv-education-entry, li, .cv-skills p { break-inside: avoid; }
+  p { orphans: 2; widows: 2; }
+}

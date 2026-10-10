@@ -1,341 +1,205 @@
-<div class="no-print mx-auto max-w-[210mm] w-full px-4 pt-6 pb-4 flex items-center justify-between gap-4">
-
-    <button (click)="printCv()"
-        class="inline-flex items-center gap-2 rounded-lg bg-primary-30 text-primary-90 px-4 py-2 text-xs font-medium transition-all hover:bg-primary-60 hover:text-primary-10 shadow-sm cursor-pointer"
-        type="button">
-        <svg class="size-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M6.72 13.829c-.24-1.076-.641-2.073-1.185-2.957m13.01 2.957a15.753 15.753 0 00-1.186-2.957M3 13.5v-3a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 10.5v3m-3 0h.008v.008H18V13.5zm-12 0h.008v.008H6V13.5zm3 0h6m-9 3.75h12A2.25 2.25 0 0021 15v3a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-3a2.25 2.25 0 012.25-2.25z" />
-        </svg>
-        <span>Imprimer / Télécharger en PDF</span>
-    </button>
+<div class="cv-toolbar no-print">
+  <div class="cv-layout-options" role="group" aria-label="Présentation du CV">
+    <button type="button" [class.is-selected]="!isAtsLayout()" [attr.aria-pressed]="!isAtsLayout()"
+      (click)="setLayout('columns')">Avec colonne gauche</button>
+    <button type="button" [class.is-selected]="layout() === 'candidature'"
+      [attr.aria-pressed]="layout() === 'candidature'" (click)="setLayout('candidature')">Candidature · 1
+      colonne</button>
+    <button type="button" [class.is-selected]="isOptimizedLayout()" [attr.aria-pressed]="isOptimizedLayout()"
+      (click)="setLayout('optimized')">CV optimisé ATS</button>
+  </div>
+  <button class="cv-print-button" type="button" (click)="printCv()">Imprimer / Enregistrer en PDF</button>
+  <p class="cv-export-help">Pour les plateformes de candidature, privilégie la version « CV optimisé ATS ».
+    Dans la fenêtre d’impression, choisis « Enregistrer au format PDF », format A4, et désactive les en-têtes et pieds
+    de page.</p>
 </div>
 
-<div class="cv-page-wrapper pb-12">
-    <article class="cv-a4 bg-white text-primary-10 font-sans shadow-md mx-auto print:m-0 print:left-0"
-        aria-label="Curriculum Vitae Emmanuel Garnier Boidun">
+<div class="cv-page-wrapper">
+  @if (isOptimizedLayout()) {
+  <app-cv-optimized />
+  } @else {
+  <article class="cv-a4" [class.cv-ats]="isAtsLayout()" aria-label="CV d’Emmanuel Garnier Boidun">
+    <header class="cv-header">
+      <div class="cv-heading-row">
+        <h1>Emmanuel GARNIER BOIDUN</h1>
+        <h2 class="cv-job-title">
+          <span>Développeur Full Stack</span>
+          <span class="cv-job-stack">Java / Spring Boot / Angular</span>
+        </h2>
+      </div>
+      <address class="cv-contact">
+        <span>06 61 74 29 19</span>
+        <span>manu.boidun&#64;gmail.com</span>
+        <span>Bordeaux</span>
+        <span><a href="https://www.linkedin.com/in/emmanuel-garnier-boidun-456a85208/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a></span>
+        <span><a href="https://github.com/GARNIER-Emmanuel" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+        <span><a href="https://emmanuel-garnier-boidun.com/fr/" target="_blank"
+            rel="noopener noreferrer">emmanuel-garnier-boidun.com</a></span>
+      </address>
+    </header>
 
-        <header class="relative -mx-[2px] w-[calc(100%+4px)] px-[12mm] pt-[7mm] pb-[7mm] text-primary-80">
-            <div class="absolute inset-0 bg-primary-10 pointer-events-none"
-                style="clip-path: polygon(-2px 0, calc(100% + 2px) 0, calc(100% + 2px) calc(100% - 12px), -2px 100%); -webkit-clip-path: polygon(-2px 0, calc(100% + 2px) 0, calc(100% + 2px) calc(100% - 12px), -2px 100%);">
+    <div class="cv-body">
+      <section class="cv-profile" aria-labelledby="cv-profile-title">
+        <h2 id="cv-profile-title" class="section-title">Profil professionnel</h2>
+        <p>Développeur Full Stack Java / Spring Boot / Angular, avec près de trois ans d’alternance chez CGI Bordeaux.
+          Expérience en applications web métier, logiciel desktop Java / Swing et tests unitaires.</p>
+      </section>
+
+
+
+      <div class="cv-main">
+        <section aria-labelledby="cv-experience-title">
+          <h2 id="cv-experience-title" class="section-title">Expériences professionnelles</h2>
+          <div class="cv-entry">
+            <div class="cv-entry-heading">
+              <h3>Développeur Full Stack Java / Spring Boot / Angular</h3>
+              <span class="cv-entry-date">09/2024 - 07/2026</span>
             </div>
-
-            <div class="relative z-10 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                <h1 class="text-2xl font-bold tracking-tight text-white ">
-                    Emmanuel GARNIER BOIDUN
-                </h1>
-                <p class="text-sm font-semibold tracking-wide text-primary-80 uppercase">
-                    DÉVELOPPEUR JAVA FULL STACK
-                </p>
+            <p class="cv-entry-meta"><strong>CGI · Bordeaux · Alternance</strong></p>
+            <ul class="cv-bullets">
+              <li>Développer des composants Angular de consultation, saisie et modification de données, avec validation
+                des formulaires.</li>
+              <li>Mettre en place les services Angular avec HttpClient pour communiquer avec les API REST du back-end.
+              </li>
+              <li>Développer des API REST Spring Boot de consultation, création et modification. Structurer les
+                échanges
+                JSON entre front-end et back-end avec des DTO.</li>
+              <li>Organiser le back-end par domaines fonctionnels (Screaming Architecture), avec séparation des
+                responsabilités entre Controller, Service et Repository.</li>
+              <li>Développer l’accès aux données et leur persistance MySQL avec Spring Data JPA.</li>
+              <li>Fiabiliser la logique des services et les cas d’erreur avec des tests unitaires JUnit, Mockito et
+                AssertJ
+                sur les comportements attendus.</li>
+            </ul>
+            <p class="cv-entry-tools"><strong>Environnement :</strong> Java 21, Spring Boot, Angular, TypeScript,
+              API REST, MySQL, JUnit, Mockito, AssertJ, GitLab, Docker.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-heading">
+              <h3>Développeur Java / Swing · Application desktop</h3>
+              <span class="cv-entry-date">09/2023 - 09/2024</span>
             </div>
-
-            <address
-                class="relative z-10 not-italic mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-[10.5px] text-primary-80 font-medium">
-                <span>06 61 74 29 19</span>
-                <span class="text-primary-60">•</span>
-                <a href="mailto:manu.boidun@gmail.com"
-                    class="hover:text-white text-primary-80 transition-colors">manu.boidun@gmail.com</a>
-                <span class="text-primary-60">•</span>
-                <span>Bordeaux</span>
-                <span class="text-primary-60">•</span>
-                <span>24 ans</span>
-                <span class="text-primary-60">•</span>
-                <a href="https://www.linkedin.com/in/emmanuel-garnier-boidun-456a85208/" target="_blank"
-                    rel="noopener noreferrer" class="hover:text-white text-primary-80 transition-colors">LinkedIn</a>
-                <span class="text-primary-60">•</span>
-                <a href="https://github.com/GARNIER-Emmanuel" target="_blank" rel="noopener noreferrer"
-                    class="hover:text-white text-primary-80 transition-colors">GitHub</a>
-                <span class="text-primary-60">•</span>
-                <a href="https://emmanuel-garnier-boidun.com" target="_blank" rel="noopener noreferrer"
-                    class="hover:text-white text-primary-80 transition-colors">emmanuel-garnier-boidun.com</a>
-            </address>
-        </header>
-
-        <main class="flex-1 px-[12mm] pt-[2.5mm] pb-[1mm]">
-            <section class="mb-1.5" aria-labelledby="sec-resume">
-                <h2 id="sec-resume" class="section-title">
-                    PROFIL PROFESSIONNEL
-                </h2>
-                <p class="text-[10px] leading-relaxed text-secondary-10 mt-0.5">
-                    Développeur Full Stack avec 3 ans d'alternance chez CGI Bordeaux, sur des projets Java, Spring Boot
-                    et
-                    Angular. Curieux et autodidacte, je cherche à apprendre continuellement et à améliorer mon expertise
-                    technique.
-                </p>
-            </section>
-
-            <section class="mb-1.5" aria-labelledby="sec-exp">
-                <h2 id="sec-exp" class="section-title">
-                    EXPÉRIENCES PROFESSIONNELLES
-                </h2>
-
-                <div class="space-y-1 mt-0.5">
-                    <div class="item-block">
-                        <div class="flex justify-between items-baseline text-[10.5px]">
-                            <h3 class="font-bold text-primary-30">
-                                Développeur Java Full Stack – Alternance
-                            </h3>
-                            <span class="text-[9.5px] font-medium text-secondary-30">09/2023 – 07/2026</span>
-                        </div>
-                        <div class="text-[10px] font-semibold text-primary-40">CGI – Bordeaux</div>
-                        <ul class="list-disc ml-4 text-[9.5px] text-secondary-10 space-y-0.5 mt-0.5 leading-snug">
-                            <li><strong class="text-primary-20 font-semibold">Projet éditique desktop (Java / Swing)
-                                    :</strong> <br /> Modernisation d'un logiciel de comparaison de documents PDF et
-                                détection
-                                d'anomalies, passage d'une comparaison unitaire à un moteur de traitement
-                                multi-fichiers,
-                                refonte ergonomique,
-                                réduction des temps de traitement, démarche TDD et tests d'intégration (JUnit, AssertJ)
-                                au sein d'une équipe Scrum de 3 développeurs.</li>
-                            <li><strong class="text-primary-20 font-semibold">Projets web grands comptes (Spring Boot &
-                                    Angular) :</strong> <br />Conception de formulaires dynamiques complexes et
-                                évolutions
-                                applicatives métier, développement d'APIs REST sécurisées connectées à MySQL, mise en
-                                place
-                                de tests automatisés (TU & TI avec JUnit, AssertJ, Mockito), intégration front-end
-                                réactive et
-                                conteneurisation Docker.</li>
-                            <li><strong class="text-primary-20 font-semibold">Méthodologie :</strong> <br /> Pratique
-                                active
-                                des rituels agiles (sprints de 2 semaines, démos client interne, revues de code).</li>
-                        </ul>
-                    </div>
-
-                    <div class="item-block">
-                        <div class="flex justify-between items-baseline text-[10.5px]">
-                            <h3 class="font-bold text-primary-30">Développeur Web – Stage</h3>
-                            <span class="text-[9.5px] font-medium text-secondary-30">01/2023 – 02/2023</span>
-                        </div>
-                        <div class="text-[10px] font-semibold text-primary-40">ElementRoot – Pau</div>
-                        <ul class="list-disc ml-4 text-[9px] text-secondary-10 space-y-0.5 mt-0.5 leading-snug">
-                            <li>Conception et intégration de formulaires dynamiques complexes avec Symfony et PHP.</li>
-                            <li>Validation des données, traitement serveur et requêtage MySQL via Doctrine ORM selon
-                                l'architecture MVC.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item-block">
-                        <div class="flex justify-between items-baseline text-[10.5px]">
-                            <h3 class="font-bold text-primary-30">Développeur Web – Stage</h3>
-                            <span class="text-[9.5px] font-medium text-secondary-30">05/2022 – 06/2022</span>
-                        </div>
-                        <div class="text-[10px] font-semibold text-primary-40">Madness Escape Game – Pau</div>
-                        <ul class="list-disc ml-4 text-[9px] text-secondary-10 space-y-0.5 mt-0.5 leading-snug">
-                            <li>Développement complet d'une application web de mini-jeu interactif avec mécaniques en
-                                temps réel en JS vanilla.</li>
-                            <li>Back-end PHP pour la logique métier et modélisation de la base de données MySQL pour le
-                                classement des scores.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item-block">
-                        <div class="flex justify-between items-baseline text-[10.5px]">
-                            <h3 class="font-bold text-primary-30">
-                                Caissier polyvalent – CDI temps partiel
-                            </h3>
-                            <span class="text-[9.5px] font-medium text-secondary-30">08/2022 – 06/2023</span>
-                        </div>
-                        <div class="text-[10px] font-semibold text-primary-40">Intermarché – Pau</div>
-                        <p class="text-[9px] text-secondary-10 leading-tight mt-0.5">Relation client, encaissement en
-                            contexte à fort flux, autonomie et gestion du temps menées en parallèle des études.</p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-1.5">
-
-                <div class="space-y-1.5">
-                    <section aria-labelledby="sec-form">
-                        <h2 id="sec-form" class="section-title">
-                            FORMATIONS
-                        </h2>
-                        <div class="space-y-1.5 mt-0.5">
-                            <div>
-                                <div class="flex justify-between items-baseline">
-                                    <h3 class="font-bold text-primary-30 text-[10px]">Master – Développeur Full Stack
-                                    </h3>
-                                    <span class="text-[9.5px] font-medium text-secondary-30">08/2024 – Présent</span>
-                                </div>
-                                <p class="text-[9px] font-semibold text-primary-40">Sup de Vinci – Bordeaux</p>
-
-                            </div>
-
-                            <div>
-                                <div class="flex justify-between items-baseline">
-                                    <h3 class="font-bold text-primary-30 text-[10px]">Bachelor Concepteur Développeur
-                                        d'Applications</h3>
-                                    <span class="text-[9.5px] font-medium text-secondary-30">09/2023 – 09/2024</span>
-                                </div>
-                                <p class="text-[9px] font-semibold text-primary-40">CESI – Bordeaux</p>
-
-                            </div>
-
-                            <div>
-                                <div class="flex justify-between items-baseline">
-                                    <h3 class="font-bold text-primary-30 text-[10px]">BTS SIO (SLAM — Solutions
-                                        Logicielles)</h3>
-                                    <span class="text-[9.5px] font-medium text-secondary-30">08/2021 – 06/2023</span>
-                                </div>
-                                <p class="text-[9px] font-semibold text-primary-40">Lycée Saint-John Perse – Pau</p>
-
-                            </div>
-
-                            <div>
-                                <div class="flex justify-between items-baseline">
-                                    <h3 class="font-bold text-primary-30 text-[10px]">BAC STI2D (Sciences de l'Ingénieur
-                                        &
-                                        Numérique)</h3>
-                                    <span class="text-[9.5px] font-medium text-secondary-30">08/2019 – 06/2021</span>
-                                </div>
-                                <p class="text-[9px] font-semibold text-primary-40">Lycée Saint Cricq – Pau</p>
-
-                            </div>
-                        </div>
-                    </section>
-                    <section class="mb-1.5" aria-labelledby="sec-skills">
-                        <h2 id="sec-skills" class="section-title">
-                            COMPÉTENCES TECHNIQUES
-                        </h2>
-                        <div
-                            class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 mt-0.5 text-[9.5px] text-secondary-10">
-                            <p>
-                                <strong class="text-primary-30 font-bold">Back-end :</strong>
-                                Java (POO, 17/21), Spring Boot, Spring Security, Spring Data JPA / Hibernate, APIs
-                                RESTful
-                            </p>
-                            <p>
-                                <strong class="text-primary-30 font-bold">Front-end :</strong>
-                                Angular (Signals, Standalone), TypeScript, JavaScript, HTML5 / CSS3, Tailwind CSS,
-                                Angular
-                                Material
-                            </p>
-                            <p>
-                                <strong class="text-primary-30 font-bold">Données & DevOps :</strong>
-                                MySQL, PostgreSQL, Docker, Git / GitHub, CI/CD, Postman,
-                                Linux
-                            </p>
-                            <p>
-                                <strong class="text-primary-30 font-bold">Qualité & Méthodes :</strong>
-                                JUnit 5, Mockito, AssertJ, TDD, Clean Code / Principes SOLID, Agile (Scrum)
-                            </p>
-                        </div>
-                    </section>
-
-                </div>
-                <div class="space-y-1.5">
-                    <section aria-labelledby="sec-projects">
-                        <h2 id="sec-projects" class="section-title">
-                            PROJETS CLÉS
-                        </h2>
-                        <div class="space-y-1 mt-0.5">
-                            <div class="item-block">
-                                <div class="flex justify-between items-baseline text-[10.5px]">
-                                    <h3 class="font-bold text-primary-30">
-                                        JobTracker — Suivi de candidatures
-                                        <span class="text-[9.5px] font-normal text-primary-40">(Spring Boot 3, Neon
-                                            PostgreSQL, Angular, Docker)</span>
-                                    </h3>
-                                    <span class="text-[9.5px] font-medium text-secondary-30">2026</span>
-                                </div>
-                                <p class="text-[9px] text-secondary-10 mt-0.5 leading-snug">
-                                    Plateforme modulaire complète : architecture RESTful, migrations Flyway, couverture
-                                    TDD complète, interface moderne, réactive en Angular Signals & PrimeNG.
-                                </p>
-                            </div>
-                            <div class="item-block">
-                                <div class="flex justify-between items-baseline text-[10.5px]">
-                                    <h3 class="font-bold text-primary-30">
-                                        Portfolio 2026 — Vitrine Full Stack
-                                        <span class="text-[9.5px] font-normal text-primary-40">(Angular 20+, TypeScript,
-                                            Tailwind CSS v4, Material 3)</span>
-                                    </h3>
-                                    <span class="text-[9.5px] font-medium text-secondary-30">2026</span>
-                                </div>
-                                <p class="text-[9px] text-secondary-10 mt-0.5 leading-snug">
-                                    Application web bilingue (FR/EN), architecture Zoneless avec Signals, design system
-                                    personnalisé Tailwind v4 et rendu haute performance.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section aria-labelledby="sec-certif">
-                        <h2 id="sec-certif" class="section-title">
-                            CERTIFICATIONS
-                        </h2>
-                        <div class="space-y-1 mt-0.5">
-                            <div class="item-block">
-                                <div class="flex justify-between items-baseline text-[10.5px]">
-                                    <h3 class="font-bold text-primary-30">Google AI Professional Certificate — Google
-                                    </h3>
-                                    <span class="text-[9.5px] font-semibold text-secondary-30">2026</span>
-                                </div>
-                                <p class="text-[9px] text-secondary-10 mt-0.5 leading-snug">
-                                    Posture de collaborateur IA, prompt engineering structuré, cas d'usage métiers
-                                    (analyse de données,
-                                    recherche, communication, automatisation).
-                                </p>
-                            </div>
-                            <div class="item-block">
-                                <div class="flex justify-between items-baseline text-[10.5px]">
-                                    <h3 class="font-bold text-primary-30">Certification Angular — Dyma</h3>
-                                    <span class="text-[9.5px] font-semibold text-secondary-30">2026</span>
-                                </div>
-                                <p class="text-[9px] text-secondary-10 mt-0.5 leading-snug">
-                                    Architecture Angular & SSR/SSG, composants, requêtes HTTP / API REST, routeur & lazy
-                                    loading, ReactiveFormsModule, directives, pipes, Material et tests.
-                                </p>
-                            </div>
-                            <div class="item-block">
-                                <div class="flex justify-between items-baseline text-[10.5px]">
-                                    <h3 class="font-bold text-primary-30">Certification Spring Boot — Dyma</h3>
-                                    <span class="text-[9.5px] font-semibold text-secondary-30">2026</span>
-                                </div>
-                                <p class="text-[9px] text-secondary-10 mt-0.5 leading-snug">
-                                    Architecture applicative en couches, APIs REST & Spring MVC, Spring Data JPA /
-                                    Hibernate, sécurité Spring Security, tests complets (TU/TI), Docker et SOLID.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+            <p class="cv-entry-meta"><strong>CGI · Bordeaux · Alternance</strong></p>
+            <ul class="cv-bullets">
+              <li>Analyser l’existant d’un logiciel Java Swing de comparaison de PDF et de détection d’anomalies et
+                rédiger
+                sa documentation technique.</li>
+              <li>Adapter le moteur de comparaison au traitement de plusieurs documents au cours d’une même exécution.
+              </li>
+              <li>Participer à la refonte ergonomique de l’interface et à la navigation entre les fichiers analysés pour
+                faciliter la consultation des résultats.</li>
+              <li>Générer automatiquement des rapports Excel centralisant les anomalies détectées.</li>
+              <li>Refactoriser certains traitements pour isoler les responsabilités et faciliter leur testabilité.
+                Ajouter des tests unitaires JUnit et AssertJ.</li>
+            </ul>
+            <p class="cv-entry-tools"><strong>Environnement :</strong> Java 17, Swing, GitLab, JUnit, AssertJ.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-heading">
+              <h3>Développeur web</h3>
+              <span class="cv-entry-date">01/2023 - 02/2023</span>
             </div>
-
-
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <section aria-labelledby="sec-lang">
-                    <h2 id="sec-lang" class="section-title">
-                        LANGUES
-                    </h2>
-                    <div class="flex flex-wrap gap-4 mt-0.5 text-[9.5px] text-secondary-10">
-                        <p><span class="font-bold text-primary-30">Français :</span> Maternelle</p>
-                        <p><span class="font-bold text-primary-30">Anglais :</span> B1</p>
-                        <p><span class="font-bold text-primary-30">Espagnol :</span> A2</p>
-                    </div>
-                </section>
-
-                <section aria-labelledby="sec-interests">
-                    <h2 id="sec-interests" class="section-title">
-                        CENTRES D’INTÉRÊT
-                    </h2>
-                    <p
-                        class="text-[9.5px] text-secondary-10 mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 leading-relaxed">
-                        <span>Production musicale (MAO)</span>
-                        <span class="text-primary-80">•</span>
-                        <span>Espace & Aérospacial</span>
-                        <span class="text-primary-80">•</span>
-                        <span>Musculation</span>
-                        <span class="text-primary-80">•</span>
-                        <span>Cinéma</span>
-                    </p>
-                </section>
+            <p class="cv-entry-meta"><strong>ElementRoot · Pau · Stage</strong></p>
+            <p>Concevoir et intégrer les formulaires d’une application de gestion de cabinet dentaire. Développer les
+              traitements PHP / Symfony et la persistance MySQL avec Doctrine ORM pour la saisie, la consultation
+              et la gestion des dossiers patients.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-heading">
+              <h3>Développeur web</h3>
+              <span class="cv-entry-date">05/2022 - 06/2022</span>
             </div>
-        </main>
+            <p class="cv-entry-meta"><strong>Madness Escape Game · Pau · Stage</strong></p>
+            <p>Concevoir et développer l’interface d’un mini-jeu interactif en HTML, CSS et JavaScript vanilla, la
+              logique
+              back-end en PHP et la base MySQL pour l’enregistrement des scores et le classement des joueurs.</p>
+          </div>
+        </section>
 
-        <footer class="mt-auto h-8 bg-primary-10 -mx-[2px] w-[calc(100%+4px)] shrink-0"
-            style="clip-path: polygon(-2px 12px, calc(100% + 2px) 0, calc(100% + 2px) calc(100% + 2px), -2px calc(100% + 2px)); -webkit-clip-path: polygon(-2px 12px, calc(100% + 2px) 0, calc(100% + 2px) calc(100% + 2px), -2px calc(100% + 2px));">
-        </footer>
+        <section aria-labelledby="cv-education-title">
+          <h2 id="cv-education-title" class="section-title">Formation</h2>
+          <div class="cv-education-entry">
+            <div class="cv-entry-heading">
+              <h3>Master Développeur Full Stack</h3>
+              <span class="cv-entry-date">08/2024 - 09/2026</span>
+            </div>
+            <p class="cv-entry-meta"><span>Sup de Vinci · Bordeaux</span></p>
+          </div>
+          <div class="cv-education-entry">
+            <div class="cv-entry-heading">
+              <h3>Bachelor Concepteur Développeur d’Applications</h3>
+              <span class="cv-entry-date">09/2023 - 09/2024</span>
+            </div>
+            <p class="cv-entry-meta"><span>CESI · Bordeaux</span></p>
+          </div>
+          <div class="cv-education-entry">
+            <div class="cv-entry-heading">
+              <h3>BTS Services Informatiques aux Organisations · Option SLAM</h3>
+              <span class="cv-entry-date">08/2021 - 06/2023</span>
+            </div>
+            <p class="cv-entry-meta"><span>Lycée Saint-John Perse · Pau</span></p>
+          </div>
+        </section>
+      </div>
 
-    </article>
+      <aside class="cv-sidebar" aria-label="Compétences et informations complémentaires">
+
+
+        <section aria-labelledby="cv-certifications-title">
+          <h2 id="cv-certifications-title" class="section-title">Certifications</h2>
+          <ul class="cv-plain-list cv-certifications">
+            <li><strong>Spring Boot</strong><span>Dyma · 2026</span></li>
+            <li><strong>Angular</strong><span>Dyma · 2026</span></li>
+            <li><strong>Google AI Professional Certificate</strong><span>Google · 2026</span></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="cv-skills-title">
+          <h2 id="cv-skills-title" class="section-title">Compétences techniques</h2>
+          <dl class="cv-skills">
+            <div>
+              <dt>Back-end Java</dt>
+              <dd>Java 17 / 21, Spring Boot, API REST, Spring Data JPA, Hibernate, DTO.</dd>
+            </div>
+            <div>
+              <dt>Front-end</dt>
+              <dd>Angular, TypeScript, JavaScript, HTML, CSS, formulaires, HttpClient.</dd>
+              <dd>Signals, Tailwind CSS, Angular Material : portfolio personnel.</dd>
+            </div>
+            <div>
+              <dt>Données et outils</dt>
+              <dd>SQL, MySQL, PostgreSQL, Git, GitLab, GitHub, Docker, Postman.</dd>
+            </div>
+            <div>
+              <dt>Qualité et méthodes</dt>
+              <dd><strong>Tests :</strong> unitaires et d’intégration, JUnit, Mockito, AssertJ, TDD.</dd>
+              <dd><strong>Code :</strong> Clean Code, SOLID.</dd>
+              <dd><strong>Agile :</strong> Scrum, Kanban (Jira).</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section aria-labelledby="cv-languages-title">
+          <h2 id="cv-languages-title" class="section-title">Langues</h2>
+          <ul class="cv-plain-list">
+            <li><strong>Français :</strong> langue maternelle</li>
+            <li><strong>Anglais :</strong> B1</li>
+            <li><strong>Espagnol :</strong> A2</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="cv-interests-title">
+          <h2 id="cv-interests-title" class="section-title">Centres d’intérêt</h2>
+          <ul class="cv-plain-list">
+            <li>Cinéma</li>
+            <li>Production musicale (MAO)</li>
+            <li>Espace et aérospatial</li>
+            <li>Musculation</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </article>
+  }
 </div>

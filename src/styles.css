@@ -80,12 +80,20 @@ html {
 @media print {
     @page {
         size: A4 portrait;
-        margin: 0 !important;
+        margin: 0;
     }
 
     app-header,
     app-footer {
         display: none !important;
+    }
+
+    body:has(app-cv-refonte) {
+        page: cv-columns;
+    }
+
+    body:has(app-cv-refonte .cv-ats) {
+        page: cv-candidature;
     }
 
     html,
