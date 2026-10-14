@@ -2,6 +2,22 @@ import { Project } from "../interfaces";
 
 export const PROJECT_DATA: Project[] = [
     {
+        id: 'lunaas',
+        name: 'Lunaas',
+        date: '2026',
+        image: 'lunaas.png',
+        description: $localize`:@@project_lunaas_desc:Site vitrine pour mon activité freelance de création web à Bordeaux
+Architecture moderne Angular 22 Signals, OnPush & rendu statique (SSG), animations GSAP et Signal Forms`,
+        repo: 'https://github.com/GARNIER-Emmanuel/Lunaas',
+        live: 'https://lunaas.site/',
+        type: 'freelance',
+        skills: [
+            { name: 'Angular', icon: 'devicon-angularjs-plain colored', category: 'frontend' },
+            { name: 'TypeScript', icon: 'devicon-typescript-plain colored', category: 'frontend' },
+            { name: 'GSAP', icon: 'devicon-javascript-plain colored', category: 'frontend' },
+        ],
+    },
+    {
         id: 'portfolio-2026',
         name: 'Portfolio 2026',
         date: '2026',

@@ -717,6 +717,16 @@ Project-based learning, system modeling, and eco-design practices</target>
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="project_lunaas_desc" datatype="html">
+        <source>Site vitrine pour mon activité freelance de création web à Bordeaux
+Architecture moderne Angular 22 Signals, OnPush &amp; rendu statique (SSG), animations GSAP et Signal Forms</source>
+        <target>Showcase website for my freelance web design and development business in Bordeaux
+Modern Angular 22 Signals, OnPush &amp; static site generation (SSG) architecture, GSAP animations and Signal Forms</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="project_portfolio_desc" datatype="html">
         <source>Portfolio personnel bilingue (FR/EN)
 Architecture moderne Angular Signals &amp; Zoneless
@@ -1223,6 +1233,14 @@ Built with Symfony 6.2, Doctrine ORM, Twig, Bootstrap, and MySQL</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
           <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_type_freelance" datatype="html">
+        <source>Projet freelance</source>
+        <target>Freelance Project</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">20,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projects_btn_repo" datatype="html">

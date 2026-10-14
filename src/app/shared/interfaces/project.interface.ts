@@ -8,6 +8,6 @@ export interface Project {
     description: string;
     repo?: string;
     live?: string;
-    type: 'formation' | 'school' | 'personal';
+    type: 'formation' | 'school' | 'personal' | 'freelance';
     skills: Skill[];
 }

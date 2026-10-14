@@ -612,20 +612,28 @@ Travail en mode projet, modélisation et démarches d&apos;éco-conception</sour
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="project_lunaas_desc" datatype="html">
+        <source>Site vitrine pour mon activité freelance de création web à Bordeaux
+Architecture moderne Angular 22 Signals, OnPush &amp; rendu statique (SSG), animations GSAP et Signal Forms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="project_portfolio_desc" datatype="html">
         <source>Portfolio personnel bilingue (FR/EN)
 Architecture moderne Angular Signals &amp; Zoneless
 Stylisé avec Tailwind CSS v4 &amp; Material Theming</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_1_name" datatype="html">
         <source>Certification Angular</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_1_desc" datatype="html">
@@ -633,14 +641,14 @@ Stylisé avec Tailwind CSS v4 &amp; Material Theming</source>
 Maîtrise approfondie des Standalone Components, Signals réactifs, Control Flow et formulaires typés</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">25,26</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_2_name" datatype="html">
         <source>Certification Spring Boot</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_2_desc" datatype="html">
@@ -648,34 +656,7 @@ Maîtrise approfondie des Standalone Components, Signals réactifs, Control Flow
 Développement d’APIs REST sécurisées, persistance relationnelle avec JPA / Hibernate et Spring Security</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">40,41</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="project_3_desc" datatype="html">
-        <source>Plateforme modulaire de suivi des candidatures
-Backend Spring Boot 3 &amp; Neon PostgreSQL (Flyway, TDD)
-Frontend Angular Standalone (Signals, PrimeNG)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">55</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="project_4_desc" datatype="html">
-        <source>Site web de recommandation cinématographique interactive (swipe duo synchronisé, roulette 3D, flux Letterboxd)
-Frontend Angular Glassmorphism
-Backend NestJS &amp; TMDB API sous Docker</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">73</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="project_5_desc" datatype="html">
-        <source>PWA de suivi de musculation avec programmes personnalisables
-Séances guidées, historique et suivi des progrès
-Sauvegarde hors ligne et synchronisation via Supabase</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="linenumber">56,57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_supbro_desc" datatype="html">
@@ -684,7 +665,34 @@ Création et consultation d’amis avec PostgreSQL et migrations Flyway
 Tests unitaires, d’intégration et de bout en bout automatisés avec GitHub Actions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_3_desc" datatype="html">
+        <source>Plateforme modulaire de suivi des candidatures
+Backend Spring Boot 3 &amp; Neon PostgreSQL (Flyway, TDD)
+Frontend Angular Standalone (Signals, PrimeNG)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_4_desc" datatype="html">
+        <source>Site web de recommandation cinématographique interactive (swipe duo synchronisé, roulette 3D, flux Letterboxd)
+Frontend Angular Glassmorphism
+Backend NestJS &amp; TMDB API sous Docker</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project_5_desc" datatype="html">
+        <source>PWA de suivi de musculation avec programmes personnalisables
+Séances guidées, historique et suivi des progrès
+Sauvegarde hors ligne et synchronisation via Supabase</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
+          <context context-type="linenumber">124</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_6_desc" datatype="html">
@@ -693,7 +701,7 @@ Développé avec React et Next.js
 Pour ma veille personnelle</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_7_desc" datatype="html">
@@ -701,7 +709,7 @@ Pour ma veille personnelle</source>
 Modélisation SQL avec JMerise et gestion de projet via diagramme de Gantt</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">122</context>
+          <context context-type="linenumber">156</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project_8_desc" datatype="html">
@@ -709,7 +717,7 @@ Modélisation SQL avec JMerise et gestion de projet via diagramme de Gantt</sour
 Développée avec Symfony 6.2, Doctrine ORM, Twig, Bootstrap et MySQL</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/project.data.ts</context>
-          <context context-type="linenumber">136</context>
+          <context context-type="linenumber">170</context>
         </context-group>
       </trans-unit>
       <trans-unit id="certif_status_inprogress" datatype="html">
@@ -1040,33 +1048,40 @@ Développée avec Symfony 6.2, Doctrine ORM, Twig, Bootstrap et MySQL</source>
           <context context-type="linenumber">19,20</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="project_type_freelance" datatype="html">
+        <source>Projet freelance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="projects_btn_repo" datatype="html">
         <source>Voir le repo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
-          <context context-type="linenumber">36,37</context>
+          <context context-type="linenumber">37,38</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
-          <context context-type="linenumber">41,42</context>
+          <context context-type="linenumber">42,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projects_btn_live" datatype="html">
         <source>Voir le site</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">39,40</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">45,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projects_btn_none" datatype="html">
         <source>Aucun lien disponible</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/homepage/projects/projects.html</context>
-          <context context-type="linenumber">46,48</context>
+          <context context-type="linenumber">47,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="notfound_badge" datatype="html">
