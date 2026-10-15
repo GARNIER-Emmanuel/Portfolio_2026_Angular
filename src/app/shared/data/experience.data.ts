@@ -12,28 +12,34 @@ export const EXPERIENCES_DATA: Experience[] = [
 
         resume: $localize`:@@exp_1_resume:Développement d'applications web Java / Spring Boot / Angular et modernisation d'un logiciel desktop Java Swing en environnement Agile.`,
 
-        description: $localize`:@@exp_1_desc:PROJET 1 : Développement d'applications web métiers (Spring Boot / Angular)
+        description: $localize`:@@exp_1_desc:Développement d'applications web métiers et modernisation d'un logiciel de comparaison de documents PDF.`,
 
-Participation au développement et à l'évolution d'applications web métiers sur des projets grands comptes.
-
-Réalisations :
-- Conception et développement de fonctionnalités métiers et de formulaires dynamiques avec Angular.
-- Développement d'API REST sécurisées avec Spring Boot et intégration avec MySQL.
-- Développement de tests unitaires et d'intégration avec JUnit, Mockito et AssertJ, notamment selon une démarche TDD.
-- Intégration front-end et conteneurisation des applications avec Docker.
-- Participation aux revues de code et aux cérémonies Agile Scrum.
-
-PROJET 2 : Modernisation d'une application desktop (Java / Swing)
-
-Modernisation d'un logiciel de comparaison de documents PDF et de détection d'anomalies, au sein d'une équipe Scrum de trois développeurs.
-
-Réalisations :
-- Évolution du moteur de comparaison pour permettre le traitement multifichiers.
-- Refonte ergonomique de l'interface utilisateur en Java Swing.
-- Développement d'une fonctionnalité de génération de rapports Excel répertoriant les anomalies détectées.
-- Optimisation des traitements et développement de tests automatisés selon une démarche TDD.
-- Réduction des temps de traitement et automatisation de la production des rapports.
-`,
+        missions: [
+            {
+                title: $localize`:@@exp_1_web_title:Applications web métiers`,
+                period: '09/2024 – 07/2026',
+                technologies: 'Java 21 · Spring Boot · Angular · MySQL',
+                summary: $localize`:@@exp_1_web_summary:Contribution au développement d'applications métiers pour des projets grands comptes.`,
+                highlights: [
+                    $localize`:@@exp_1_web_ui:Développement de composants Angular et de formulaires avec validation, connectés aux API via HttpClient.`,
+                    $localize`:@@exp_1_web_api:Conception d'API REST Spring Boot, structuration des échanges avec des DTO et persistance MySQL avec Spring Data JPA.`,
+                    $localize`:@@exp_1_web_architecture:Organisation du back-end par domaines fonctionnels, avec séparation des responsabilités entre Controller, Service et Repository.`,
+                    $localize`:@@exp_1_web_tests:Tests unitaires des services et des cas d'erreur avec JUnit, Mockito et AssertJ.`,
+                ],
+            },
+            {
+                title: $localize`:@@exp_1_desktop_title:Modernisation d'un logiciel Java / Swing`,
+                period: '09/2023 – 09/2024',
+                technologies: 'Java 17 · Swing · JUnit · AssertJ',
+                summary: $localize`:@@exp_1_desktop_summary:Évolution d'un logiciel de comparaison de PDF et de détection d'anomalies.`,
+                highlights: [
+                    $localize`:@@exp_1_desktop_analysis:Analyse de l'existant et rédaction de la documentation technique.`,
+                    $localize`:@@exp_1_desktop_engine:Adaptation du moteur de comparaison au traitement de plusieurs documents par exécution.`,
+                    $localize`:@@exp_1_desktop_ui:Contribution à la refonte de l'interface et de la navigation entre les fichiers analysés.`,
+                    $localize`:@@exp_1_desktop_quality:Automatisation des rapports Excel d'anomalies, refactorisation des traitements et ajout de tests unitaires.`,
+                ],
+            },
+        ],
 
         skills: [
             {
@@ -109,14 +115,22 @@ Réalisations :
 
         resume: $localize`:@@exp_2_resume:Développement d'une application web de gestion de cabinet dentaire avec PHP, Symfony et Doctrine ORM.`,
 
-        description: $localize`:@@exp_2_desc:Développement d'une application web de gestion de cabinet dentaire permettant la saisie et la gestion des dossiers patients.
+        description: $localize`:@@exp_2_desc:Développement d'une application web dédiée à la gestion des dossiers patients d'un cabinet dentaire.`,
 
-Réalisations :
-- Conception et intégration de formulaires de gestion des patients avec Symfony.
-- Développement des traitements back-end en PHP pour la validation et le traitement des données.
-- Gestion de la persistance des données avec Doctrine ORM et MySQL.
-- Intégration des interfaces utilisateur avec Twig, HTML, CSS et Bootstrap.
-- Réalisation de fonctionnalités de saisie, de consultation et de gestion des dossiers patients.`,
+        missions: [
+            {
+                title: $localize`:@@exp_2_patient_title:Gestion des dossiers patients`,
+                period: '01/2023 – 02/2023',
+                technologies: 'PHP · Symfony · Doctrine ORM · MySQL',
+                summary: $localize`:@@exp_2_patient_summary:Mise en œuvre des parcours de saisie, de consultation et de mise à jour des données patients.`,
+                highlights: [
+                    $localize`:@@exp_2_patient_forms:Conception et intégration des formulaires de gestion des patients avec Symfony.`,
+                    $localize`:@@exp_2_patient_backend:Développement des traitements back-end en PHP pour la validation et le traitement des données.`,
+                    $localize`:@@exp_2_patient_data:Gestion de la persistance des dossiers patients avec Doctrine ORM et MySQL.`,
+                    $localize`:@@exp_2_patient_ui:Intégration des interfaces utilisateur avec Twig, HTML, CSS et Bootstrap.`,
+                ],
+            },
+        ],
 
         skills: [
             {
@@ -172,16 +186,22 @@ Réalisations :
 
         resume: $localize`:@@exp_3_resume:Conception et développement d'un mini-jeu web interactif en HTML, CSS, JavaScript, PHP et MySQL.`,
 
-        description: $localize`:@@exp_3_desc:Développement d'un mini-jeu web interactif destiné aux joueurs d'un escape game, intégrant des mécaniques de jeu et un système de classement des équipes.
+        description: $localize`:@@exp_3_desc:Conception et développement d'un mini-jeu web interactif destiné aux joueurs d'un escape game.`,
 
-Réalisations :
-- Conception et développement de l'interface utilisateur en HTML5 et CSS3.
-- Développement des mécaniques interactives en JavaScript vanilla.
-- Implémentation de la logique métier côté serveur en PHP.
-- Conception d'une base de données MySQL pour l'enregistrement et le classement des scores.
-
-Résultat :
-- Réalisation d'un mini-jeu web fonctionnel intégrant un système de classement des équipes.`,
+        missions: [
+            {
+                title: $localize`:@@exp_3_game_title:Mini-jeu interactif et classement des équipes`,
+                period: '05/2022 – 06/2022',
+                technologies: 'HTML5 · CSS3 · JavaScript · PHP · MySQL',
+                summary: $localize`:@@exp_3_game_summary:Développement des mécaniques de jeu et d'un classement reposant sur l'enregistrement des scores.`,
+                highlights: [
+                    $localize`:@@exp_3_game_ui:Conception et intégration de l'interface du jeu en HTML5 et CSS3.`,
+                    $localize`:@@exp_3_game_interactions:Développement des interactions et des mécaniques de jeu en JavaScript vanilla.`,
+                    $localize`:@@exp_3_game_backend:Implémentation de la logique métier côté serveur en PHP.`,
+                    $localize`:@@exp_3_game_data:Conception de la base MySQL pour l'enregistrement des scores et le classement des équipes.`,
+                ],
+            },
+        ],
         skills: [
             {
                 name: 'JavaScript',

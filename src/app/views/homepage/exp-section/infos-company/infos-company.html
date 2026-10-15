@@ -9,6 +9,25 @@
             <p class="mt-2 text-sm/relaxed text-gray-600 whitespace-pre-line">
                 {{experience().description}}
             </p>
+            @if (experience().missions; as missions) {
+            <div class="missions">
+                @for (mission of missions; track mission.title) {
+                <section class="mission">
+                    <div class="mission-heading">
+                        <h4>{{ mission.title }}</h4>
+                        <span class="mission-period">{{ mission.period }}</span>
+                    </div>
+                    <p class="mission-technologies">{{ mission.technologies }}</p>
+                    <p class="mission-summary">{{ mission.summary }}</p>
+                    <ul class="mission-highlights">
+                        @for (highlight of mission.highlights; track highlight) {
+                        <li>{{ highlight }}</li>
+                        }
+                    </ul>
+                </section>
+                }
+            </div>
+            }
         </div>
     </div>
 </div>
