@@ -289,6 +289,16 @@ Gestion de la dette technique, découplage et maintenabilité des systèmes dist
           <context context-type="linenumber">231</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="certif_18_desc" datatype="html">
+        <source>Ingénierie de prompt avancée, gestion du contexte et utilisation de l&apos;API Anthropic Claude
+Intégration d&apos;outils (Tool Use), agents autonomes et architectures multi-agents
+Maîtrise de l&apos;écosystème de développement Anthropic, incluant l&apos;outil CLI Claude Code et le Model Context Protocol (MCP)
+Sécurité, conformité et déploiement de solutions d&apos;IA générative en environnement de production</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+          <context context-type="linenumber">240</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="exp_1_title" datatype="html">
         <source>Développeur Java Full Stack (Alternance)</source>
         <context-group purpose="location">

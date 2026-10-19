@@ -1638,6 +1638,19 @@ Technical debt management, decoupling, and distributed system maintainability</t
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="certif_18_desc" datatype="html">
+        <source>Ingénierie de prompt avancée, gestion du contexte et utilisation de l&apos;API Anthropic Claude
+Intégration d&apos;outils (Tool Use), agents autonomes et architectures multi-agents
+Maîtrise de l&apos;écosystème de développement Anthropic, incluant l&apos;outil CLI Claude Code et le Model Context Protocol (MCP)
+Sécurité, conformité et déploiement de solutions d&apos;IA générative en environnement de production</source>
+        <target>Advanced prompt engineering, context management, and Anthropic Claude API integration
+Tool Use integration, autonomous agents, and multi-agent architectures
+Mastery of the Anthropic developer ecosystem, including the Claude Code CLI tool and the Model Context Protocol (MCP)
+Security, compliance, and deployment of generative AI solutions in production environments</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

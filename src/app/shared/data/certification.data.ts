@@ -175,9 +175,21 @@ Mener un projet de bout en bout : tests, CI/CD, Git, revues de code et vérifica
     },
     {
         id: '13',
-        name: 'Mastering Advanced Spring Boot: Microservices & System Design',
+        name: 'Claude Certified Developer - Foundations (CCDV-F)',
         image: '',
         obtained_date: '2026',
+        description: $localize`:@@certif_18_desc:Ingénierie de prompt avancée, gestion du contexte et utilisation de l'API Anthropic Claude
+Intégration d'outils (Tool Use), agents autonomes et architectures multi-agents
+Maîtrise de l'écosystème de développement Anthropic, incluant l'outil CLI Claude Code et le Model Context Protocol (MCP)
+Sécurité, conformité et déploiement de solutions d'IA générative en environnement de production`,
+        site: 'Anthropic / Pearson VUE',
+        link: 'https://www.pearsonvue.com/us/en/anthropic.html',
+        status: 'wish'
+    },
+    {
+        id: '14',
+        name: 'Mastering Advanced Spring Boot: Microservices & System Design',
+        image: '',
         description: $localize`:@@certif_13_desc:Fonctionnement interne : cycle de vie des beans, ApplicationContext et configurations conditionnelles
 Architecture modulaire et structuration d'applications Spring Boot d'entreprise
 Microservices avec Spring Cloud : découverte de services, communication inter-services, résilience et API Gateway
@@ -187,7 +199,7 @@ Stratégies de tests (unitaires, intégration, E2E), automatisation CI et observ
         status: 'wish'
     },
     {
-        id: '14',
+        id: '15',
         name: 'Generative AI for Software Development Skills Certificate',
         image: '',
         obtained_date: '2026',
@@ -200,10 +212,9 @@ Intégration d'assistants IA dans l'IDE et automatisation du workflow de dev`,
         status: 'wish'
     },
     {
-        id: '15',
+        id: '16',
         name: 'AWS Certified Developer',
         image: '',
-        obtained_date: '2026',
         description: $localize`:@@certif_15_desc:Déploiement et sécurisation d'applications et microservices dans le cloud AWS
 Gestion des services serverless (Lambda, API Gateway), bases de données (DynamoDB, RDS) et stockage S3
 Mise en place de pipelines CI/CD et surveillance applicative via CloudWatch et X-Ray`,
@@ -212,10 +223,9 @@ Mise en place de pipelines CI/CD et surveillance applicative via CloudWatch et X
         status: 'wish'
     },
     {
-        id: '16',
+        id: '17',
         name: 'Docker Certified Associate (DCA)',
         image: '',
-        obtained_date: '2026',
         description: $localize`:@@certif_16_desc:Création, optimisation et sécurisation des images de conteneurs Docker (Multi-stage builds)
 Orchestration multi-conteneurs avec Docker Compose et gestion des réseaux et volumes
 Déploiement, monitoring et maintenance d'infrastructures conteneurisées`,
@@ -224,10 +234,9 @@ Déploiement, monitoring et maintenance d'infrastructures conteneurisées`,
         status: 'wish'
     },
     {
-        id: '17',
+        id: '18',
         name: 'Software Design and Architecture Specialization',
         image: '',
-        obtained_date: '2026',
         description: $localize`:@@certif_17_desc:Conception orientée objet avancée et application rigoureuse des principes SOLID
 Maîtrise des Design Patterns du GoF (Création, Structure, Comportement)
 Architectures logicielles modernes : microservices, SOA, événementielle et modélisation UML
@@ -235,5 +244,7 @@ Gestion de la dette technique, découplage et maintenabilité des systèmes dist
         site: 'University of Alberta',
         link: 'https://www.coursera.org/specializations/software-design-architecture',
         status: 'wish'
-    }
+    },
+
+
 ];
