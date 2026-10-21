@@ -129,6 +129,21 @@ Identifier les opportunités clés d'intégration de l'IA dans son flux de trava
     },
     {
         id: '10',
+        name: 'Claude Code',
+        image: 'certif-claude-code.png',
+        image_minimize: 'certif-claude-code-640-452.png',
+        obtained_date: '2026',
+        description: $localize`:@@certif_12_desc:Maîtriser Claude Code, les agents IA et la gestion du contexte
+Configurer les permissions, la sécurité et la mémoire du projet
+Automatiser les workflows avec les skills, MCP, sous-agents et hooks
+Développer et valider un projet complet avec Git, tests, revues de code et CI/CD`,
+        site: 'Dyma',
+        link: 'https://dyma.fr/',
+        pdf: 'certification-claude-code.pdf',
+        status: 'obtained'
+    },
+    {
+        id: '11',
         name: 'Angular',
         image: 'certif-angular.png',
         image_minimize: 'certif-angular-640-452.png',
@@ -144,7 +159,7 @@ Tests automatisés, composants Angular Material et internationalisation (i18n)`,
         status: 'obtained'
     },
     {
-        id: '11',
+        id: '12',
         name: 'Spring Boot',
         image: 'certif-spring-boot.png',
         image_minimize: 'certif-spring-boot-640-452.png',
@@ -158,21 +173,6 @@ Conteneurisation Docker, déploiement Cloud et principes Clean Code & SOLID`,
         site: 'Dyma',
         link: 'https://dyma.fr/',
         pdf: 'certification-spring-boot-GARNIER-BOIDUN-Emmanuel.pdf',
-        status: 'obtained'
-    },
-    {
-        id: '12',
-        name: 'Claude Code',
-        image: 'certif-claude-code.png',
-        image_minimize: 'certif-claude-code-640-452.png',
-        obtained_date: '2026',
-        description: $localize`:@@certif_12_desc:Maîtriser Claude Code, les agents IA et la gestion du contexte
-Configurer les permissions, la sécurité et la mémoire du projet
-Automatiser les workflows avec les skills, MCP, sous-agents et hooks
-Développer et valider un projet complet avec Git, tests, revues de code et CI/CD`,
-        site: 'Dyma',
-        link: 'https://dyma.fr/',
-        pdf: 'certification-claude-code.pdf',
         status: 'obtained'
     },
     {

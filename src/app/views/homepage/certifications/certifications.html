@@ -7,6 +7,7 @@
             class="flex overflow-x-auto w-full min-w-0 overscroll-x-contain touch-pan-x snap-x snap-mandatory gap-4 pb-4 sm:grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 sm:overflow-visible">
             @for (certification of group.items; track certification.id) {
             <a (click)="openDialogCertif(certification)" role="button" tabindex="0"
+                [matTooltip]="certification.name" [attr.aria-label]="certification.name"
                 (keydown.enter)="openDialogCertif(certification)"
                 class="w-[44vw] max-w-[150px] snap-start shrink-0 select-none sm:w-full sm:max-w-none block group transition-all duration-200 hover:-translate-y-1 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-se-3xl rounded-es-3xl">
 
