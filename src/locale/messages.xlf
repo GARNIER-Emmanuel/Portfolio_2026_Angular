@@ -232,10 +232,10 @@ Conteneurisation Docker, déploiement Cloud et principes Clean Code &amp; SOLID<
         </context-group>
       </trans-unit>
       <trans-unit id="certif_12_desc" datatype="html">
-        <source>Maîtriser les fondamentaux des agents IA, LLM et de la boucle agentique Claude Code
-Structurer le contexte projet (CLAUDE.md, rules, prompts avancés et gestion des tokens)
-Développer avec l&apos;écosystème : protocoles MCP, sous-agents parallèles, skills et hooks d&apos;automatisation
-Mener un projet de bout en bout : tests, CI/CD, Git, revues de code et vérification continue</source>
+        <source>Maîtriser Claude Code, les agents IA et la gestion du contexte
+Configurer les permissions, la sécurité et la mémoire du projet
+Automatiser les workflows avec les skills, MCP, sous-agents et hooks
+Développer et valider un projet complet avec Git, tests, revues de code et CI/CD</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
           <context context-type="linenumber">168</context>

@@ -163,15 +163,17 @@ Conteneurisation Docker, déploiement Cloud et principes Clean Code & SOLID`,
     {
         id: '12',
         name: 'Claude Code',
-        image: '',
+        image: 'certif-claude-code.png',
+        image_minimize: 'certif-claude-code-640-452.png',
         obtained_date: '2026',
-        description: $localize`:@@certif_12_desc:Maîtriser les fondamentaux des agents IA, LLM et de la boucle agentique Claude Code
-Structurer le contexte projet (CLAUDE.md, rules, prompts avancés et gestion des tokens)
-Développer avec l'écosystème : protocoles MCP, sous-agents parallèles, skills et hooks d'automatisation
-Mener un projet de bout en bout : tests, CI/CD, Git, revues de code et vérification continue`,
+        description: $localize`:@@certif_12_desc:Maîtriser Claude Code, les agents IA et la gestion du contexte
+Configurer les permissions, la sécurité et la mémoire du projet
+Automatiser les workflows avec les skills, MCP, sous-agents et hooks
+Développer et valider un projet complet avec Git, tests, revues de code et CI/CD`,
         site: 'Dyma',
         link: 'https://dyma.fr/',
-        status: 'in_progress'
+        pdf: 'certification-claude-code.pdf',
+        status: 'obtained'
     },
     {
         id: '13',
