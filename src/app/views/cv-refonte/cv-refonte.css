@@ -288,7 +288,11 @@
 }
 
 .cv-education-entry+.cv-education-entry {
-  margin-top: 4px;
+  margin-top: 2px;
+}
+
+.cv-education-entry .cv-entry-meta {
+  margin-bottom: 0;
 }
 
 .cv-entry>h3+p:not(.cv-entry-meta) {
