@@ -2,6 +2,47 @@ import { Experience } from "../interfaces";
 
 export const EXPERIENCES_DATA: Experience[] = [
     {
+        id: 'lunaas',
+        name: 'Lunaas – Bordeaux',
+        logo: 'lunaas-logo.png',
+
+        title: $localize`:@@exp_lunaas_title:Développeur web freelance · Fondateur de Lunaas`,
+
+        period: $localize`:@@exp_lunaas_period:10/2026 – Présent`,
+
+        resume: $localize`:@@exp_lunaas_resume:Création de sites web pour les artisans, indépendants et petites entreprises, du cadrage du besoin à la mise en ligne.`,
+
+        description: $localize`:@@exp_lunaas_desc:Création et développement de Lunaas, mon activité indépendante de conception de sites web sur mesure à Bordeaux.`,
+
+        missions: [
+            {
+                title: $localize`:@@exp_lunaas_web_title:Création de sites web et accompagnement client`,
+                period: $localize`:@@exp_lunaas_period:10/2026 – Présent`,
+                technologies: 'Angular · TypeScript · HTML / CSS · Cloudflare Pages',
+                summary: $localize`:@@exp_lunaas_web_summary:Prise en charge des projets de sites vitrines et de pages de présentation, de la définition du besoin au suivi technique.`,
+                highlights: [
+                    $localize`:@@exp_lunaas_web_scope:Cadrage des besoins, définition des fonctionnalités et préparation des devis.`,
+                    $localize`:@@exp_lunaas_web_design:Conception de sites au design personnalisé, adaptés aux mobiles, tablettes et ordinateurs.`,
+                    $localize`:@@exp_lunaas_web_development:Développement des interfaces, intégration des contenus et des formulaires de contact.`,
+                    $localize`:@@exp_lunaas_web_quality:Prise en compte du référencement naturel (SEO), des performances et de l'accessibilité.`,
+                    $localize`:@@exp_lunaas_web_delivery:Accompagnement à la mise en ligne, à la maintenance et aux évolutions des sites.`,
+                ],
+            },
+        ],
+
+        skills: [
+            { name: 'Angular', icon: 'devicon-angularjs-plain colored', category: 'frontend' },
+            { name: 'TypeScript', icon: 'devicon-typescript-plain colored', category: 'frontend' },
+            { name: 'HTML5', icon: 'devicon-html5-plain colored', category: 'frontend' },
+            { name: 'CSS3', icon: 'devicon-css3-plain colored', category: 'frontend' },
+            { name: 'Cloudflare Pages', icon: 'devicon-cloudflare-plain colored', category: 'devops' },
+            { name: 'Git', icon: 'devicon-git-plain colored', category: 'tools' },
+            { name: 'Vitest', icon: 'devicon-vitest-plain colored', category: 'tools' },
+            { name: 'SEO', icon: 'travel_explore', category: 'tools' },
+            { name: $localize`:@@exp_lunaas_accessibility:Accessibilité`, icon: 'accessibility_new', category: 'frontend' },
+        ]
+    },
+    {
         id: '1',
         name: 'CGI – Bordeaux',
         logo: 'cgi.png',

@@ -305,6 +305,106 @@ Technical debt management, decoupling, and maintainability of distributed system
           <context context-type="sourcefile">src/app/shared/data/certification.data.ts</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="exp_lunaas_title" datatype="html">
+        <source>Développeur web freelance · Fondateur de Lunaas</source>
+        <target>Freelance Web Developer · Founder of Lunaas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_period" datatype="html">
+        <source>10/2026 – Présent</source>
+        <target>10/2026 – Present</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_resume" datatype="html">
+        <source>Création de sites web pour les artisans, indépendants et petites entreprises, du cadrage du besoin à la mise en ligne.</source>
+        <target>Website creation for tradespeople, freelancers and small businesses, from scoping requirements to launch.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_desc" datatype="html">
+        <source>Création et développement de Lunaas, mon activité indépendante de conception de sites web sur mesure à Bordeaux.</source>
+        <target>Founded and developed Lunaas, my independent business designing custom websites in Bordeaux.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_web_title" datatype="html">
+        <source>Création de sites web et accompagnement client</source>
+        <target>Website creation and client support</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_web_summary" datatype="html">
+        <source>Prise en charge des projets de sites vitrines et de pages de présentation, de la définition du besoin au suivi technique.</source>
+        <target>Management of business website and landing page projects, from defining requirements to technical support.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_web_scope" datatype="html">
+        <source>Cadrage des besoins, définition des fonctionnalités et préparation des devis.</source>
+        <target>Scoping requirements, defining features and preparing quotes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_web_design" datatype="html">
+        <source>Conception de sites au design personnalisé, adaptés aux mobiles, tablettes et ordinateurs.</source>
+        <target>Designing custom websites adapted to mobile phones, tablets and computers.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_web_development" datatype="html">
+        <source>Développement des interfaces, intégration des contenus et des formulaires de contact.</source>
+        <target>Developing interfaces and integrating content and contact forms.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_web_quality" datatype="html">
+        <source>Prise en compte du référencement naturel (SEO), des performances et de l&apos;accessibilité.</source>
+        <target>Addressing search engine optimization (SEO), performance and accessibility.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_web_delivery" datatype="html">
+        <source>Accompagnement à la mise en ligne, à la maintenance et aux évolutions des sites.</source>
+        <target>Supporting website launch, maintenance and further development.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exp_lunaas_accessibility" datatype="html">
+        <source>Accessibilité</source>
+        <target>Accessibility</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/data/experience.data.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="exp_1_title" datatype="html">
         <source>Développeur Java Full Stack (Alternance)</source>
         <target>Full Stack Java Developer (Apprenticeship)</target>
